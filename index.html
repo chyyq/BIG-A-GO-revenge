@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A股低位假跌破放量反转监测</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Share Spring Reversal V2</p>
+        <h1>A股低位假跌破放量反转监测</h1>
+      </div>
+      <div class="top-actions">
+        <button id="refreshView" type="button" title="重新读取本地数据">刷新</button>
+        <a href="https://quote.eastmoney.com/center/gridlist.html#hs_a_board" target="_blank" rel="noreferrer">数据源</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="status-grid" aria-label="今日状态">
+        <div class="metric">
+          <span>更新时间</span>
+          <strong id="updatedAt">--</strong>
+        </div>
+        <div class="metric">
+          <span>候选股票</span>
+          <strong id="signalCount">--</strong>
+        </div>
+        <div class="metric">
+          <span>策略阈值</span>
+          <strong>90 / 110</strong>
+        </div>
+        <div class="metric">
+          <span>持仓提醒</span>
+          <strong id="alertCount">--</strong>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <div>
+            <h2>每日推荐</h2>
+            <p>按策略估算胜率排序；没有达到 90 分时自动空置。</p>
+          </div>
+          <div class="filters" role="group" aria-label="推荐筛选">
+            <button class="filter active" data-filter="all" type="button">全部</button>
+            <button class="filter" data-filter="buy" type="button">买入候选</button>
+            <button class="filter" data-filter="watch" type="button">观察</button>
+          </div>
+        </div>
+        <div id="recommendations" class="cards"></div>
+        <div id="emptyState" class="empty hidden">今日没有符合策略阈值的股票。</div>
+      </section>
+
+      <section class="workspace">
+        <div class="panel trade-panel">
+          <div class="section-head compact">
+            <h2>交易记录</h2>
+            <button id="clearClosed" type="button" title="清理已卖出记录">清理已卖出</button>
+          </div>
+          <form id="tradeForm" class="trade-form">
+            <div class="field-row">
+              <label>
+                股票代码
+                <input id="tradeCode" name="code" autocomplete="off" required placeholder="例如 600000" />
+              </label>
+              <label>
+                股票名称
+                <input id="tradeName" name="name" autocomplete="off" placeholder="可选" />
+              </label>
+            </div>
+            <div class="field-row">
+              <label>
+                买入价
+                <input id="tradeBuyPrice" name="buyPrice" type="number" min="0" step="0.01" required />
+              </label>
+              <label>
+                数量
+                <input id="tradeQuantity" name="quantity" type="number" min="0" step="100" placeholder="可选" />
+              </label>
+              <label>
+                买入日期
+                <input id="tradeBuyDate" name="buyDate" type="date" required />
+              </label>
+            </div>
+            <div class="field-row">
+              <label>
+                硬止损
+                <input id="tradeStopLoss" name="stopLoss" type="number" min="0" step="0.01" />
+              </label>
+              <label>
+                15%止盈
+                <input id="tradeTarget1" name="target1" type="number" min="0" step="0.01" />
+              </label>
+              <label>
+                30%止盈
+                <input id="tradeTarget2" name="target2" type="number" min="0" step="0.01" />
+              </label>
+            </div>
+            <label>
+              备注
+              <textarea id="tradeNotes" name="notes" rows="2" placeholder="买入理由、计划仓位、盘中触发条件"></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit">保存交易</button>
+              <button id="resetForm" type="button">清空</button>
+            </div>
+          </form>
+          <div id="trades" class="trade-list"></div>
+        </div>
+
+        <aside class="side-stack">
+          <section class="panel">
+            <h2>持仓提醒</h2>
+            <div id="alerts" class="alerts"></div>
+          </section>
+          <section class="panel">
+            <h2>风控与数据</h2>
+            <div id="riskReview" class="source-list"></div>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>策略来自本地文档《大A超跌量化》；行情、K线与板块数据优先使用东方财富公开行情接口。页面仅作策略监测和记录，不构成投资建议。</p>
+    </footer>
+
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

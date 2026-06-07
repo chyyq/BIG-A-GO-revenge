@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026/6/7 22:26:08",
+  "tradeDate": "2026-06-07",
+  "dataSources": [
+    "东方财富沪深A股实时行情 clist/get",
+    "东方财富行业板块近5日涨幅 f109",
+    "东方财富日K线 kline/get，失败时回退腾讯证券复权日K线",
+    "东方财富上市公司公告 security/ann"
+  ],
+  "strategyName": "A股低位假跌破放量反转策略 V2",
+  "scannedCount": 13,
+  "signalCount": 0,
+  "riskReview": {
+    "announcementCheckedCount": 13,
+    "excludedByAnnouncement": 4,
+    "announcementRiskSamples": [
+      {
+        "code": "002877",
+        "name": "智能自控",
+        "title": "智能自控:关于公司股东减持计划期限届满暨实施情况的公告",
+        "date": "2026-04-29",
+        "url": "https://data.eastmoney.com/notices/detail/002877/AN202604281821673386.html"
+      },
+      {
+        "code": "688056",
+        "name": "莱伯泰科",
+        "title": "莱伯泰科:股票交易异常波动暨风险提示公告",
+        "date": "2026-06-06",
+        "url": "https://data.eastmoney.com/notices/detail/688056/AN202606051823297047.html"
+      },
+      {
+        "code": "600382",
+        "name": "广东明珠",
+        "title": "广东明珠:广东明珠集团股份有限公司股东减持股份结果公告",
+        "date": "2026-05-23",
+        "url": "https://data.eastmoney.com/notices/detail/600382/AN202605221822690632.html"
+      },
+      {
+        "code": "300503",
+        "name": "昊志机电",
+        "title": "昊志机电:关于公司部分董事减持股份的预披露公告",
+        "date": "2026-04-30",
+        "url": "https://data.eastmoney.com/notices/detail/300503/AN202604291821761363.html"
+      }
+    ],
+    "riskKeywords": [
+      "减持",
+      "清仓式减持",
+      "被立案",
+      "立案调查",
+      "行政处罚",
+      "监管函",
+      "警示函",
+      "风险提示",
+      "退市",
+      "终止上市",
+      "暂停上市",
+      "预亏",
+      "亏损",
+      "业绩预告修正",
+      "业绩预告更正",
+      "债务逾期",
+      "重大诉讼",
+      "仲裁",
+      "冻结",
+      "破产",
+      "重整",
+      "大额计提",
+      "商誉减值",
+      "无法表示意见",
+      "保留意见",
+      "非标准审计"
+    ]
+  },
+  "recommendations": [],
+  "notes": [
+    "强信号：总分 >= 110；观察信号：总分 90-109；低于90自动空置。",
+    "估算胜率来自策略评分映射，用于排序，不等同于历史回测胜率。",
+    "近期公告命中重大利空、减持、业绩暴雷等关键词的股票会按文档淘汰条件剔除。",
+    "页面仅作策略监测和交易记录，不构成投资建议。"
+  ]
+}
