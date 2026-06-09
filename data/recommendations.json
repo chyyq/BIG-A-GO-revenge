@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/6/8 20:16:07",
-  "tradeDate": "2026-06-08",
+  "generatedAt": "2026/6/9 10:11:17",
+  "tradeDate": "2026-06-09",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,12 +8,48 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位假跌破放量反转策略 V2",
-  "scannedCount": 2,
+  "scannedCount": 9,
   "signalCount": 0,
   "riskReview": {
-    "announcementCheckedCount": 2,
-    "excludedByAnnouncement": 0,
-    "announcementRiskSamples": [],
+    "announcementCheckedCount": 7,
+    "excludedByAnnouncement": 5,
+    "announcementRiskSamples": [
+      {
+        "code": "300221",
+        "name": "银禧科技",
+        "title": "银禧科技:关于部分董事减持计划实施完成的公告",
+        "date": "2026-04-24",
+        "url": "https://data.eastmoney.com/notices/detail/300221/AN202604241821551131.html"
+      },
+      {
+        "code": "603002",
+        "name": "宏昌电子",
+        "title": "宏昌电子:宏昌电子高级管理人员减持股份计划公告",
+        "date": "2026-05-14",
+        "url": "https://data.eastmoney.com/notices/detail/603002/AN202605131822275515.html"
+      },
+      {
+        "code": "601208",
+        "name": "东材科技",
+        "title": "东材科技:四川东材科技集团股份有限公司董事减持股份计划公告",
+        "date": "2026-06-05",
+        "url": "https://data.eastmoney.com/notices/detail/601208/AN202606041823255286.html"
+      },
+      {
+        "code": "002585",
+        "name": "双星新材",
+        "title": "双星新材:董事会关于公司2025年度财务报告带强调事项段的无保留意见审计报告涉及事项的专项说明",
+        "date": "2026-04-28",
+        "url": "https://data.eastmoney.com/notices/detail/002585/AN202604271821643946.html"
+      },
+      {
+        "code": "000636",
+        "name": "风华高科",
+        "title": "风华高科:关于持股5%以上股东减持股份变动触及1%及5%的整数倍暨披露简式权益变动报告书的提示性公告",
+        "date": "2026-05-21",
+        "url": "https://data.eastmoney.com/notices/detail/000636/AN202605201822503024.html"
+      }
+    ],
     "riskKeywords": [
       "减持",
       "清仓式减持",
