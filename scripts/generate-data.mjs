@@ -10,12 +10,15 @@ const A_SHARE_FS = "m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23";
 const INDUSTRY_FS = "m:90+t:2";
 const OUTPUT = resolve("data/recommendations.json");
 const MAX_RECOMMENDATIONS = 5;
-const RISK_KEYWORDS = [
-  "减持", "清仓式减持", "被立案", "立案调查", "行政处罚", "监管函", "警示函",
+const SEVERE_RISK_KEYWORDS = [
+  "清仓式减持", "被立案", "立案调查", "行政处罚", "监管函", "警示函",
   "风险提示", "退市", "终止上市", "暂停上市", "预亏", "亏损", "业绩预告修正",
   "业绩预告更正", "债务逾期", "重大诉讼", "仲裁", "冻结", "破产", "重整",
   "大额计提", "商誉减值", "无法表示意见", "保留意见", "非标准审计"
 ];
+const REDUCTION_HOLDER_KEYWORDS = ["控股股东", "实际控制人", "大股东", "持股5%以上", "持股 5%以上"];
+const REDUCTION_ACTIVE_KEYWORDS = ["预披露", "计划", "时间过半", "尚未实施完毕", "进展", "期间"];
+const REDUCTION_FINISHED_KEYWORDS = ["结果公告", "期限届满", "实施完毕", "完成", "届满暨实施情况"];
 
 const sleep = (ms) => new Promise((resolveSleep) => setTimeout(resolveSleep, ms));
 const round = (value, digits = 2) => Number.isFinite(Number(value)) ? Number(Number(value).toFixed(digits)) : null;
@@ -184,7 +187,7 @@ async function fetchAnnouncements(code) {
 async function checkAnnouncementRisk(code) {
   try {
     const announcements = await fetchAnnouncements(code);
-    const hit = announcements.find((item) => RISK_KEYWORDS.some((keyword) => item.title.includes(keyword)));
+    const hit = announcements.find((item) => isRiskAnnouncement(item.title));
     return {
       checked: true,
       blocked: Boolean(hit),
@@ -199,6 +202,15 @@ async function checkAnnouncementRisk(code) {
       recent: [],
     };
   }
+}
+
+function isRiskAnnouncement(title) {
+  if (SEVERE_RISK_KEYWORDS.some((keyword) => title.includes(keyword))) return true;
+  if (!title.includes("减持")) return false;
+  if (REDUCTION_FINISHED_KEYWORDS.some((keyword) => title.includes(keyword))) return false;
+  const isImportantHolder = REDUCTION_HOLDER_KEYWORDS.some((keyword) => title.includes(keyword));
+  const isActivePeriod = REDUCTION_ACTIVE_KEYWORDS.some((keyword) => title.includes(keyword));
+  return isImportantHolder && isActivePeriod;
 }
 
 async function fetchTencentKlines(secid, limit = 260) {
@@ -444,7 +456,10 @@ async function main() {
       announcementCheckedCount,
       excludedByAnnouncement,
       announcementRiskSamples,
-      riskKeywords: RISK_KEYWORDS,
+      riskKeywords: [
+        ...SEVERE_RISK_KEYWORDS,
+        "控股股东/实际控制人大额减持计划或进行期",
+      ],
     },
     recommendations,
     notes: [
