@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026/6/9 10:11:17",
+  "generatedAt": "2026/6/9 18:47:57",
   "tradeDate": "2026-06-09",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
@@ -8,46 +8,39 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位假跌破放量反转策略 V2",
-  "scannedCount": 9,
+  "scannedCount": 6,
   "signalCount": 0,
   "riskReview": {
-    "announcementCheckedCount": 7,
-    "excludedByAnnouncement": 5,
+    "announcementCheckedCount": 6,
+    "excludedByAnnouncement": 4,
     "announcementRiskSamples": [
       {
-        "code": "300221",
-        "name": "银禧科技",
-        "title": "银禧科技:关于部分董事减持计划实施完成的公告",
-        "date": "2026-04-24",
-        "url": "https://data.eastmoney.com/notices/detail/300221/AN202604241821551131.html"
-      },
-      {
-        "code": "603002",
-        "name": "宏昌电子",
-        "title": "宏昌电子:宏昌电子高级管理人员减持股份计划公告",
-        "date": "2026-05-14",
-        "url": "https://data.eastmoney.com/notices/detail/603002/AN202605131822275515.html"
-      },
-      {
-        "code": "601208",
-        "name": "东材科技",
-        "title": "东材科技:四川东材科技集团股份有限公司董事减持股份计划公告",
+        "code": "002201",
+        "name": "九鼎新材",
+        "title": "九鼎新材:关于累计诉讼、仲裁事项的进展公告",
         "date": "2026-06-05",
-        "url": "https://data.eastmoney.com/notices/detail/601208/AN202606041823255286.html"
+        "url": "https://data.eastmoney.com/notices/detail/002201/AN202606041823254060.html"
       },
       {
-        "code": "002585",
-        "name": "双星新材",
-        "title": "双星新材:董事会关于公司2025年度财务报告带强调事项段的无保留意见审计报告涉及事项的专项说明",
-        "date": "2026-04-28",
-        "url": "https://data.eastmoney.com/notices/detail/002585/AN202604271821643946.html"
+        "code": "688711",
+        "name": "宏微科技",
+        "title": "宏微科技:江苏宏微科技股份有限公司股东、核心技术人员及董高减持股份结果公告",
+        "date": "2026-06-05",
+        "url": "https://data.eastmoney.com/notices/detail/688711/AN202606041823249437.html"
       },
       {
-        "code": "000636",
-        "name": "风华高科",
-        "title": "风华高科:关于持股5%以上股东减持股份变动触及1%及5%的整数倍暨披露简式权益变动报告书的提示性公告",
-        "date": "2026-05-21",
-        "url": "https://data.eastmoney.com/notices/detail/000636/AN202605201822503024.html"
+        "code": "300576",
+        "name": "容大感光",
+        "title": "深交所:容大感光_监管函",
+        "date": "2026-05-15",
+        "url": "https://data.eastmoney.com/notices/detail/300576/AN202605151822346464.html"
+      },
+      {
+        "code": "002134",
+        "name": "天津普林",
+        "title": "天津普林:关于部分董事、高级管理人员减持股份的预披露公告",
+        "date": "2026-05-29",
+        "url": "https://data.eastmoney.com/notices/detail/002134/AN202605281822952384.html"
       }
     ],
     "riskKeywords": [
