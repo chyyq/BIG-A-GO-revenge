@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026/6/10 10:02:30",
+  "generatedAt": "2026/6/10 19:11:05",
   "tradeDate": "2026-06-10",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
@@ -8,20 +8,12 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位假跌破放量反转策略 V2",
-  "scannedCount": 6,
+  "scannedCount": 2,
   "signalCount": 0,
   "riskReview": {
-    "announcementCheckedCount": 3,
-    "excludedByAnnouncement": 1,
-    "announcementRiskSamples": [
-      {
-        "code": "002585",
-        "name": "双星新材",
-        "title": "双星新材:董事会关于公司2025年度财务报告带强调事项段的无保留意见审计报告涉及事项的专项说明",
-        "date": "2026-04-28",
-        "url": "https://data.eastmoney.com/notices/detail/002585/AN202604271821643946.html"
-      }
-    ],
+    "announcementCheckedCount": 2,
+    "excludedByAnnouncement": 0,
+    "announcementRiskSamples": [],
     "riskKeywords": [
       "清仓式减持",
       "被立案",
