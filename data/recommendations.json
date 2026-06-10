@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/6/9 18:47:57",
-  "tradeDate": "2026-06-09",
+  "generatedAt": "2026/6/10 10:02:30",
+  "tradeDate": "2026-06-10",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -11,40 +11,18 @@
   "scannedCount": 6,
   "signalCount": 0,
   "riskReview": {
-    "announcementCheckedCount": 6,
-    "excludedByAnnouncement": 4,
+    "announcementCheckedCount": 3,
+    "excludedByAnnouncement": 1,
     "announcementRiskSamples": [
       {
-        "code": "002201",
-        "name": "九鼎新材",
-        "title": "九鼎新材:关于累计诉讼、仲裁事项的进展公告",
-        "date": "2026-06-05",
-        "url": "https://data.eastmoney.com/notices/detail/002201/AN202606041823254060.html"
-      },
-      {
-        "code": "688711",
-        "name": "宏微科技",
-        "title": "宏微科技:江苏宏微科技股份有限公司股东、核心技术人员及董高减持股份结果公告",
-        "date": "2026-06-05",
-        "url": "https://data.eastmoney.com/notices/detail/688711/AN202606041823249437.html"
-      },
-      {
-        "code": "300576",
-        "name": "容大感光",
-        "title": "深交所:容大感光_监管函",
-        "date": "2026-05-15",
-        "url": "https://data.eastmoney.com/notices/detail/300576/AN202605151822346464.html"
-      },
-      {
-        "code": "002134",
-        "name": "天津普林",
-        "title": "天津普林:关于部分董事、高级管理人员减持股份的预披露公告",
-        "date": "2026-05-29",
-        "url": "https://data.eastmoney.com/notices/detail/002134/AN202605281822952384.html"
+        "code": "002585",
+        "name": "双星新材",
+        "title": "双星新材:董事会关于公司2025年度财务报告带强调事项段的无保留意见审计报告涉及事项的专项说明",
+        "date": "2026-04-28",
+        "url": "https://data.eastmoney.com/notices/detail/002585/AN202604271821643946.html"
       }
     ],
     "riskKeywords": [
-      "减持",
       "清仓式减持",
       "被立案",
       "立案调查",
@@ -69,7 +47,8 @@
       "商誉减值",
       "无法表示意见",
       "保留意见",
-      "非标准审计"
+      "非标准审计",
+      "控股股东/实际控制人大额减持计划或进行期"
     ]
   },
   "recommendations": [],
