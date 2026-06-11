@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/6/10 19:11:05",
-  "tradeDate": "2026-06-10",
+  "generatedAt": "2026/6/11 10:16:11",
+  "tradeDate": "2026-06-11",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,12 +8,27 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位假跌破放量反转策略 V2",
-  "scannedCount": 2,
+  "scannedCount": 3,
   "signalCount": 0,
   "riskReview": {
-    "announcementCheckedCount": 2,
-    "excludedByAnnouncement": 0,
-    "announcementRiskSamples": [],
+    "announcementCheckedCount": 3,
+    "excludedByAnnouncement": 2,
+    "announcementRiskSamples": [
+      {
+        "code": "600255",
+        "name": "鑫科材料",
+        "title": "鑫科材料:鑫科材料股票交易风险提示公告",
+        "date": "2026-06-05",
+        "url": "https://data.eastmoney.com/notices/detail/600255/AN202606041823251893.html"
+      },
+      {
+        "code": "688545",
+        "name": "兴福电子",
+        "title": "兴福电子:湖北兴福电子材料股份有限公司关于持股5%以上股东减持股份计划公告的更正公告",
+        "date": "2026-05-21",
+        "url": "https://data.eastmoney.com/notices/detail/688545/AN202605201822493425.html"
+      }
+    ],
     "riskKeywords": [
       "清仓式减持",
       "被立案",
