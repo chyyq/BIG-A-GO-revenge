@@ -28,9 +28,21 @@ function saveTrades() {
 }
 
 async function loadData() {
-  const response = await fetch(`${DATA_URL}?v=${Date.now()}`);
-  if (!response.ok) throw new Error(`数据读取失败：${response.status}`);
-  state.data = await response.json();
+  try {
+    const response = await fetch(`${DATA_URL}?v=${Date.now()}`);
+    if (!response.ok) throw new Error(`数据读取失败：${response.status}`);
+    state.data = await response.json();
+  } catch (error) {
+    if (window.__RECOMMENDATIONS_DATA__) {
+      state.data = window.__RECOMMENDATIONS_DATA__;
+      state.data.notes = [
+        ...(state.data.notes || []),
+        `JSON读取失败，已使用内嵌备用数据：${error.message}`,
+      ];
+      return;
+    }
+    throw error;
+  }
 }
 
 function renderMetrics(alerts) {
@@ -52,7 +64,7 @@ function recommendationCard(signal) {
       <div class="card-head">
         <div class="stock-title">
           <strong>${signal.name}</strong>
-          <span>${signal.code} · ${signal.industry || "行业待确认"}</span>
+          <span>${signal.code} · ${signal.industry || "行业待确认"} · ${signal.setupType || "放量反转"}</span>
         </div>
         ${signalBadge(signal)}
       </div>
@@ -63,9 +75,9 @@ function recommendationCard(signal) {
       </div>
       <div class="price-grid">
         <div class="price-box"><span>推荐买点</span><strong>${fmt(signal.tradePlan.buyPrice)}</strong><small>${signal.tradePlan.buyTiming}</small></div>
-        <div class="price-box"><span>硬止损</span><strong>${fmt(signal.tradePlan.stopLoss)}</strong><small>买入价 × 0.97</small></div>
-        <div class="price-box"><span>15%止盈</span><strong>${fmt(signal.tradePlan.takeProfit1)}</strong><small>卖出 30%</small></div>
-        <div class="price-box"><span>30%止盈</span><strong>${fmt(signal.tradePlan.takeProfit2)}</strong><small>卖出 40%</small></div>
+        <div class="price-box"><span>硬止损</span><strong>${fmt(signal.tradePlan.stopLoss)}</strong><small>买入价 × 0.96</small></div>
+        <div class="price-box"><span>10%止盈</span><strong>${fmt(signal.tradePlan.takeProfit1)}</strong><small>卖出 30%</small></div>
+        <div class="price-box"><span>20%止盈</span><strong>${fmt(signal.tradePlan.takeProfit2)}</strong><small>卖出 40%</small></div>
       </div>
       <ul class="reasons">${reasons}</ul>
       <p class="muted">卖点时间：${signal.tradePlan.sellTiming}</p>
@@ -110,13 +122,13 @@ function buildAlerts() {
     } else if (trade.target2 && latest >= trade.target2) {
       alerts.push({
         type: "good",
-        title: `${trade.name || trade.code} 到达 30% 止盈`,
+        title: `${trade.name || trade.code} 到达 20% 止盈`,
         body: `最新价 ${fmt(latest)} 已达到 ${fmt(trade.target2)}，策略建议再卖出 40%，余下沿 10 日均线持有。`,
       });
     } else if (trade.target1 && latest >= trade.target1) {
       alerts.push({
         type: "good",
-        title: `${trade.name || trade.code} 到达 15% 止盈`,
+        title: `${trade.name || trade.code} 到达 10% 止盈`,
         body: `最新价 ${fmt(latest)} 已达到 ${fmt(trade.target1)}，策略建议卖出 30%。`,
       });
     }
@@ -235,9 +247,9 @@ function upsertTrade(event) {
     buyPrice: Number(form.get("buyPrice")),
     quantity: Number(form.get("quantity")) || "",
     buyDate: String(form.get("buyDate") || todayISO()),
-    stopLoss: Number(form.get("stopLoss")) || Number(form.get("buyPrice")) * 0.97,
-    target1: Number(form.get("target1")) || Number(form.get("buyPrice")) * 1.15,
-    target2: Number(form.get("target2")) || Number(form.get("buyPrice")) * 1.3,
+    stopLoss: Number(form.get("stopLoss")) || Number(form.get("buyPrice")) * 0.96,
+    target1: Number(form.get("target1")) || Number(form.get("buyPrice")) * 1.1,
+    target2: Number(form.get("target2")) || Number(form.get("buyPrice")) * 1.2,
     notes: String(form.get("notes") || "").trim(),
     status: "open",
   };
