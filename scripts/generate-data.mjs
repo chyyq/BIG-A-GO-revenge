@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
-const STRATEGY_NAME = "A股低位假跌破放量反转策略 V2";
+const STRATEGY_NAME = "A股低位放量反转概率评分策略 V3";
 const EASTMONEY_QUOTE = "https://push2delay.eastmoney.com/api/qt/clist/get";
 const EASTMONEY_KLINE = "https://push2his.eastmoney.com/api/qt/stock/kline/get";
 const EASTMONEY_NOTICE = "https://np-anotice-stock.eastmoney.com/api/security/ann";
@@ -9,7 +9,10 @@ const TENCENT_KLINE = "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get";
 const A_SHARE_FS = "m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23";
 const INDUSTRY_FS = "m:90+t:2";
 const OUTPUT = resolve("data/recommendations.json");
+const OUTPUT_JS = resolve("data/recommendations.js");
 const MAX_RECOMMENDATIONS = 5;
+const WATCH_SCORE = 75;
+const BUY_SCORE = 100;
 const SEVERE_RISK_KEYWORDS = [
   "清仓式减持", "被立案", "立案调查", "行政处罚", "监管函", "警示函",
   "风险提示", "退市", "终止上市", "暂停上市", "预亏", "亏损", "业绩预告修正",
@@ -268,61 +271,75 @@ function scoreSignal(quote, klines, industryRank, announcementRisk) {
 
   const high60 = max(prev60, "high");
   const drop = day.close / high60 - 1;
-  if (drop > -0.3) return null;
 
   const recent5Low = min(recent5, "low");
   const prior60LowBeforeRecent = min(klines.slice(0, -5).slice(-60), "low");
-  if (recent5Low > prior60LowBeforeRecent) return null;
 
   const previousLow = min(prev60, "low");
   const breakPct = day.low / previousLow - 1;
-  if (breakPct < -0.08) return null;
-  if (!(breakPct >= -0.06 && breakPct <= -0.02 && day.close >= previousLow * 0.98)) return null;
 
-  const requiredGain = isGrowthBoard(quote.code) ? 8 : 6;
+  const requiredGain = isGrowthBoard(quote.code) ? 4.5 : 3;
   if (!day.pctChange || day.pctChange < requiredGain) return null;
 
   const avgVolume20 = avg(prev20, "volume");
   const volumeRatio = avgVolume20 ? day.volume / avgVolume20 : 0;
-  if (volumeRatio < 2) return null;
+  if (volumeRatio < 1.2) return null;
 
   const range = day.high - day.low;
   const entity = Math.abs(day.close - day.open);
   const entityStrength = range > 0 ? entity / range : 0;
   const closePosition = range > 0 ? (day.close - day.low) / range : 0;
-  if (entityStrength < 0.6 || closePosition < 0.8) return null;
-  if (day.high - day.close > entity * 0.8) return null;
+  if (day.high - day.close > entity * 1.2) return null;
 
   const turnover = day.turnover ?? quote.turnover;
-  const minTurnover = isGrowthBoard(quote.code) ? 8 : 5;
+  const minTurnover = isGrowthBoard(quote.code) ? 5 : 3;
   if (!turnover || turnover < minTurnover || turnover > 35) return null;
 
   const mainNet = quote.mainNetInflow ?? 0;
-  if (mainNet <= 0) return null;
   const dayAmount = day.amount ?? quote.amount;
   const mainNetRatio = dayAmount ? mainNet / dayAmount : 0;
 
-  if (!industryRank || industryRank.rankPercent > 0.3) return null;
+  if (!industryRank || industryRank.rankPercent > 0.6) return null;
 
   const scores = {
-    oversold: drop <= -0.5 ? 20 : drop <= -0.4 ? 15 : 10,
-    newLow: recent5Low <= min(prev250, "low") ? 20 : recent5Low <= min(prev120, "low") ? 15 : 10,
-    falseBreak: 20,
-    priceRise: day.pctChange >= (isGrowthBoard(quote.code) ? 19.5 : 9.8) ? 20 : day.pctChange >= 8 ? 15 : 10,
-    volume: volumeRatio >= 5 ? 20 : volumeRatio >= 3 ? 15 : 10,
-    candleEntity: 10,
-    closePosition: closePosition >= 0.9 ? 15 : 10,
-    turnover: turnover >= 15 ? 15 : turnover >= 10 ? 10 : 5,
-    moneyFlow: mainNetRatio >= 0.1 ? 20 : mainNetRatio >= 0.05 ? 15 : 10,
-    sector: industryRank.rankPercent <= 0.1 ? 20 : industryRank.rankPercent <= 0.2 ? 15 : 10,
+    oversold: drop <= -0.4 ? 25 : drop <= -0.3 ? 22 : drop <= -0.2 ? 17 : drop <= -0.12 ? 10 : 4,
+    lowStructure: recent5Low <= min(prev250, "low") ? 20
+      : recent5Low <= min(prev120, "low") ? 17
+        : recent5Low <= prior60LowBeforeRecent ? 14
+          : recent5Low <= prior60LowBeforeRecent * 1.05 ? 9
+            : 4,
+    falseBreak: breakPct >= -0.08 && breakPct <= -0.02 && day.close >= previousLow * 0.98 ? 20
+      : breakPct > -0.02 && breakPct <= 0.03 ? 14
+        : breakPct > 0.03 && breakPct <= 0.12 ? 8
+          : 3,
+    priceRise: day.pctChange >= (isGrowthBoard(quote.code) ? 19.5 : 9.8) ? 20
+      : day.pctChange >= 8 ? 17
+        : day.pctChange >= 6 ? 13
+          : 8,
+    volume: volumeRatio >= 3 ? 20 : volumeRatio >= 2 ? 17 : volumeRatio >= 1.5 ? 12 : 8,
+    candleQuality: entityStrength >= 0.6 && closePosition >= 0.8 ? 20
+      : entityStrength >= 0.45 && closePosition >= 0.7 ? 14
+        : closePosition >= 0.6 ? 8
+          : 3,
+    turnover: turnover >= 10 && turnover <= 25 ? 15 : turnover >= 5 ? 11 : 7,
+    moneyFlow: mainNetRatio >= 0.1 ? 20 : mainNetRatio >= 0.05 ? 17 : mainNet > 0 ? 11 : 0,
+    sector: industryRank.rankPercent <= 0.1 ? 20
+      : industryRank.rankPercent <= 0.2 ? 17
+        : industryRank.rankPercent <= 0.3 ? 14
+          : industryRank.rankPercent <= 0.5 ? 9
+            : 5,
   };
 
   const totalScore = Object.values(scores).reduce((sum, value) => sum + value, 0);
-  if (totalScore < 90) return null;
+  if (totalScore < WATCH_SCORE) return null;
 
-  const buyPrice = (day.open + day.close) / 2;
+  const buyPrice = round(Math.max((day.open + day.close) / 2, day.close * 0.97));
   const latestPrice = quote.latestPrice || day.close;
-  const estimatedWinRate = Math.min(78, Math.max(45, 38 + totalScore * 0.27));
+  const estimatedWinRate = Math.min(82, Math.max(42, 32 + totalScore * 0.31));
+  const signalLevel = totalScore >= BUY_SCORE ? "buy" : "watch";
+  const setupType = scores.falseBreak >= 20 ? "假跌破反包"
+    : scores.oversold >= 17 && scores.volume >= 12 ? "低位放量反弹"
+      : "板块放量弹性";
 
   return {
     strategyName: STRATEGY_NAME,
@@ -332,7 +349,8 @@ function scoreSignal(quote, klines, industryRank, announcementRisk) {
     industry: quote.industry,
     industryRank: industryRank.rank,
     industryRankPercent: round(industryRank.rankPercent * 100, 1),
-    signalLevel: totalScore >= 110 ? "buy" : "watch",
+    signalLevel,
+    setupType,
     totalScore,
     estimatedWinRate: round(estimatedWinRate, 1),
     latestPrice: round(latestPrice),
@@ -341,6 +359,7 @@ function scoreSignal(quote, klines, industryRank, announcementRisk) {
     metrics: {
       dropFrom60High: round(drop * 100, 2),
       breakPct: round(breakPct * 100, 2),
+      recent5LowPremium: round((recent5Low / prior60LowBeforeRecent - 1) * 100, 2),
       volumeRatio: round(volumeRatio, 2),
       entityStrength: round(entityStrength * 100, 1),
       closePosition: round(closePosition * 100, 1),
@@ -350,19 +369,21 @@ function scoreSignal(quote, klines, industryRank, announcementRisk) {
       sectorFiveDayChange: round(industryRank.fiveDayChange * 100, 2),
     },
     tradePlan: {
-      buyPrice: round(buyPrice),
+      buyPrice,
       aggressiveBuyPrice: round(day.close),
-      buyTiming: "信号次一交易日：不低开超过3%，回踩信号日实体中位线企稳后放量上攻",
-      stopLoss: round(buyPrice * 0.97),
+      buyTiming: signalLevel === "buy"
+        ? "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻"
+        : "观察信号：次日不追高，回踩不破信号日实体中位线且分时重新放量时小仓试错",
+      stopLoss: round(buyPrice * 0.96),
       structuralStop: round(day.low),
-      takeProfit1: round(buyPrice * 1.15),
-      takeProfit2: round(buyPrice * 1.3),
+      takeProfit1: round(buyPrice * 1.1),
+      takeProfit2: round(buyPrice * 1.2),
       trailingRule: "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-      sellTiming: "买入后3个交易日确认量能，1-4周内按15%/30%目标分批执行，剩余仓位跟随10日均线",
+      sellTiming: "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线",
     },
     reasons: [
-      `距60日高点跌幅 ${round(drop * 100, 1)}%，满足超跌`,
-      `盘中跌破前低 ${round(breakPct * 100, 1)}% 后收回`,
+      `${setupType}：距60日高点 ${round(drop * 100, 1)}%，近5日低点较前60日低点 ${round((recent5Low / prior60LowBeforeRecent - 1) * 100, 1)}%`,
+      `前低关系 ${round(breakPct * 100, 1)}%，假跌破作为加分项而非一票否决`,
       `当日涨幅 ${round(day.pctChange, 1)}%，量比 ${round(volumeRatio, 2)}`,
       `实体强度 ${round(entityStrength * 100, 1)}%，收盘位置 ${round(closePosition * 100, 1)}%`,
       `主力净流入 ${round(mainNet / 10000, 1)} 万元，行业5日强度排名前 ${round(industryRank.rankPercent * 100, 1)}%`,
@@ -395,12 +416,11 @@ async function main() {
     if (!quote.amount || quote.amount < 100_000_000) return false;
     if (!quote.marketCap || quote.marketCap < 3_000_000_000) return false;
     if (!quote.latestPrice || quote.latestPrice < 2) return false;
-    if (!quote.pctChange || quote.pctChange < (isGrowthBoard(quote.code) ? 8 : 6)) return false;
-    if (!quote.turnover || quote.turnover < (isGrowthBoard(quote.code) ? 8 : 5) || quote.turnover > 35) return false;
-    if (!quote.mainNetInflow || quote.mainNetInflow <= 0) return false;
-    if (quote.quoteVolumeRatio && quote.quoteVolumeRatio < 1.8) return false;
+    if (!quote.pctChange || quote.pctChange < (isGrowthBoard(quote.code) ? 4.5 : 3)) return false;
+    if (!quote.turnover || quote.turnover < (isGrowthBoard(quote.code) ? 5 : 3) || quote.turnover > 35) return false;
+    if (quote.quoteVolumeRatio && quote.quoteVolumeRatio < 1.2) return false;
     const industryRank = industryRanks.get(quote.industry);
-    if (!industryRank || industryRank.rankPercent > 0.3) return false;
+    if (!industryRank || industryRank.rankPercent > 0.6) return false;
     return true;
   });
 
@@ -463,8 +483,9 @@ async function main() {
     },
     recommendations,
     notes: [
-      "强信号：总分 >= 110；观察信号：总分 90-109；低于90自动空置。",
+      `强信号：总分 >= ${BUY_SCORE}；观察信号：总分 ${WATCH_SCORE}-${BUY_SCORE - 1}；低于${WATCH_SCORE}自动空置。`,
       "估算胜率来自策略评分映射，用于排序，不等同于历史回测胜率。",
+      "V3将假跌破、2倍量、30%超跌改为高权重加分项，保留流动性、公告风控和基本量价强度作为硬门槛，以提升每日候选数量。",
       "近期公告命中重大利空、减持、业绩暴雷等关键词的股票会按文档淘汰条件剔除。",
       "页面仅作策略监测和交易记录，不构成投资建议。",
     ],
@@ -472,6 +493,7 @@ async function main() {
 
   await mkdir(dirname(OUTPUT), { recursive: true });
   await writeFile(OUTPUT, `${JSON.stringify(output, null, 2)}\n`, "utf8");
+  await writeFile(OUTPUT_JS, `window.__RECOMMENDATIONS_DATA__ = ${JSON.stringify(output, null, 2)};\n`, "utf8");
   console.log(`Wrote ${OUTPUT} with ${recommendations.length} recommendations.`);
 }
 
@@ -503,5 +525,6 @@ main().catch(async (error) => {
   };
   await mkdir(dirname(OUTPUT), { recursive: true });
   await writeFile(OUTPUT, `${JSON.stringify(fallback, null, 2)}\n`, "utf8");
+  await writeFile(OUTPUT_JS, `window.__RECOMMENDATIONS_DATA__ = ${JSON.stringify(fallback, null, 2)};\n`, "utf8");
   process.exitCode = 1;
 });

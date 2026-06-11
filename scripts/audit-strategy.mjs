@@ -8,6 +8,8 @@ const TENCENT_KLINE = "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get";
 const A_SHARE_FS = "m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23";
 const INDUSTRY_FS = "m:90+t:2";
 const OUTPUT = resolve("data/audit.json");
+const WATCH_SCORE = 75;
+const BUY_SCORE = 100;
 const SEVERE_RISK_KEYWORDS = [
   "清仓式减持", "被立案", "立案调查", "行政处罚", "监管函", "警示函",
   "风险提示", "退市", "终止上市", "暂停上市", "预亏", "亏损", "业绩预告修正",
@@ -241,31 +243,25 @@ function scoreCandidate(quote, klines, industryRank) {
   const high60 = max(prev60, "high");
   const drop = day.close / high60 - 1;
   metrics.dropFrom60High = round(drop * 100, 2);
-  if (drop > -0.3) failures.push("距60日高点跌幅不足30%");
 
   const recent5Low = min(recent5, "low");
   const prior60LowBeforeRecent = min(klines.slice(0, -5).slice(-60), "low");
   metrics.recent5Low = recent5Low;
   metrics.prior60LowBeforeRecent = prior60LowBeforeRecent;
-  if (recent5Low > prior60LowBeforeRecent) failures.push("最近5日未创60日新低");
 
   const previousLow = min(prev60, "low");
   const breakPct = day.low / previousLow - 1;
   metrics.previousLow = previousLow;
   metrics.breakPct = round(breakPct * 100, 2);
-  if (breakPct < -0.08) failures.push("跌破前低超过8%");
-  if (!(breakPct >= -0.06 && breakPct <= -0.02 && day.close >= previousLow * 0.98)) {
-    failures.push("未满足跌破前低2%-6%且收回");
-  }
 
-  const requiredGain = isGrowthBoard(quote.code) ? 8 : 6;
+  const requiredGain = isGrowthBoard(quote.code) ? 4.5 : 3;
   metrics.dayPctChange = round(day.pctChange, 2);
   if (!day.pctChange || day.pctChange < requiredGain) failures.push("当日涨幅不足");
 
   const avgVolume20 = avg(prev20, "volume");
   const volumeRatio = avgVolume20 ? day.volume / avgVolume20 : 0;
   metrics.volumeRatio = round(volumeRatio, 2);
-  if (volumeRatio < 2) failures.push("成交量不足20日均量2倍");
+  if (volumeRatio < 1.2) failures.push("成交量不足20日均量1.2倍");
 
   const range = day.high - day.low;
   const entity = Math.abs(day.close - day.open);
@@ -273,12 +269,10 @@ function scoreCandidate(quote, klines, industryRank) {
   const closePosition = range > 0 ? (day.close - day.low) / range : 0;
   metrics.entityStrength = round(entityStrength * 100, 1);
   metrics.closePosition = round(closePosition * 100, 1);
-  if (entityStrength < 0.6) failures.push("实体强度不足60%");
-  if (closePosition < 0.8) failures.push("收盘位置不足80%");
-  if (day.high - day.close > entity * 0.8) failures.push("上影线过长");
+  if (day.high - day.close > entity * 1.2) failures.push("上影线过长");
 
   const turnover = day.turnover ?? quote.turnover;
-  const minTurnover = isGrowthBoard(quote.code) ? 8 : 5;
+  const minTurnover = isGrowthBoard(quote.code) ? 5 : 3;
   metrics.turnover = round(turnover, 2);
   if (!turnover || turnover < minTurnover) failures.push("换手率不足");
   if (turnover > 35) failures.push("换手率超过35%");
@@ -288,25 +282,42 @@ function scoreCandidate(quote, klines, industryRank) {
   const mainNetRatio = dayAmount ? mainNet / dayAmount : 0;
   metrics.mainNetInflowWan = round(mainNet / 10000, 1);
   metrics.mainNetRatio = round(mainNetRatio * 100, 2);
-  if (mainNet <= 0) failures.push("主力净流入非正");
 
   metrics.industryRankPercent = industryRank ? round(industryRank.rankPercent * 100, 1) : null;
-  if (!industryRank || industryRank.rankPercent > 0.3) failures.push("板块强度不在前30%");
+  if (!industryRank || industryRank.rankPercent > 0.6) failures.push("板块强度不在前60%");
 
   const scores = {
-    oversold: drop <= -0.5 ? 20 : drop <= -0.4 ? 15 : 10,
-    newLow: recent5Low <= min(prev250, "low") ? 20 : recent5Low <= min(prev120, "low") ? 15 : 10,
-    falseBreak: 20,
-    priceRise: day.pctChange >= (isGrowthBoard(quote.code) ? 19.5 : 9.8) ? 20 : day.pctChange >= 8 ? 15 : 10,
-    volume: volumeRatio >= 5 ? 20 : volumeRatio >= 3 ? 15 : 10,
-    candleEntity: 10,
-    closePosition: closePosition >= 0.9 ? 15 : 10,
-    turnover: turnover >= 15 ? 15 : turnover >= 10 ? 10 : 5,
-    moneyFlow: mainNetRatio >= 0.1 ? 20 : mainNetRatio >= 0.05 ? 15 : 10,
-    sector: industryRank?.rankPercent <= 0.1 ? 20 : industryRank?.rankPercent <= 0.2 ? 15 : 10,
+    oversold: drop <= -0.4 ? 25 : drop <= -0.3 ? 22 : drop <= -0.2 ? 17 : drop <= -0.12 ? 10 : 4,
+    lowStructure: recent5Low <= min(prev250, "low") ? 20
+      : recent5Low <= min(prev120, "low") ? 17
+        : recent5Low <= prior60LowBeforeRecent ? 14
+          : recent5Low <= prior60LowBeforeRecent * 1.05 ? 9
+            : 4,
+    falseBreak: breakPct >= -0.08 && breakPct <= -0.02 && day.close >= previousLow * 0.98 ? 20
+      : breakPct > -0.02 && breakPct <= 0.03 ? 14
+        : breakPct > 0.03 && breakPct <= 0.12 ? 8
+          : 3,
+    priceRise: day.pctChange >= (isGrowthBoard(quote.code) ? 19.5 : 9.8) ? 20
+      : day.pctChange >= 8 ? 17
+        : day.pctChange >= 6 ? 13
+          : 8,
+    volume: volumeRatio >= 3 ? 20 : volumeRatio >= 2 ? 17 : volumeRatio >= 1.5 ? 12 : 8,
+    candleQuality: entityStrength >= 0.6 && closePosition >= 0.8 ? 20
+      : entityStrength >= 0.45 && closePosition >= 0.7 ? 14
+        : closePosition >= 0.6 ? 8
+          : 3,
+    turnover: turnover >= 10 && turnover <= 25 ? 15 : turnover >= 5 ? 11 : 7,
+    moneyFlow: mainNetRatio >= 0.1 ? 20 : mainNetRatio >= 0.05 ? 17 : mainNet > 0 ? 11 : 0,
+    sector: industryRank?.rankPercent <= 0.1 ? 20
+      : industryRank?.rankPercent <= 0.2 ? 17
+        : industryRank?.rankPercent <= 0.3 ? 14
+          : industryRank?.rankPercent <= 0.5 ? 9
+            : 5,
   };
-  metrics.totalScoreIfGatesPassed = Object.values(scores).reduce((sum, value) => sum + value, 0);
+  metrics.totalScore = Object.values(scores).reduce((sum, value) => sum + value, 0);
+  metrics.signalLevel = metrics.totalScore >= BUY_SCORE ? "买入候选" : metrics.totalScore >= WATCH_SCORE ? "观察" : "未达标";
   metrics.klineDate = day.date;
+  if (metrics.totalScore < WATCH_SCORE) failures.push(`V3总分低于${WATCH_SCORE}`);
 
   return { failures, metrics };
 }
@@ -318,11 +329,10 @@ function basicFailure(quote, industryRank) {
   if (!quote.amount || quote.amount < 100_000_000) failures.push("成交额低于1亿元");
   if (!quote.marketCap || quote.marketCap < 3_000_000_000) failures.push("总市值低于30亿元");
   if (!quote.latestPrice || quote.latestPrice < 2) failures.push("股价低于2元");
-  if (!quote.pctChange || quote.pctChange < (isGrowthBoard(quote.code) ? 8 : 6)) failures.push("当日涨幅未达到粗筛");
-  if (!quote.turnover || quote.turnover < (isGrowthBoard(quote.code) ? 8 : 5) || quote.turnover > 35) failures.push("换手率未达到粗筛");
-  if (!quote.mainNetInflow || quote.mainNetInflow <= 0) failures.push("主力净流入未达到粗筛");
-  if (quote.quoteVolumeRatio && quote.quoteVolumeRatio < 1.8) failures.push("量比粗筛不足1.8");
-  if (!industryRank || industryRank.rankPercent > 0.3) failures.push("行业强度粗筛不足前30%");
+  if (!quote.pctChange || quote.pctChange < (isGrowthBoard(quote.code) ? 4.5 : 3)) failures.push("当日涨幅未达到粗筛");
+  if (!quote.turnover || quote.turnover < (isGrowthBoard(quote.code) ? 5 : 3) || quote.turnover > 35) failures.push("换手率未达到粗筛");
+  if (quote.quoteVolumeRatio && quote.quoteVolumeRatio < 1.2) failures.push("量比粗筛不足1.2");
+  if (!industryRank || industryRank.rankPercent > 0.6) failures.push("行业强度粗筛不足前60%");
   return failures;
 }
 
