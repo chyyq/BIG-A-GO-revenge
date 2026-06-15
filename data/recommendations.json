@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026/6/15 17:03:30",
+  "generatedAt": "2026/6/15 20:48:00",
   "tradeDate": "2026-06-15",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
@@ -9,10 +9,10 @@
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
   "scannedCount": 130,
-  "signalCount": 82,
+  "signalCount": 81,
   "riskReview": {
-    "announcementCheckedCount": 129,
-    "excludedByAnnouncement": 12,
+    "announcementCheckedCount": 127,
+    "excludedByAnnouncement": 13,
     "announcementRiskSamples": [
       {
         "code": "688800",
@@ -20,13 +20,6 @@
         "title": "瑞可达:关于可转债投资者适当性要求的风险提示性公告",
         "date": "2026-05-19",
         "url": "https://data.eastmoney.com/notices/detail/688800/AN202605181822399842.html"
-      },
-      {
-        "code": "300903",
-        "name": "科翔股份",
-        "title": "科翔股份:关于未弥补亏损达到股本总额三分之一的公告",
-        "date": "2026-04-25",
-        "url": "https://data.eastmoney.com/notices/detail/300903/AN202604241821559661.html"
       },
       {
         "code": "300736",
@@ -41,6 +34,13 @@
         "title": "锡业股份:云南锡业股份有限公司关于控股股东及其一致行动人减持股份的预披露公告",
         "date": "2026-04-28",
         "url": "https://data.eastmoney.com/notices/detail/000960/AN202604271821619495.html"
+      },
+      {
+        "code": "300903",
+        "name": "科翔股份",
+        "title": "科翔股份:关于未弥补亏损达到股本总额三分之一的公告",
+        "date": "2026-04-25",
+        "url": "https://data.eastmoney.com/notices/detail/300903/AN202604241821559661.html"
       },
       {
         "code": "603738",
@@ -328,8 +328,8 @@
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -12.75,
-        "breakPct": 11.34,
+        "dropFrom60High": -12.77,
+        "breakPct": 11.3,
         "recent5LowPremium": -0.07,
         "volumeRatio": 1.28,
         "entityStrength": 83.1,
@@ -351,7 +351,7 @@
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -12.7%，近5日低点较前60日低点 -0.1%",
+        "板块放量弹性：距60日高点 -12.8%，近5日低点较前60日低点 -0.1%",
         "前低关系 11.3%，假跌破作为加分项而非一票否决",
         "当日涨幅 8.5%，量比 1.28",
         "实体强度 83.1%，收盘位置 92.7%",
