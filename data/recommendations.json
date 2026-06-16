@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026/6/16 09:40:10",
+  "generatedAt": "2026/6/16 20:28:17",
   "tradeDate": "2026-06-16",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
@@ -8,18 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 19,
-  "signalCount": 0,
+  "scannedCount": 132,
+  "signalCount": 75,
   "riskReview": {
-    "announcementCheckedCount": 19,
-    "excludedByAnnouncement": 1,
+    "announcementCheckedCount": 120,
+    "excludedByAnnouncement": 17,
     "announcementRiskSamples": [
       {
-        "code": "002446",
-        "name": "盛路通信",
-        "title": "盛路通信:关于公司未弥补亏损达到实收股本总额三分之一的公告",
-        "date": "2026-04-28",
-        "url": "https://data.eastmoney.com/notices/detail/002446/AN202604271821636865.html"
+        "code": "300709",
+        "name": "精研科技",
+        "title": "精研科技:关于公司控股股东、实际控制人及其一致行动人、董事减持股份预披露公告",
+        "date": "2026-06-04",
+        "url": "https://data.eastmoney.com/notices/detail/300709/AN202606031823213164.html"
+      },
+      {
+        "code": "300450",
+        "name": "先导智能",
+        "title": "先导智能:2025年度商誉减值测试报告",
+        "date": "2026-03-31",
+        "url": "https://data.eastmoney.com/notices/detail/300450/AN202603301820876611.html"
+      },
+      {
+        "code": "688143",
+        "name": "长盈通",
+        "title": "长盈通:关于股票交易风险提示暨停牌核查的公告",
+        "date": "2026-06-17",
+        "url": "https://data.eastmoney.com/notices/detail/688143/AN202606161823609122.html"
+      },
+      {
+        "code": "002217",
+        "name": "合力泰",
+        "title": "合力泰:关于诉讼事项的进展暨公司部分银行账户及子公司股权解除冻结的公告",
+        "date": "2026-04-11",
+        "url": "https://data.eastmoney.com/notices/detail/002217/AN202604101821125856.html"
+      },
+      {
+        "code": "600703",
+        "name": "三安光电",
+        "title": "三安光电:三安光电股份有限公司关于控股股东股份被轮候冻结的公告",
+        "date": "2026-06-16",
+        "url": "https://data.eastmoney.com/notices/detail/600703/AN202606151823571561.html"
       }
     ],
     "riskKeywords": [
@@ -51,7 +79,378 @@
       "控股股东/实际控制人大额减持计划或进行期"
     ]
   },
-  "recommendations": [],
+  "recommendations": [
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-06-16",
+      "code": "688591",
+      "name": "泰凌微",
+      "industry": "半导体",
+      "industryRank": 14,
+      "industryRankPercent": 14,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 128,
+      "estimatedWinRate": 71.7,
+      "latestPrice": 33.95,
+      "dailyChange": 6.93,
+      "scores": {
+        "oversold": 17,
+        "lowStructure": 20,
+        "falseBreak": 8,
+        "priceRise": 13,
+        "volume": 8,
+        "candleQuality": 14,
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 17
+      },
+      "metrics": {
+        "dropFrom60High": -20.64,
+        "breakPct": 10.42,
+        "recent5LowPremium": -0.69,
+        "volumeRatio": 1.28,
+        "entityStrength": 70,
+        "closePosition": 70,
+        "turnover": 5.73,
+        "mainNetInflow": 3482,
+        "mainNetRatio": 10.72,
+        "sectorFiveDayChange": 8.8
+      },
+      "tradePlan": {
+        "buyPrice": 32.93,
+        "aggressiveBuyPrice": 33.95,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 31.61,
+        "structuralStop": 31.8,
+        "takeProfit1": 36.22,
+        "takeProfit2": 39.52,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 -20.6%，近5日低点较前60日低点 -0.7%",
+        "前低关系 10.4%，假跌破作为加分项而非一票否决",
+        "当日涨幅 6.9%，量比 1.28",
+        "实体强度 70%，收盘位置 70%",
+        "主力净流入 3482 万元，行业5日强度排名前 14%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "泰凌微:国投证券股份有限公司关于泰凌微电子(上海)股份有限公司差异化分红事项的核查意见",
+          "date": "2026-06-11",
+          "url": "https://data.eastmoney.com/notices/detail/688591/AN202606101823426234.html"
+        },
+        {
+          "title": "泰凌微:2025年年度权益分派实施公告",
+          "date": "2026-06-11",
+          "url": "https://data.eastmoney.com/notices/detail/688591/AN202606101823426232.html"
+        },
+        {
+          "title": "泰凌微:上海磐启微电子有限公司审计报告",
+          "date": "2026-05-29",
+          "url": "https://data.eastmoney.com/notices/detail/688591/AN202605281822955528.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-06-16",
+      "code": "603803",
+      "name": "瑞斯康达",
+      "industry": "通信设备",
+      "industryRank": 41,
+      "industryRankPercent": 41,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 127,
+      "estimatedWinRate": 71.4,
+      "latestPrice": 13.33,
+      "dailyChange": 9.98,
+      "scores": {
+        "oversold": 17,
+        "lowStructure": 14,
+        "falseBreak": 8,
+        "priceRise": 20,
+        "volume": 8,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 9
+      },
+      "metrics": {
+        "dropFrom60High": -24.73,
+        "breakPct": 6.07,
+        "recent5LowPremium": -2.15,
+        "volumeRatio": 1.36,
+        "entityStrength": 95.3,
+        "closePosition": 100,
+        "turnover": 7.73,
+        "mainNetInflow": 9986.8,
+        "mainNetRatio": 23.48,
+        "sectorFiveDayChange": 2.69
+      },
+      "tradePlan": {
+        "buyPrice": 12.93,
+        "aggressiveBuyPrice": 13.33,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 12.41,
+        "structuralStop": 12.06,
+        "takeProfit1": 14.22,
+        "takeProfit2": 15.52,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 -24.7%，近5日低点较前60日低点 -2.2%",
+        "前低关系 6.1%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.36",
+        "实体强度 95.3%，收盘位置 100%",
+        "主力净流入 9986.8 万元，行业5日强度排名前 41%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "瑞斯康达:关于特定股东权益变动触及1%刻度的提示性公告",
+          "date": "2026-06-16",
+          "url": "https://data.eastmoney.com/notices/detail/603803/AN202606151823572731.html"
+        },
+        {
+          "title": "瑞斯康达:关于董事长辞职及选举董事长、变更法定代表人的公告",
+          "date": "2026-06-11",
+          "url": "https://data.eastmoney.com/notices/detail/603803/AN202606101823420826.html"
+        },
+        {
+          "title": "瑞斯康达:关于召开2025年度暨2026年第一季度业绩说明会的公告",
+          "date": "2026-05-23",
+          "url": "https://data.eastmoney.com/notices/detail/603803/AN202605221822682481.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-06-16",
+      "code": "600478",
+      "name": "科力远",
+      "industry": "电池",
+      "industryRank": 26,
+      "industryRankPercent": 26,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 124,
+      "estimatedWinRate": 70.4,
+      "latestPrice": 6.06,
+      "dailyChange": 7.64,
+      "scores": {
+        "oversold": 17,
+        "lowStructure": 17,
+        "falseBreak": 8,
+        "priceRise": 13,
+        "volume": 17,
+        "candleQuality": 14,
+        "turnover": 7,
+        "moneyFlow": 17,
+        "sector": 14
+      },
+      "metrics": {
+        "dropFrom60High": -24.53,
+        "breakPct": 5.63,
+        "recent5LowPremium": -0.93,
+        "volumeRatio": 2.34,
+        "entityStrength": 59.1,
+        "closePosition": 97.7,
+        "turnover": 4.44,
+        "mainNetInflow": 3247,
+        "mainNetRatio": 7.54,
+        "sectorFiveDayChange": 6.09
+      },
+      "tradePlan": {
+        "buyPrice": 5.93,
+        "aggressiveBuyPrice": 6.06,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 5.69,
+        "structuralStop": 5.63,
+        "takeProfit1": 6.52,
+        "takeProfit2": 7.12,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -24.5%，近5日低点较前60日低点 -0.9%",
+        "前低关系 5.6%，假跌破作为加分项而非一票否决",
+        "当日涨幅 7.6%，量比 2.34",
+        "实体强度 59.1%，收盘位置 97.7%",
+        "主力净流入 3247 万元，行业5日强度排名前 26%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "科力远:科力远关于选举副董事长及副总经理辞职的公告",
+          "date": "2026-06-16",
+          "url": "https://data.eastmoney.com/notices/detail/600478/AN202606151823572784.html"
+        },
+        {
+          "title": "科力远:科力远关于投资建设定兴县10万千瓦混合独立储能电站项目的公告",
+          "date": "2026-06-16",
+          "url": "https://data.eastmoney.com/notices/detail/600478/AN202606151823572782.html"
+        },
+        {
+          "title": "科力远:科力远第八届董事会第二十八次会议决议公告",
+          "date": "2026-06-16",
+          "url": "https://data.eastmoney.com/notices/detail/600478/AN202606151823572785.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-06-16",
+      "code": "600392",
+      "name": "盛和资源",
+      "industry": "小金属",
+      "industryRank": 4,
+      "industryRankPercent": 4,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 123,
+      "estimatedWinRate": 70.1,
+      "latestPrice": 29.03,
+      "dailyChange": 10,
+      "scores": {
+        "oversold": 4,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 15,
+        "moneyFlow": 20,
+        "sector": 20
+      },
+      "metrics": {
+        "dropFrom60High": 3.83,
+        "breakPct": 25.55,
+        "recent5LowPremium": 10.86,
+        "volumeRatio": 2.64,
+        "entityStrength": 94.3,
+        "closePosition": 100,
+        "turnover": 11.27,
+        "mainNetInflow": 135160.9,
+        "mainNetRatio": 24.02,
+        "sectorFiveDayChange": 15.73
+      },
+      "tradePlan": {
+        "buyPrice": 28.16,
+        "aggressiveBuyPrice": 29.03,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 27.03,
+        "structuralStop": 26.24,
+        "takeProfit1": 30.98,
+        "takeProfit2": 33.79,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 3.8%，近5日低点较前60日低点 10.9%",
+        "前低关系 25.6%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 2.64",
+        "实体强度 94.3%，收盘位置 100%",
+        "主力净流入 135160.9 万元，行业5日强度排名前 4%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "盛和资源:盛和资源控股股份有限公司关于持股5%以上股东权益变动触及1%刻度的提示性公告",
+          "date": "2026-06-17",
+          "url": "https://data.eastmoney.com/notices/detail/600392/AN202606161823604508.html"
+        },
+        {
+          "title": "盛和资源:盛和资源控股股份有限公司关于为控股子公司提供担保的进展公告",
+          "date": "2026-06-13",
+          "url": "https://data.eastmoney.com/notices/detail/600392/AN202606121823511066.html"
+        },
+        {
+          "title": "盛和资源:投资者关系活动记录表2026-02",
+          "date": "2026-06-12",
+          "url": "https://data.eastmoney.com/notices/detail/600392/AN202606121823513743.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-06-16",
+      "code": "603042",
+      "name": "华脉科技",
+      "industry": "通信设备",
+      "industryRank": 41,
+      "industryRankPercent": 41,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 121,
+      "estimatedWinRate": 69.5,
+      "latestPrice": 20.97,
+      "dailyChange": 10.02,
+      "scores": {
+        "oversold": 10,
+        "lowStructure": 14,
+        "falseBreak": 8,
+        "priceRise": 20,
+        "volume": 8,
+        "candleQuality": 20,
+        "turnover": 15,
+        "moneyFlow": 17,
+        "sector": 9
+      },
+      "metrics": {
+        "dropFrom60High": -13.35,
+        "breakPct": 4.92,
+        "recent5LowPremium": -0.67,
+        "volumeRatio": 1.38,
+        "entityStrength": 94.1,
+        "closePosition": 100,
+        "turnover": 10.56,
+        "mainNetInflow": 3241.5,
+        "mainNetRatio": 9.44,
+        "sectorFiveDayChange": 2.69
+      },
+      "tradePlan": {
+        "buyPrice": 20.34,
+        "aggressiveBuyPrice": 20.97,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 19.53,
+        "structuralStop": 18.76,
+        "takeProfit1": 22.37,
+        "takeProfit2": 24.41,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 -13.3%，近5日低点较前60日低点 -0.7%",
+        "前低关系 4.9%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.38",
+        "实体强度 94.1%，收盘位置 100%",
+        "主力净流入 3241.5 万元，行业5日强度排名前 41%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "华脉科技:关于控股股东、实际控制人部分股份解除质押的公告",
+          "date": "2026-06-16",
+          "url": "https://data.eastmoney.com/notices/detail/603042/AN202606151823573838.html"
+        },
+        {
+          "title": "华脉科技:2025年年度权益分派实施公告",
+          "date": "2026-06-16",
+          "url": "https://data.eastmoney.com/notices/detail/603042/AN202606151823573839.html"
+        },
+        {
+          "title": "华脉科技:关于控股股东、实际控制人部分股份解除质押的公告",
+          "date": "2026-06-06",
+          "url": "https://data.eastmoney.com/notices/detail/603042/AN202606051823289148.html"
+        }
+      ]
+    }
+  ],
   "notes": [
     "强信号：总分 >= 100；观察信号：总分 75-99；低于75自动空置。",
     "估算胜率来自策略评分映射，用于排序，不等同于历史回测胜率。",
