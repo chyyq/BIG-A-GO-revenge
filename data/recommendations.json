@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026/6/18 19:38:52",
+  "generatedAt": "2026/6/19 19:51:12",
   "tradeDate": "2026-06-18",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
@@ -9,10 +9,10 @@
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
   "scannedCount": 96,
-  "signalCount": 51,
+  "signalCount": 52,
   "riskReview": {
-    "announcementCheckedCount": 94,
-    "excludedByAnnouncement": 14,
+    "announcementCheckedCount": 87,
+    "excludedByAnnouncement": 13,
     "announcementRiskSamples": [
       {
         "code": "688702",
@@ -22,11 +22,11 @@
         "url": "https://data.eastmoney.com/notices/detail/688702/AN202605151822348446.html"
       },
       {
-        "code": "001296",
-        "name": "长江材料",
-        "title": "长江材料:关于控股股东、实际控制人减持股份的预披露公告",
-        "date": "2026-05-13",
-        "url": "https://data.eastmoney.com/notices/detail/001296/AN202605121822222123.html"
+        "code": "603082",
+        "name": "北自科技",
+        "title": "北自科技:股票交易风险提示公告",
+        "date": "2026-05-19",
+        "url": "https://data.eastmoney.com/notices/detail/603082/AN202605181822409253.html"
       },
       {
         "code": "603991",
@@ -36,18 +36,18 @@
         "url": "https://data.eastmoney.com/notices/detail/603991/AN202604231821504471.html"
       },
       {
-        "code": "603261",
-        "name": "立航科技",
-        "title": "*ST立航:成都立航科技股份有限公司关于撤销退市风险警示暨停复牌的公告",
-        "date": "2026-06-13",
-        "url": "https://data.eastmoney.com/notices/detail/603261/AN202606121823516529.html"
+        "code": "001296",
+        "name": "长江材料",
+        "title": "长江材料:关于控股股东、实际控制人减持股份的预披露公告",
+        "date": "2026-05-13",
+        "url": "https://data.eastmoney.com/notices/detail/001296/AN202605121822222123.html"
       },
       {
-        "code": "603082",
-        "name": "北自科技",
-        "title": "北自科技:股票交易风险提示公告",
+        "code": "300700",
+        "name": "岱勒新材",
+        "title": "岱勒新材:关于实际控制人减持股份的预披露公告",
         "date": "2026-05-19",
-        "url": "https://data.eastmoney.com/notices/detail/603082/AN202605181822409253.html"
+        "url": "https://data.eastmoney.com/notices/detail/300700/AN202605191822454823.html"
       }
     ],
     "riskKeywords": [
@@ -282,25 +282,9 @@
         "当日涨幅 20%，量比 2.12",
         "实体强度 100%，收盘位置 100%",
         "主力净流入 41743.9 万元，行业5日强度排名前 52%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+        "公告风控接口本次未能确认，需人工复核"
       ],
-      "recentAnnouncements": [
-        {
-          "title": "铂力特:西安铂力特增材技术股份有限公司股票交易异常波动公告",
-          "date": "2026-06-19",
-          "url": "https://data.eastmoney.com/notices/detail/688333/AN202606181823671684.html"
-        },
-        {
-          "title": "铂力特:西安铂力特增材技术股份有限公司2025年度权益分派实施公告",
-          "date": "2026-06-16",
-          "url": "https://data.eastmoney.com/notices/detail/688333/AN202606151823572390.html"
-        },
-        {
-          "title": "铂力特:西安铂力特增材技术股份有限公司关于高级管理人员退休离任的公告",
-          "date": "2026-06-16",
-          "url": "https://data.eastmoney.com/notices/detail/688333/AN202606151823572392.html"
-        }
-      ]
+      "recentAnnouncements": []
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
@@ -356,25 +340,9 @@
         "当日涨幅 20%，量比 1.21",
         "实体强度 100%，收盘位置 100%",
         "主力净流入 22183.5 万元，行业5日强度排名前 18%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+        "公告风控接口本次未能确认，需人工复核"
       ],
-      "recentAnnouncements": [
-        {
-          "title": "裕太微:关于补选董事会审计委员会委员及战略投资与可持续发展委员会委员的公告",
-          "date": "2026-06-17",
-          "url": "https://data.eastmoney.com/notices/detail/688515/AN202606161823601344.html"
-        },
-        {
-          "title": "裕太微:关于更换持续督导保荐代表人的公告",
-          "date": "2026-06-13",
-          "url": "https://data.eastmoney.com/notices/detail/688515/AN202606121823515375.html"
-        },
-        {
-          "title": "裕太微:关于向特定对象发行A股股票申请获得上海证券交易所受理的公告",
-          "date": "2026-06-11",
-          "url": "https://data.eastmoney.com/notices/detail/688515/AN202606101823426624.html"
-        }
-      ]
+      "recentAnnouncements": []
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
