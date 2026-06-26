@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/6/25 18:26:35",
-  "tradeDate": "2026-06-25",
+  "generatedAt": "2026/6/26 18:37:42",
+  "tradeDate": "2026-06-26",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 73,
-  "signalCount": 41,
+  "scannedCount": 40,
+  "signalCount": 25,
   "riskReview": {
-    "announcementCheckedCount": 73,
-    "excludedByAnnouncement": 11,
+    "announcementCheckedCount": 40,
+    "excludedByAnnouncement": 9,
     "announcementRiskSamples": [
       {
-        "code": "300650",
-        "name": "太龙股份",
-        "title": "太龙股份:关于持股5%以上股东及董事、高管减持股份的预披露公告",
-        "date": "2026-05-13",
-        "url": "https://data.eastmoney.com/notices/detail/300650/AN202605131822279016.html"
-      },
-      {
-        "code": "688545",
-        "name": "兴福电子",
-        "title": "兴福电子:湖北兴福电子材料股份有限公司关于持股5%以上股东减持股份计划公告的更正公告",
+        "code": "688584",
+        "name": "上海合晶",
+        "title": "上海合晶:上海合晶持股5%以上股东减持股份计划公告",
         "date": "2026-05-21",
-        "url": "https://data.eastmoney.com/notices/detail/688545/AN202605201822493425.html"
+        "url": "https://data.eastmoney.com/notices/detail/688584/AN202605201822502527.html"
       },
       {
-        "code": "688592",
-        "name": "司南导航",
-        "title": "司南导航:2025年度业绩快报暨业绩预告更正公告",
-        "date": "2026-04-28",
-        "url": "https://data.eastmoney.com/notices/detail/688592/AN202604271821622736.html"
+        "code": "300102",
+        "name": "乾照光电",
+        "title": "乾照光电:持股5%以上股东减持股份预披露公告",
+        "date": "2026-05-06",
+        "url": "https://data.eastmoney.com/notices/detail/300102/AN202605061821994728.html"
       },
       {
-        "code": "002558",
-        "name": "巨人网络",
-        "title": "巨人网络:关于控股股东的一致行动人减持股份预披露公告",
-        "date": "2026-05-16",
-        "url": "https://data.eastmoney.com/notices/detail/002558/AN202605151822355365.html"
+        "code": "300398",
+        "name": "飞凯材料",
+        "title": "飞凯材料:关于公司控股股东及其一致行动人股份减持计划的预披露公告",
+        "date": "2026-06-10",
+        "url": "https://data.eastmoney.com/notices/detail/300398/AN202606101823428586.html"
       },
       {
-        "code": "603690",
-        "name": "至纯科技",
-        "title": "至纯科技:控股股东及其一致行动人减持股份计划公告",
-        "date": "2026-05-28",
-        "url": "https://data.eastmoney.com/notices/detail/603690/AN202605271822916849.html"
+        "code": "688605",
+        "name": "先锋精科",
+        "title": "先锋精科:先锋精科关于持股5%以上股东减持股份计划公告",
+        "date": "2026-05-27",
+        "url": "https://data.eastmoney.com/notices/detail/688605/AN202605261822884379.html"
+      },
+      {
+        "code": "300506",
+        "name": "名家汇",
+        "title": "ST名家汇:关于累计及重大诉讼、仲裁情况的进展公告(二十四)",
+        "date": "2026-06-10",
+        "url": "https://data.eastmoney.com/notices/detail/300506/AN202606101823422622.html"
       }
     ],
     "riskKeywords": [
@@ -82,371 +82,371 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-06-25",
-      "code": "300533",
-      "name": "冰川网络",
-      "industry": "游戏Ⅱ",
-      "industryRank": 31,
-      "industryRankPercent": 31,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 132,
-      "estimatedWinRate": 72.9,
-      "latestPrice": 16.45,
-      "dailyChange": 7.94,
-      "scores": {
-        "oversold": 17,
-        "lowStructure": 20,
-        "falseBreak": 8,
-        "priceRise": 13,
-        "volume": 17,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 17,
-        "sector": 9
-      },
-      "metrics": {
-        "dropFrom60High": -24.44,
-        "breakPct": 6.27,
-        "recent5LowPremium": -1.34,
-        "volumeRatio": 2.75,
-        "entityStrength": 86.3,
-        "closePosition": 88,
-        "turnover": 9.41,
-        "mainNetInflow": 2698.1,
-        "mainNetRatio": 7.72,
-        "sectorFiveDayChange": 2.38
-      },
-      "tradePlan": {
-        "buyPrice": 15.96,
-        "aggressiveBuyPrice": 16.45,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 15.32,
-        "structuralStop": 14.91,
-        "takeProfit1": 17.56,
-        "takeProfit2": 19.15,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -24.4%，近5日低点较前60日低点 -1.3%",
-        "前低关系 6.3%，假跌破作为加分项而非一票否决",
-        "当日涨幅 7.9%，量比 2.75",
-        "实体强度 86.3%，收盘位置 88%",
-        "主力净流入 2698.1 万元，行业5日强度排名前 31%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "冰川网络:关于拟与关联方签署《游戏海外独家运营协议之终止协议》暨关联交易进展的公告",
-          "date": "2026-06-05",
-          "url": "https://data.eastmoney.com/notices/detail/300533/AN202606051823295582.html"
-        },
-        {
-          "title": "冰川网络:第五届董事会第十五次会议决议公告",
-          "date": "2026-06-05",
-          "url": "https://data.eastmoney.com/notices/detail/300533/AN202606051823295488.html"
-        },
-        {
-          "title": "冰川网络:关于使用闲置自有资金购买理财产品的进展公告",
-          "date": "2026-05-28",
-          "url": "https://data.eastmoney.com/notices/detail/300533/AN202605281822949131.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-06-25",
-      "code": "002517",
-      "name": "恺英网络",
-      "industry": "游戏Ⅱ",
-      "industryRank": 31,
-      "industryRankPercent": 31,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 121,
-      "estimatedWinRate": 69.5,
-      "latestPrice": 16.07,
-      "dailyChange": 4.22,
-      "scores": {
-        "oversold": 17,
-        "lowStructure": 20,
-        "falseBreak": 8,
-        "priceRise": 8,
-        "volume": 17,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 11,
-        "sector": 9
-      },
-      "metrics": {
-        "dropFrom60High": -21.38,
-        "breakPct": 9.39,
-        "recent5LowPremium": -0.92,
-        "volumeRatio": 2.09,
-        "entityStrength": 82.8,
-        "closePosition": 93.1,
-        "turnover": 5.94,
-        "mainNetInflow": 5444.1,
-        "mainNetRatio": 3.05,
-        "sectorFiveDayChange": 2.38
-      },
-      "tradePlan": {
-        "buyPrice": 15.71,
-        "aggressiveBuyPrice": 16.07,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 15.08,
-        "structuralStop": 15.26,
-        "takeProfit1": 17.28,
-        "takeProfit2": 18.85,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -21.4%，近5日低点较前60日低点 -0.9%",
-        "前低关系 9.4%，假跌破作为加分项而非一票否决",
-        "当日涨幅 4.2%，量比 2.09",
-        "实体强度 82.8%，收盘位置 93.1%",
-        "主力净流入 5444.1 万元，行业5日强度排名前 31%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "恺英网络:关于控股股东、实际控制人及高级管理人员2026年第一次现金分红增持股份的公告",
-          "date": "2026-06-11",
-          "url": "https://data.eastmoney.com/notices/detail/002517/AN202606101823427211.html"
-        },
-        {
-          "title": "恺英网络:2025年年度权益分派实施公告",
-          "date": "2026-06-03",
-          "url": "https://data.eastmoney.com/notices/detail/002517/AN202606021823163391.html"
-        },
-        {
-          "title": "恺英网络:2025年年度股东会决议公告",
-          "date": "2026-05-23",
-          "url": "https://data.eastmoney.com/notices/detail/002517/AN202605221822691024.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-06-25",
-      "code": "688380",
-      "name": "中微半导",
-      "industry": "半导体",
-      "industryRank": 9,
-      "industryRankPercent": 9,
+      "tradeDate": "2026-06-26",
+      "code": "002456",
+      "name": "欧菲光",
+      "industry": "光学光电子",
+      "industryRank": 19,
+      "industryRankPercent": 19,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 119,
-      "estimatedWinRate": 68.9,
-      "latestPrice": 61.74,
-      "dailyChange": 20,
+      "totalScore": 124,
+      "estimatedWinRate": 70.4,
+      "latestPrice": 9.52,
+      "dailyChange": 8.8,
+      "scores": {
+        "oversold": 4,
+        "lowStructure": 9,
+        "falseBreak": 14,
+        "priceRise": 17,
+        "volume": 12,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 17
+      },
+      "metrics": {
+        "dropFrom60High": -6.85,
+        "breakPct": 2.27,
+        "recent5LowPremium": 2.27,
+        "volumeRatio": 1.74,
+        "entityStrength": 78.1,
+        "closePosition": 92.4,
+        "turnover": 8,
+        "mainNetInflow": 47987.3,
+        "mainNetRatio": 19.5,
+        "sectorFiveDayChange": 1.09
+      },
+      "tradePlan": {
+        "buyPrice": 9.23,
+        "aggressiveBuyPrice": 9.52,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 8.86,
+        "structuralStop": 8.55,
+        "takeProfit1": 10.15,
+        "takeProfit2": 11.08,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 -6.8%，近5日低点较前60日低点 2.3%",
+        "前低关系 2.3%，假跌破作为加分项而非一票否决",
+        "当日涨幅 8.8%，量比 1.74",
+        "实体强度 78.1%，收盘位置 92.4%",
+        "主力净流入 47987.3 万元，行业5日强度排名前 19%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "欧菲光:关于公司副总经理辞职的公告",
+          "date": "2026-06-25",
+          "url": "https://data.eastmoney.com/notices/detail/002456/AN202606241823815564.html"
+        },
+        {
+          "title": "欧菲光:关于对外担保事项的进展公告",
+          "date": "2026-06-25",
+          "url": "https://data.eastmoney.com/notices/detail/002456/AN202606241823815467.html"
+        },
+        {
+          "title": "欧菲光:广东信达律师事务所关于欧菲光集团股份有限公司2026年第二次临时股东会的法律意见书",
+          "date": "2026-06-22",
+          "url": "https://data.eastmoney.com/notices/detail/002456/AN202606211823708736.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-06-26",
+      "code": "301421",
+      "name": "波长光电",
+      "industry": "光学光电子",
+      "industryRank": 19,
+      "industryRankPercent": 19,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 115,
+      "estimatedWinRate": 67.7,
+      "latestPrice": 92.94,
+      "dailyChange": 6.1,
+      "scores": {
+        "oversold": 22,
+        "lowStructure": 9,
+        "falseBreak": 8,
+        "priceRise": 13,
+        "volume": 12,
+        "candleQuality": 8,
+        "turnover": 15,
+        "moneyFlow": 11,
+        "sector": 17
+      },
+      "metrics": {
+        "dropFrom60High": -31.61,
+        "breakPct": 5.72,
+        "recent5LowPremium": 3.97,
+        "volumeRatio": 1.6,
+        "entityStrength": 66.8,
+        "closePosition": 70,
+        "turnover": 24.26,
+        "mainNetInflow": 2849.7,
+        "mainNetRatio": 2.74,
+        "sectorFiveDayChange": 1.09
+      },
+      "tradePlan": {
+        "buyPrice": 90.15,
+        "aggressiveBuyPrice": 92.94,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 86.54,
+        "structuralStop": 85.8,
+        "takeProfit1": 99.17,
+        "takeProfit2": 108.18,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -31.6%，近5日低点较前60日低点 4%",
+        "前低关系 5.7%，假跌破作为加分项而非一票否决",
+        "当日涨幅 6.1%，量比 1.6",
+        "实体强度 66.8%，收盘位置 70%",
+        "主力净流入 2849.7 万元，行业5日强度排名前 19%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "波长光电:关于完成工商变更登记并换发营业执照的公告",
+          "date": "2026-06-24",
+          "url": "https://data.eastmoney.com/notices/detail/301421/AN202606241823808108.html"
+        },
+        {
+          "title": "波长光电:投资者关系活动记录表",
+          "date": "2026-06-22",
+          "url": "https://data.eastmoney.com/notices/detail/301421/AN202606221823718768.html"
+        },
+        {
+          "title": "波长光电:关于公司董事长收到《取保候审决定书》的公告",
+          "date": "2026-06-18",
+          "url": "https://data.eastmoney.com/notices/detail/301421/AN202606181823671611.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-06-26",
+      "code": "002119",
+      "name": "康强电子",
+      "industry": "半导体",
+      "industryRank": 7,
+      "industryRankPercent": 7,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 114,
+      "estimatedWinRate": 67.3,
+      "latestPrice": 37.02,
+      "dailyChange": 10.01,
       "scores": {
         "oversold": 4,
         "lowStructure": 4,
         "falseBreak": 3,
         "priceRise": 20,
-        "volume": 17,
+        "volume": 8,
         "candleQuality": 20,
-        "turnover": 11,
+        "turnover": 15,
         "moneyFlow": 20,
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": 10.11,
-        "breakPct": 32.1,
-        "recent5LowPremium": 19.34,
-        "volumeRatio": 2.09,
-        "entityStrength": 89.5,
+        "dropFrom60High": 4.52,
+        "breakPct": 70.51,
+        "recent5LowPremium": 62.28,
+        "volumeRatio": 1.36,
+        "entityStrength": 96.5,
         "closePosition": 100,
-        "turnover": 6.11,
-        "mainNetInflow": 19077.8,
-        "mainNetRatio": 13.27,
-        "sectorFiveDayChange": 10.34
+        "turnover": 23.14,
+        "mainNetInflow": 32063.5,
+        "mainNetRatio": 10.46,
+        "sectorFiveDayChange": 6.77
       },
       "tradePlan": {
-        "buyPrice": 59.89,
-        "aggressiveBuyPrice": 61.74,
+        "buyPrice": 35.91,
+        "aggressiveBuyPrice": 37.02,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 57.49,
-        "structuralStop": 53,
-        "takeProfit1": 65.88,
-        "takeProfit2": 71.87,
+        "stopLoss": 34.47,
+        "structuralStop": 32.5,
+        "takeProfit1": 39.5,
+        "takeProfit2": 43.09,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 10.1%，近5日低点较前60日低点 19.3%",
-        "前低关系 32.1%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 2.09",
-        "实体强度 89.5%，收盘位置 100%",
-        "主力净流入 19077.8 万元，行业5日强度排名前 9%",
+        "板块放量弹性：距60日高点 4.5%，近5日低点较前60日低点 62.3%",
+        "前低关系 70.5%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.36",
+        "实体强度 96.5%，收盘位置 100%",
+        "主力净流入 32063.5 万元，行业5日强度排名前 7%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "中微半导:投资者关系活动记录表(2026年6月)",
-          "date": "2026-06-16",
-          "url": "https://data.eastmoney.com/notices/detail/688380/AN202606161823601026.html"
+          "title": "康强电子:关于取得金融机构股票回购专项贷款承诺函的公告",
+          "date": "2026-06-17",
+          "url": "https://data.eastmoney.com/notices/detail/002119/AN202606161823605805.html"
         },
         {
-          "title": "中微半导:北京盈科(成都)律师事务所关于中微半导体(深圳)股份有限公司差异化分红的法律意见书",
-          "date": "2026-05-19",
-          "url": "https://data.eastmoney.com/notices/detail/688380/AN202605181822407977.html"
+          "title": "康强电子:股票交易异常波动公告",
+          "date": "2026-06-12",
+          "url": "https://data.eastmoney.com/notices/detail/002119/AN202606111823464392.html"
         },
         {
-          "title": "中微半导:2025年年度权益分派实施公告",
-          "date": "2026-05-19",
-          "url": "https://data.eastmoney.com/notices/detail/688380/AN202605181822407978.html"
+          "title": "康强电子:关于股东减持计划实施完成的公告",
+          "date": "2026-06-12",
+          "url": "https://data.eastmoney.com/notices/detail/002119/AN202606111823464371.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-06-25",
-      "code": "688381",
-      "name": "帝奥微",
-      "industry": "半导体",
-      "industryRank": 9,
-      "industryRankPercent": 9,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 115,
-      "estimatedWinRate": 67.7,
-      "latestPrice": 51.9,
-      "dailyChange": 20,
-      "scores": {
-        "oversold": 4,
-        "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 20,
-        "volume": 12,
-        "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 17,
-        "sector": 20
-      },
-      "metrics": {
-        "dropFrom60High": -1.01,
-        "breakPct": 110.9,
-        "recent5LowPremium": 107.01,
-        "volumeRatio": 1.82,
-        "entityStrength": 83.3,
-        "closePosition": 100,
-        "turnover": 12.68,
-        "mainNetInflow": 10852.1,
-        "mainNetRatio": 7.2,
-        "sectorFiveDayChange": 10.34
-      },
-      "tradePlan": {
-        "buyPrice": 50.34,
-        "aggressiveBuyPrice": 51.9,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 48.33,
-        "structuralStop": 42.96,
-        "takeProfit1": 55.37,
-        "takeProfit2": 60.41,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "板块放量弹性：距60日高点 -1%，近5日低点较前60日低点 107%",
-        "前低关系 110.9%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 1.82",
-        "实体强度 83.3%，收盘位置 100%",
-        "主力净流入 10852.1 万元，行业5日强度排名前 9%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "帝奥微:北京市中伦(上海)律师事务所关于江苏帝奥微电子股份有限公司差异化权益分派事项的法律意见书",
-          "date": "2026-06-04",
-          "url": "https://data.eastmoney.com/notices/detail/688381/AN202606031823215569.html"
-        },
-        {
-          "title": "帝奥微:2025年年度权益分派实施公告",
-          "date": "2026-06-04",
-          "url": "https://data.eastmoney.com/notices/detail/688381/AN202606031823215570.html"
-        },
-        {
-          "title": "帝奥微:关于出售参股公司部分股份的公告",
-          "date": "2026-05-21",
-          "url": "https://data.eastmoney.com/notices/detail/688381/AN202605201822494214.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-06-25",
-      "code": "000783",
-      "name": "长江证券",
-      "industry": "证券Ⅱ",
-      "industryRank": 22,
-      "industryRankPercent": 22,
+      "tradeDate": "2026-06-26",
+      "code": "002962",
+      "name": "五方光电",
+      "industry": "光学光电子",
+      "industryRank": 19,
+      "industryRankPercent": 19,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
       "totalScore": 113,
       "estimatedWinRate": 67,
-      "latestPrice": 10.15,
-      "dailyChange": 9.97,
+      "latestPrice": 19.34,
+      "dailyChange": 10.01,
       "scores": {
-        "oversold": 4,
+        "oversold": 10,
         "lowStructure": 4,
         "falseBreak": 3,
         "priceRise": 20,
-        "volume": 20,
+        "volume": 8,
         "candleQuality": 20,
         "turnover": 11,
-        "moneyFlow": 17,
-        "sector": 14
+        "moneyFlow": 20,
+        "sector": 17
       },
       "metrics": {
-        "dropFrom60High": 3.68,
-        "breakPct": 39.81,
-        "recent5LowPremium": 20.47,
-        "volumeRatio": 3.87,
-        "entityStrength": 75.2,
+        "dropFrom60High": -13.62,
+        "breakPct": 33.21,
+        "recent5LowPremium": 27.33,
+        "volumeRatio": 1.47,
+        "entityStrength": 81.5,
         "closePosition": 100,
-        "turnover": 9.71,
-        "mainNetInflow": 40288.7,
-        "mainNetRatio": 7.64,
-        "sectorFiveDayChange": 5.23
+        "turnover": 25.8,
+        "mainNetInflow": 26769.9,
+        "mainNetRatio": 26.33,
+        "sectorFiveDayChange": 1.09
       },
       "tradePlan": {
-        "buyPrice": 9.85,
-        "aggressiveBuyPrice": 10.15,
+        "buyPrice": 18.76,
+        "aggressiveBuyPrice": 19.34,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 9.46,
-        "structuralStop": 9.06,
-        "takeProfit1": 10.84,
-        "takeProfit2": 11.82,
+        "stopLoss": 18.01,
+        "structuralStop": 17.45,
+        "takeProfit1": 20.64,
+        "takeProfit2": 22.51,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 3.7%，近5日低点较前60日低点 20.5%",
-        "前低关系 39.8%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 3.87",
-        "实体强度 75.2%，收盘位置 100%",
-        "主力净流入 40288.7 万元，行业5日强度排名前 22%",
+        "板块放量弹性：距60日高点 -13.6%，近5日低点较前60日低点 27.3%",
+        "前低关系 33.2%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.47",
+        "实体强度 81.5%，收盘位置 100%",
+        "主力净流入 26769.9 万元，行业5日强度排名前 19%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "长江证券:长江证券股份有限公司2026年面向专业投资者公开发行公司债券(第二期)募集说明书",
-          "date": "2026-06-25",
-          "url": "https://data.eastmoney.com/notices/detail/000783/AN202606251823851458.html"
+          "title": "五方光电:股票交易异常波动公告",
+          "date": "2026-06-16",
+          "url": "https://data.eastmoney.com/notices/detail/002962/AN202606151823574490.html"
         },
         {
-          "title": "长江证券:长江证券股份有限公司2025年面向专业投资者公开发行公司债券更名公告",
-          "date": "2026-06-25",
-          "url": "https://data.eastmoney.com/notices/detail/000783/AN202606251823851460.html"
+          "title": "五方光电:2025年年度权益分派实施公告",
+          "date": "2026-05-29",
+          "url": "https://data.eastmoney.com/notices/detail/002962/AN202605281822949220.html"
         },
         {
-          "title": "长江证券:长江证券股份有限公司2026年面向专业投资者公开发行公司债券(第二期)发行公告",
-          "date": "2026-06-25",
-          "url": "https://data.eastmoney.com/notices/detail/000783/AN202606251823851463.html"
+          "title": "五方光电:北京德恒(深圳)律师事务所关于湖北五方光电股份有限公司2025年度股东会的法律意见",
+          "date": "2026-05-20",
+          "url": "https://data.eastmoney.com/notices/detail/002962/AN202605191822451794.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-06-26",
+      "code": "003033",
+      "name": "征和工业",
+      "industry": "摩托车及其他",
+      "industryRank": 33,
+      "industryRankPercent": 33,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 111,
+      "estimatedWinRate": 66.4,
+      "latestPrice": 57.33,
+      "dailyChange": 10,
+      "scores": {
+        "oversold": 10,
+        "lowStructure": 9,
+        "falseBreak": 8,
+        "priceRise": 20,
+        "volume": 8,
+        "candleQuality": 20,
+        "turnover": 7,
+        "moneyFlow": 20,
+        "sector": 9
+      },
+      "metrics": {
+        "dropFrom60High": -15.07,
+        "breakPct": 6.8,
+        "recent5LowPremium": 2.89,
+        "volumeRatio": 1.49,
+        "entityStrength": 96.4,
+        "closePosition": 100,
+        "turnover": 4.44,
+        "mainNetInflow": 3781.6,
+        "mainNetRatio": 19.04,
+        "sectorFiveDayChange": -1.65
+      },
+      "tradePlan": {
+        "buyPrice": 55.61,
+        "aggressiveBuyPrice": 57.33,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 53.39,
+        "structuralStop": 51.8,
+        "takeProfit1": 61.17,
+        "takeProfit2": 66.73,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 -15.1%，近5日低点较前60日低点 2.9%",
+        "前低关系 6.8%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.49",
+        "实体强度 96.4%，收盘位置 100%",
+        "主力净流入 3781.6 万元，行业5日强度排名前 33%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "征和工业:2025年度向特定对象发行A股股票方案的论证分析报告(二次修订稿)",
+          "date": "2026-06-27",
+          "url": "https://data.eastmoney.com/notices/detail/003033/AN202606261824580633.html"
+        },
+        {
+          "title": "征和工业:第五届董事会第二次会议决议公告",
+          "date": "2026-06-27",
+          "url": "https://data.eastmoney.com/notices/detail/003033/AN202606261824580643.html"
+        },
+        {
+          "title": "征和工业:关于2025年度向特定对象发行A股股票摊薄即期股东回报及填补措施与相关主体承诺(二次修订稿)的公告",
+          "date": "2026-06-27",
+          "url": "https://data.eastmoney.com/notices/detail/003033/AN202606261824580634.html"
         }
       ]
     }
