@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/7/2 18:19:17",
-  "tradeDate": "2026-07-02",
+  "generatedAt": "2026/7/3 18:16:21",
+  "tradeDate": "2026-07-03",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 31,
-  "signalCount": 20,
+  "scannedCount": 142,
+  "signalCount": 102,
   "riskReview": {
-    "announcementCheckedCount": 31,
-    "excludedByAnnouncement": 5,
+    "announcementCheckedCount": 141,
+    "excludedByAnnouncement": 22,
     "announcementRiskSamples": [
       {
-        "code": "300071",
-        "name": "福石控股",
-        "title": "福石控股:北京福石控股发展股份有限公司以财务报告为目的的商誉减值测试涉及含并购天津迪思文化传媒有限公司商誉的资产组可收回金额资产评估报告",
-        "date": "2026-04-29",
-        "url": "https://data.eastmoney.com/notices/detail/300071/AN202604281821702590.html"
+        "code": "688017",
+        "name": "绿的谐波",
+        "title": "绿的谐波:股票交易风险提示公告",
+        "date": "2026-07-01",
+        "url": "https://data.eastmoney.com/notices/detail/688017/AN202606301826595295.html"
       },
       {
-        "code": "002826",
-        "name": "易明医药",
-        "title": "易明医药:关于持股5%以上股东减持股份的预披露公告",
+        "code": "300912",
+        "name": "凯龙高科",
+        "title": "凯龙高科:关于未弥补亏损达到实收股本总额三分之一的公告",
+        "date": "2026-04-27",
+        "url": "https://data.eastmoney.com/notices/detail/300912/AN202604261821592576.html"
+      },
+      {
+        "code": "300745",
+        "name": "欣锐科技",
+        "title": "欣锐科技:关于使用公积金弥补亏损通知债权人的公告",
+        "date": "2026-05-19",
+        "url": "https://data.eastmoney.com/notices/detail/300745/AN202605191822453837.html"
+      },
+      {
+        "code": "002896",
+        "name": "中大力德",
+        "title": "中大力德:关于控股股东及其一致行动人股份减持计划的预披露公告",
         "date": "2026-05-08",
-        "url": "https://data.eastmoney.com/notices/detail/002826/AN202605071822038819.html"
+        "url": "https://data.eastmoney.com/notices/detail/002896/AN202605071822035342.html"
       },
       {
-        "code": "002693",
-        "name": "双成药业",
-        "title": "*ST双成:海南双成药业股份有限公司关于公司股票交易撤销退市风险警示暨停复牌的公告",
-        "date": "2026-05-22",
-        "url": "https://data.eastmoney.com/notices/detail/002693/AN202605211822654760.html"
-      },
-      {
-        "code": "002038",
-        "name": "双鹭药业",
-        "title": "双鹭药业:关于公司及相关当事人收到深圳证券交易所监管函及纪律处分决定的公告",
-        "date": "2026-05-06",
-        "url": "https://data.eastmoney.com/notices/detail/002038/AN202605051821969651.html"
-      },
-      {
-        "code": "300781",
-        "name": "因赛集团",
-        "title": "因赛集团:关于收到广东证监局警示函的公告",
-        "date": "2026-04-29",
-        "url": "https://data.eastmoney.com/notices/detail/300781/AN202604281821709088.html"
+        "code": "301510",
+        "name": "固高科技",
+        "title": "固高科技:关于持股5%以上股东及特定股东减持股份的预披露公告",
+        "date": "2026-05-25",
+        "url": "https://data.eastmoney.com/notices/detail/301510/AN202605251822860974.html"
       }
     ],
     "riskKeywords": [
@@ -82,92 +82,92 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-02",
-      "code": "300740",
-      "name": "水羊股份",
-      "industry": "化妆品",
-      "industryRank": 16,
-      "industryRankPercent": 16,
+      "tradeDate": "2026-07-03",
+      "code": "600547",
+      "name": "山东黄金",
+      "industry": "贵金属",
+      "industryRank": 4,
+      "industryRankPercent": 4,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 147,
-      "estimatedWinRate": 77.6,
-      "latestPrice": 22.27,
-      "dailyChange": 19.99,
+      "totalScore": 141,
+      "estimatedWinRate": 75.7,
+      "latestPrice": 26.08,
+      "dailyChange": 7.86,
       "scores": {
-        "oversold": 17,
-        "lowStructure": 17,
+        "oversold": 22,
+        "lowStructure": 20,
         "falseBreak": 8,
-        "priceRise": 20,
+        "priceRise": 13,
         "volume": 17,
-        "candleQuality": 20,
-        "turnover": 11,
+        "candleQuality": 14,
+        "turnover": 7,
         "moneyFlow": 20,
-        "sector": 17
+        "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -21.39,
-        "breakPct": 6.47,
-        "recent5LowPremium": -10.16,
-        "volumeRatio": 2.4,
-        "entityStrength": 92.8,
-        "closePosition": 100,
-        "turnover": 9.97,
-        "mainNetInflow": 13399.3,
-        "mainNetRatio": 18.02,
-        "sectorFiveDayChange": 5.69
+        "dropFrom60High": -39.32,
+        "breakPct": 11.31,
+        "recent5LowPremium": -1.18,
+        "volumeRatio": 2.45,
+        "entityStrength": 50,
+        "closePosition": 71,
+        "turnover": 4.32,
+        "mainNetInflow": 59944.4,
+        "mainNetRatio": 14.77,
+        "sectorFiveDayChange": 12.53
       },
       "tradePlan": {
-        "buyPrice": 21.6,
-        "aggressiveBuyPrice": 22.27,
+        "buyPrice": 25.73,
+        "aggressiveBuyPrice": 26.08,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 20.74,
-        "structuralStop": 18.26,
-        "takeProfit1": 23.76,
-        "takeProfit2": 25.92,
+        "stopLoss": 24.7,
+        "structuralStop": 25.1,
+        "takeProfit1": 28.3,
+        "takeProfit2": 30.88,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -21.4%，近5日低点较前60日低点 -10.2%",
-        "前低关系 6.5%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 2.4",
-        "实体强度 92.8%，收盘位置 100%",
-        "主力净流入 13399.3 万元，行业5日强度排名前 16%",
+        "低位放量反弹：距60日高点 -39.3%，近5日低点较前60日低点 -1.2%",
+        "前低关系 11.3%，假跌破作为加分项而非一票否决",
+        "当日涨幅 7.9%，量比 2.45",
+        "实体强度 50%，收盘位置 71%",
+        "主力净流入 59944.4 万元，行业5日强度排名前 4%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "水羊股份:关于“水羊转债”恢复转股的公告",
-          "date": "2026-07-02",
-          "url": "https://data.eastmoney.com/notices/detail/300740/AN202607011826633652.html"
+          "title": "山东黄金:山东黄金矿业股份有限公司2025年年度权益分派实施公告",
+          "date": "2026-07-03",
+          "url": "https://data.eastmoney.com/notices/detail/600547/AN202607021826662685.html"
         },
         {
-          "title": "水羊股份:关于2026年第二季度可转换公司债券转股情况的公告",
-          "date": "2026-07-02",
-          "url": "https://data.eastmoney.com/notices/detail/300740/AN202607011826630314.html"
+          "title": "山东黄金:国浩律师(济南)事务所关于山东黄金矿业股份有限公司2026年第一次临时股东会的法律意见书",
+          "date": "2026-06-27",
+          "url": "https://data.eastmoney.com/notices/detail/600547/AN202606261824661913.html"
         },
         {
-          "title": "水羊股份:2025年度权益分派实施公告",
-          "date": "2026-06-26",
-          "url": "https://data.eastmoney.com/notices/detail/300740/AN202606261824724747.html"
+          "title": "山东黄金:山东黄金矿业股份有限公司2026年第一次临时股东会决议公告",
+          "date": "2026-06-27",
+          "url": "https://data.eastmoney.com/notices/detail/600547/AN202606261824661912.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-02",
-      "code": "300111",
-      "name": "向日葵",
-      "industry": "化学制药",
-      "industryRank": 12,
-      "industryRankPercent": 12,
+      "tradeDate": "2026-07-03",
+      "code": "300817",
+      "name": "双飞集团",
+      "industry": "通用设备",
+      "industryRank": 48,
+      "industryRankPercent": 48,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 147,
-      "estimatedWinRate": 77.6,
-      "latestPrice": 3.45,
-      "dailyChange": 16.55,
+      "totalScore": 139,
+      "estimatedWinRate": 75.1,
+      "latestPrice": 18.85,
+      "dailyChange": 16.5,
       "scores": {
         "oversold": 10,
         "lowStructure": 20,
@@ -177,222 +177,58 @@
         "candleQuality": 20,
         "turnover": 15,
         "moneyFlow": 20,
-        "sector": 17
+        "sector": 9
       },
       "metrics": {
-        "dropFrom60High": -17.86,
-        "breakPct": 6.86,
-        "recent5LowPremium": -3.82,
-        "volumeRatio": 5.88,
-        "entityStrength": 79.7,
-        "closePosition": 83.1,
-        "turnover": 14.96,
-        "mainNetInflow": 11541.5,
-        "mainNetRatio": 18.05,
-        "sectorFiveDayChange": 6.91
+        "dropFrom60High": -12.98,
+        "breakPct": 9.1,
+        "recent5LowPremium": -3.64,
+        "volumeRatio": 4.73,
+        "entityStrength": 77.5,
+        "closePosition": 82.4,
+        "turnover": 11.86,
+        "mainNetInflow": 4648.7,
+        "mainNetRatio": 16.99,
+        "sectorFiveDayChange": 6.05
       },
       "tradePlan": {
-        "buyPrice": 3.35,
-        "aggressiveBuyPrice": 3.45,
+        "buyPrice": 18.28,
+        "aggressiveBuyPrice": 18.85,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 3.22,
-        "structuralStop": 2.96,
-        "takeProfit1": 3.69,
-        "takeProfit2": 4.02,
+        "stopLoss": 17.55,
+        "structuralStop": 16.18,
+        "takeProfit1": 20.11,
+        "takeProfit2": 21.94,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -17.9%，近5日低点较前60日低点 -3.8%",
-        "前低关系 6.9%，假跌破作为加分项而非一票否决",
-        "当日涨幅 16.6%，量比 5.88",
-        "实体强度 79.7%，收盘位置 83.1%",
-        "主力净流入 11541.5 万元，行业5日强度排名前 12%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+        "板块放量弹性：距60日高点 -13%，近5日低点较前60日低点 -3.6%",
+        "前低关系 9.1%，假跌破作为加分项而非一票否决",
+        "当日涨幅 16.5%，量比 4.73",
+        "实体强度 77.5%，收盘位置 82.4%",
+        "主力净流入 4648.7 万元，行业5日强度排名前 48%",
+        "公告风控接口本次未能确认，需人工复核"
       ],
-      "recentAnnouncements": [
-        {
-          "title": "向日葵:关于子公司获得药品注册证书的公告",
-          "date": "2026-06-26",
-          "url": "https://data.eastmoney.com/notices/detail/300111/AN202606261824614980.html"
-        },
-        {
-          "title": "向日葵:关于2025年年度股东会决议的公告",
-          "date": "2026-05-13",
-          "url": "https://data.eastmoney.com/notices/detail/300111/AN202605131822277850.html"
-        },
-        {
-          "title": "向日葵:上海市锦天城律师事务所关于浙江向日葵大健康股份有限公司2025年年度股东会的法律意见书",
-          "date": "2026-05-13",
-          "url": "https://data.eastmoney.com/notices/detail/300111/AN202605131822277851.html"
-        }
-      ]
+      "recentAnnouncements": []
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-02",
-      "code": "605189",
-      "name": "富春染织",
-      "industry": "纺织制造",
-      "industryRank": 57,
-      "industryRankPercent": 57,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 142,
-      "estimatedWinRate": 76,
-      "latestPrice": 14.59,
-      "dailyChange": 10.03,
-      "scores": {
-        "oversold": 17,
-        "lowStructure": 17,
-        "falseBreak": 8,
-        "priceRise": 20,
-        "volume": 20,
-        "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 20,
-        "sector": 5
-      },
-      "metrics": {
-        "dropFrom60High": -29.55,
-        "breakPct": 11.23,
-        "recent5LowPremium": -6.06,
-        "volumeRatio": 4.37,
-        "entityStrength": 84.1,
-        "closePosition": 100,
-        "turnover": 10.64,
-        "mainNetInflow": 6284.9,
-        "mainNetRatio": 17.6,
-        "sectorFiveDayChange": 1.36
-      },
-      "tradePlan": {
-        "buyPrice": 14.15,
-        "aggressiveBuyPrice": 14.59,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 13.58,
-        "structuralStop": 13.27,
-        "takeProfit1": 15.57,
-        "takeProfit2": 16.98,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -29.6%，近5日低点较前60日低点 -6.1%",
-        "前低关系 11.2%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 4.37",
-        "实体强度 84.1%，收盘位置 100%",
-        "主力净流入 6284.9 万元，行业5日强度排名前 57%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "富春染织:富春染织股票交易异常波动公告",
-          "date": "2026-07-03",
-          "url": "https://data.eastmoney.com/notices/detail/605189/AN202607021826659710.html"
-        },
-        {
-          "title": "富春染织:富春染织关于为控股子公司提供担保的公告",
-          "date": "2026-07-01",
-          "url": "https://data.eastmoney.com/notices/detail/605189/AN202606301826583426.html"
-        },
-        {
-          "title": "富春染织:富春染织关于完成工商变更登记并换发营业执照的公告",
-          "date": "2026-06-26",
-          "url": "https://data.eastmoney.com/notices/detail/605189/AN202606251823845102.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-02",
-      "code": "603630",
-      "name": "拉芳家化",
-      "industry": "化妆品",
-      "industryRank": 16,
-      "industryRankPercent": 16,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 138,
-      "estimatedWinRate": 74.8,
-      "latestPrice": 14.18,
-      "dailyChange": 5.04,
-      "scores": {
-        "oversold": 17,
-        "lowStructure": 20,
-        "falseBreak": 8,
-        "priceRise": 8,
-        "volume": 17,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 20,
-        "sector": 17
-      },
-      "metrics": {
-        "dropFrom60High": -20.02,
-        "breakPct": 10.47,
-        "recent5LowPremium": -1.95,
-        "volumeRatio": 2.4,
-        "entityStrength": 60.2,
-        "closePosition": 81.5,
-        "turnover": 6.03,
-        "mainNetInflow": 1957.2,
-        "mainNetRatio": 10.28,
-        "sectorFiveDayChange": 5.69
-      },
-      "tradePlan": {
-        "buyPrice": 13.86,
-        "aggressiveBuyPrice": 14.18,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 13.31,
-        "structuralStop": 13.3,
-        "takeProfit1": 15.25,
-        "takeProfit2": 16.63,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -20%，近5日低点较前60日低点 -2%",
-        "前低关系 10.5%，假跌破作为加分项而非一票否决",
-        "当日涨幅 5%，量比 2.4",
-        "实体强度 60.2%，收盘位置 81.5%",
-        "主力净流入 1957.2 万元，行业5日强度排名前 16%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "拉芳家化:关于控股股东部分股份补充质押的公告",
-          "date": "2026-07-02",
-          "url": "https://data.eastmoney.com/notices/detail/603630/AN202607011826629795.html"
-        },
-        {
-          "title": "拉芳家化:2025年年度股东会决议公告",
-          "date": "2026-05-30",
-          "url": "https://data.eastmoney.com/notices/detail/603630/AN202605291823018190.html"
-        },
-        {
-          "title": "拉芳家化:北京市中伦(深圳)律师事务所关于拉芳家化股份有限公司2025年年度股东会的法律意见书",
-          "date": "2026-05-30",
-          "url": "https://data.eastmoney.com/notices/detail/603630/AN202605291823018188.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-02",
-      "code": "002235",
-      "name": "安妮股份",
-      "industry": "造纸",
-      "industryRank": 43,
-      "industryRankPercent": 43,
+      "tradeDate": "2026-07-03",
+      "code": "300809",
+      "name": "华辰装备",
+      "industry": "通用设备",
+      "industryRank": 48,
+      "industryRankPercent": 48,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 136,
-      "estimatedWinRate": 74.2,
-      "latestPrice": 8.62,
-      "dailyChange": 9.25,
+      "totalScore": 139,
+      "estimatedWinRate": 75.1,
+      "latestPrice": 30.29,
+      "dailyChange": 11.73,
       "scores": {
         "oversold": 22,
-        "lowStructure": 17,
+        "lowStructure": 20,
         "falseBreak": 8,
         "priceRise": 17,
         "volume": 8,
@@ -402,51 +238,199 @@
         "sector": 9
       },
       "metrics": {
-        "dropFrom60High": -32.02,
-        "breakPct": 3.85,
-        "recent5LowPremium": -2.84,
-        "volumeRatio": 1.32,
-        "entityStrength": 96.3,
-        "closePosition": 97.6,
-        "turnover": 10.04,
-        "mainNetInflow": 8400.4,
-        "mainNetRatio": 18.03,
-        "sectorFiveDayChange": 2.1
+        "dropFrom60High": -30.37,
+        "breakPct": 6.55,
+        "recent5LowPremium": -5.17,
+        "volumeRatio": 1.49,
+        "entityStrength": 86.6,
+        "closePosition": 86.6,
+        "turnover": 10.46,
+        "mainNetInflow": 5253.2,
+        "mainNetRatio": 11.45,
+        "sectorFiveDayChange": 6.05
       },
       "tradePlan": {
-        "buyPrice": 8.36,
-        "aggressiveBuyPrice": 8.62,
+        "buyPrice": 29.38,
+        "aggressiveBuyPrice": 30.29,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 8.03,
-        "structuralStop": 7.82,
-        "takeProfit1": 9.2,
-        "takeProfit2": 10.03,
+        "stopLoss": 28.2,
+        "structuralStop": 26.99,
+        "takeProfit1": 32.32,
+        "takeProfit2": 35.26,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -32%，近5日低点较前60日低点 -2.8%",
-        "前低关系 3.9%，假跌破作为加分项而非一票否决",
-        "当日涨幅 9.3%，量比 1.32",
-        "实体强度 96.3%，收盘位置 97.6%",
-        "主力净流入 8400.4 万元，行业5日强度排名前 43%",
+        "板块放量弹性：距60日高点 -30.4%，近5日低点较前60日低点 -5.2%",
+        "前低关系 6.6%，假跌破作为加分项而非一票否决",
+        "当日涨幅 11.7%，量比 1.49",
+        "实体强度 86.6%，收盘位置 86.6%",
+        "主力净流入 5253.2 万元，行业5日强度排名前 48%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "安妮股份:厦门安妮股份有限公司2026年第一次临时股东会决议公告",
-          "date": "2026-06-30",
-          "url": "https://data.eastmoney.com/notices/detail/002235/AN202606291826550141.html"
+          "title": "华辰装备:华辰装备2025年年度权益分派实施公告",
+          "date": "2026-06-29",
+          "url": "https://data.eastmoney.com/notices/detail/300809/AN202606291826535264.html"
         },
         {
-          "title": "安妮股份:北京盈科(厦门)律师事务所关于厦门安妮股份有限公司2026年第一次临时股东会的法律意见书",
-          "date": "2026-06-30",
-          "url": "https://data.eastmoney.com/notices/detail/002235/AN202606291826550138.html"
+          "title": "华辰装备:华辰装备关于募集资金专户完成注销的公告",
+          "date": "2026-06-16",
+          "url": "https://data.eastmoney.com/notices/detail/300809/AN202606161823603449.html"
         },
         {
-          "title": "安妮股份:关于向金融机构增加申请综合授信额度的公告",
-          "date": "2026-06-13",
-          "url": "https://data.eastmoney.com/notices/detail/002235/AN202606121823515781.html"
+          "title": "华辰装备:北京市金杜律师事务所上海分所关于华辰精密装备(昆山)股份有限公司2025年年度股东会之法律意见书",
+          "date": "2026-05-15",
+          "url": "https://data.eastmoney.com/notices/detail/300809/AN202605151822351609.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-03",
+      "code": "300952",
+      "name": "恒辉安防",
+      "industry": "服装家纺",
+      "industryRank": 43,
+      "industryRankPercent": 43,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 139,
+      "estimatedWinRate": 75.1,
+      "latestPrice": 20.24,
+      "dailyChange": 12.76,
+      "scores": {
+        "oversold": 22,
+        "lowStructure": 20,
+        "falseBreak": 8,
+        "priceRise": 17,
+        "volume": 17,
+        "candleQuality": 14,
+        "turnover": 15,
+        "moneyFlow": 17,
+        "sector": 9
+      },
+      "metrics": {
+        "dropFrom60High": -31.15,
+        "breakPct": 8.42,
+        "recent5LowPremium": -2.98,
+        "volumeRatio": 2.48,
+        "entityStrength": 66,
+        "closePosition": 70.8,
+        "turnover": 12.09,
+        "mainNetInflow": 2112.7,
+        "mainNetRatio": 5.94,
+        "sectorFiveDayChange": 6.25
+      },
+      "tradePlan": {
+        "buyPrice": 19.63,
+        "aggressiveBuyPrice": 20.24,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 18.84,
+        "structuralStop": 18.03,
+        "takeProfit1": 21.59,
+        "takeProfit2": 23.56,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -31.1%，近5日低点较前60日低点 -3%",
+        "前低关系 8.4%，假跌破作为加分项而非一票否决",
+        "当日涨幅 12.8%，量比 2.48",
+        "实体强度 66%，收盘位置 70.8%",
+        "主力净流入 2112.7 万元，行业5日强度排名前 43%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "恒辉安防:关于独立董事自愿放弃领取独立董事津贴的公告",
+          "date": "2026-06-27",
+          "url": "https://data.eastmoney.com/notices/detail/300952/AN202606261824763028.html"
+        },
+        {
+          "title": "恒辉安防:关于控股子公司减资暨关联交易的公告",
+          "date": "2026-06-27",
+          "url": "https://data.eastmoney.com/notices/detail/300952/AN202606261824763038.html"
+        },
+        {
+          "title": "恒辉安防:关于召开2026年第三次临时股东会的通知",
+          "date": "2026-06-27",
+          "url": "https://data.eastmoney.com/notices/detail/300952/AN202606261824763021.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-03",
+      "code": "688311",
+      "name": "盟升电子",
+      "industry": "军工电子Ⅱ",
+      "industryRank": 57,
+      "industryRankPercent": 57,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 138,
+      "estimatedWinRate": 74.8,
+      "latestPrice": 31.15,
+      "dailyChange": 19.99,
+      "scores": {
+        "oversold": 17,
+        "lowStructure": 20,
+        "falseBreak": 8,
+        "priceRise": 20,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 5
+      },
+      "metrics": {
+        "dropFrom60High": -23.84,
+        "breakPct": 8.51,
+        "recent5LowPremium": -1.92,
+        "volumeRatio": 2.46,
+        "entityStrength": 100,
+        "closePosition": 100,
+        "turnover": 6.11,
+        "mainNetInflow": 6455,
+        "mainNetRatio": 20.83,
+        "sectorFiveDayChange": 5.45
+      },
+      "tradePlan": {
+        "buyPrice": 30.22,
+        "aggressiveBuyPrice": 31.15,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 29.01,
+        "structuralStop": 26.01,
+        "takeProfit1": 33.24,
+        "takeProfit2": 36.26,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -23.8%，近5日低点较前60日低点 -1.9%",
+        "前低关系 8.5%，假跌破作为加分项而非一票否决",
+        "当日涨幅 20%，量比 2.46",
+        "实体强度 100%，收盘位置 100%",
+        "主力净流入 6455 万元，行业5日强度排名前 57%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "盟升电子:关于2025年限制性股票激励计划首次授予第一个归属期归属结果暨股票上市公告",
+          "date": "2026-06-25",
+          "url": "https://data.eastmoney.com/notices/detail/688311/AN202606241823814079.html"
+        },
+        {
+          "title": "盟升电子:泰和泰律师事务所关于成都盟升电子技术股份有限公司2025年限制性股票激励计划首次授予部分第一个归属期归属条件成就及部分限制性股票作废相关事项之法律意见书",
+          "date": "2026-05-30",
+          "url": "https://data.eastmoney.com/notices/detail/688311/AN202605291823011354.html"
+        },
+        {
+          "title": "盟升电子:关于2025年限制性股票激励计划首次授予第一个归属期符合归属条件的公告",
+          "date": "2026-05-30",
+          "url": "https://data.eastmoney.com/notices/detail/688311/AN202605291823011353.html"
         }
       ]
     }
