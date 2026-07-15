@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/7/14 17:28:31",
-  "tradeDate": "2026-07-14",
+  "generatedAt": "2026/7/15 17:32:59",
+  "tradeDate": "2026-07-15",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 46,
-  "signalCount": 33,
+  "scannedCount": 78,
+  "signalCount": 53,
   "riskReview": {
-    "announcementCheckedCount": 46,
-    "excludedByAnnouncement": 8,
+    "announcementCheckedCount": 78,
+    "excludedByAnnouncement": 17,
     "announcementRiskSamples": [
       {
-        "code": "300332",
-        "name": "天壕能源",
-        "title": "天壕能源:关于披露预案暨公司股票复牌及一般风险提示性公告",
-        "date": "2026-07-09",
-        "url": "https://data.eastmoney.com/notices/detail/300332/AN202607081826820317.html"
+        "code": "300255",
+        "name": "常山药业",
+        "title": "深交所:常山药业_监管函",
+        "date": "2026-05-11",
+        "url": "https://data.eastmoney.com/notices/detail/300255/AN202605111822163204.html"
       },
       {
-        "code": "301393",
-        "name": "昊帆生物",
-        "title": "昊帆生物:关于部分募集资金账户解除冻结的公告",
-        "date": "2026-07-06",
-        "url": "https://data.eastmoney.com/notices/detail/301393/AN202607061826746505.html"
+        "code": "603387",
+        "name": "基蛋生物",
+        "title": "基蛋生物:公证天业关于对基蛋生物2025年度财务报表发表非标准审计意见的专项说明",
+        "date": "2026-04-30",
+        "url": "https://data.eastmoney.com/notices/detail/603387/AN202604291821767429.html"
       },
       {
-        "code": "002826",
-        "name": "易明医药",
-        "title": "易明医药:关于持股5%以上股东减持股份的预披露公告",
-        "date": "2026-05-08",
-        "url": "https://data.eastmoney.com/notices/detail/002826/AN202605071822038819.html"
+        "code": "301333",
+        "name": "诺思格",
+        "title": "诺思格:关于控股股东未减持公司股份并提前终止减持计划的公告",
+        "date": "2026-06-15",
+        "url": "https://data.eastmoney.com/notices/detail/301333/AN202606151823571573.html"
       },
       {
-        "code": "600121",
-        "name": "郑州煤电",
-        "title": "郑州煤电:郑州煤电股份有限公司2026年半年度业绩预亏公告",
+        "code": "600199",
+        "name": "金种子酒",
+        "title": "金种子酒:2026年半年度业绩预亏公告",
         "date": "2026-07-15",
-        "url": "https://data.eastmoney.com/notices/detail/600121/AN202607141826957508.html"
+        "url": "https://data.eastmoney.com/notices/detail/600199/AN202607141826957872.html"
       },
       {
-        "code": "000788",
-        "name": "北大医药",
-        "title": "北大医药:关于持股5%以上股东减持计划时间届满暨减持股份实施情况的公告",
+        "code": "688356",
+        "name": "键凯科技",
+        "title": "键凯科技:持股5%以上股东减持股份计划公告",
         "date": "2026-05-12",
-        "url": "https://data.eastmoney.com/notices/detail/000788/AN202605111822161119.html"
+        "url": "https://data.eastmoney.com/notices/detail/688356/AN202605111822159883.html"
       }
     ],
     "riskKeywords": [
@@ -82,23 +82,23 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-14",
-      "code": "603619",
-      "name": "中曼石油",
-      "industry": "油服工程",
-      "industryRank": 4,
-      "industryRankPercent": 4,
+      "tradeDate": "2026-07-15",
+      "code": "300683",
+      "name": "海特生物",
+      "industry": "医疗服务",
+      "industryRank": 2,
+      "industryRankPercent": 2,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 165,
-      "estimatedWinRate": 82,
-      "latestPrice": 20.66,
-      "dailyChange": 10.01,
+      "totalScore": 143,
+      "estimatedWinRate": 76.3,
+      "latestPrice": 29.5,
+      "dailyChange": 16.51,
       "scores": {
-        "oversold": 25,
-        "lowStructure": 20,
+        "oversold": 17,
+        "lowStructure": 9,
         "falseBreak": 8,
-        "priceRise": 20,
+        "priceRise": 17,
         "volume": 17,
         "candleQuality": 20,
         "turnover": 15,
@@ -106,147 +106,73 @@
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -41.32,
-        "breakPct": 7.78,
-        "recent5LowPremium": -1.27,
-        "volumeRatio": 2.59,
-        "entityStrength": 82.9,
-        "closePosition": 100,
-        "turnover": 13.42,
-        "mainNetInflow": 17647.9,
-        "mainNetRatio": 14.19,
-        "sectorFiveDayChange": 13.39
+        "dropFrom60High": -24.67,
+        "breakPct": 11.03,
+        "recent5LowPremium": 4.34,
+        "volumeRatio": 2.71,
+        "entityStrength": 83.8,
+        "closePosition": 88.4,
+        "turnover": 15.88,
+        "mainNetInflow": 6756.6,
+        "mainNetRatio": 12.44,
+        "sectorFiveDayChange": 13.06
       },
       "tradePlan": {
-        "buyPrice": 20.08,
-        "aggressiveBuyPrice": 20.66,
+        "buyPrice": 28.61,
+        "aggressiveBuyPrice": 29.5,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 19.28,
-        "structuralStop": 19.26,
-        "takeProfit1": 22.09,
-        "takeProfit2": 24.1,
+        "stopLoss": 27.47,
+        "structuralStop": 25.07,
+        "takeProfit1": 31.47,
+        "takeProfit2": 34.33,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -41.3%，近5日低点较前60日低点 -1.3%",
-        "前低关系 7.8%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 2.59",
-        "实体强度 82.9%，收盘位置 100%",
-        "主力净流入 17647.9 万元，行业5日强度排名前 4%",
+        "低位放量反弹：距60日高点 -24.7%，近5日低点较前60日低点 4.3%",
+        "前低关系 11%，假跌破作为加分项而非一票否决",
+        "当日涨幅 16.5%，量比 2.71",
+        "实体强度 83.8%，收盘位置 88.4%",
+        "主力净流入 6756.6 万元，行业5日强度排名前 2%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "中曼石油:中曼石油2026年半年度业绩预减公告",
-          "date": "2026-07-15",
-          "url": "https://data.eastmoney.com/notices/detail/603619/AN202607141826958411.html"
-        },
-        {
-          "title": "中曼石油:中曼石油关于2026年6月对外担保的进展公告",
-          "date": "2026-07-04",
-          "url": "https://data.eastmoney.com/notices/detail/603619/AN202607031826696152.html"
-        },
-        {
-          "title": "中曼石油:中曼石油关于境外子公司发行境外债券取得国家发改委审核登记证明的公告",
-          "date": "2026-07-02",
-          "url": "https://data.eastmoney.com/notices/detail/603619/AN202607011826633181.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-14",
-      "code": "301408",
-      "name": "华人健康",
-      "industry": "医药商业",
-      "industryRank": 7,
-      "industryRankPercent": 7,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 159,
-      "estimatedWinRate": 81.3,
-      "latestPrice": 15.59,
-      "dailyChange": 10.18,
-      "scores": {
-        "oversold": 22,
-        "lowStructure": 17,
-        "falseBreak": 14,
-        "priceRise": 17,
-        "volume": 17,
-        "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 17,
-        "sector": 20
-      },
-      "metrics": {
-        "dropFrom60High": -32.07,
-        "breakPct": 1.17,
-        "recent5LowPremium": -0.51,
-        "volumeRatio": 2.52,
-        "entityStrength": 66.4,
-        "closePosition": 80.2,
-        "turnover": 14.82,
-        "mainNetInflow": 4949.6,
-        "mainNetRatio": 9.63,
-        "sectorFiveDayChange": 7.06
-      },
-      "tradePlan": {
-        "buyPrice": 15.12,
-        "aggressiveBuyPrice": 15.59,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 14.52,
-        "structuralStop": 13.85,
-        "takeProfit1": 16.63,
-        "takeProfit2": 18.14,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -32.1%，近5日低点较前60日低点 -0.5%",
-        "前低关系 1.2%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10.2%，量比 2.52",
-        "实体强度 66.4%，收盘位置 80.2%",
-        "主力净流入 4949.6 万元，行业5日强度排名前 7%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "华人健康:关于公司控股股东部分股份解除质押的公告",
+          "title": "300683海特生物投资者关系管理信息20260710",
           "date": "2026-07-10",
-          "url": "https://data.eastmoney.com/notices/detail/301408/AN202607101826875702.html"
+          "url": "https://data.eastmoney.com/notices/detail/300683/AN202607101826875695.html"
         },
         {
-          "title": "华人健康:关于全资子公司收到药品注册受理通知书的公告",
-          "date": "2026-07-07",
-          "url": "https://data.eastmoney.com/notices/detail/301408/AN202607071826776877.html"
+          "title": "海特生物:关于参加湖北辖区上市公司2026年投资者集体接待日活动暨2025年度业绩说明会的公告",
+          "date": "2026-07-02",
+          "url": "https://data.eastmoney.com/notices/detail/300683/AN202607021826658586.html"
         },
         {
-          "title": "华人健康:关于公司控股股东部分股份质押的公告",
-          "date": "2026-06-26",
-          "url": "https://data.eastmoney.com/notices/detail/301408/AN202606261824614981.html"
+          "title": "海特生物:北京高文(武汉)律师事务所关于公司2025年年度股东会的法律意见书",
+          "date": "2026-05-20",
+          "url": "https://data.eastmoney.com/notices/detail/300683/AN202605201822498592.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-14",
-      "code": "300191",
-      "name": "潜能恒信",
-      "industry": "油服工程",
-      "industryRank": 4,
-      "industryRankPercent": 4,
+      "tradeDate": "2026-07-15",
+      "code": "600513",
+      "name": "联环药业",
+      "industry": "化学制药",
+      "industryRank": 5,
+      "industryRankPercent": 5,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 147,
-      "estimatedWinRate": 77.6,
-      "latestPrice": 30.35,
-      "dailyChange": 18.23,
+      "totalScore": 136,
+      "estimatedWinRate": 74.2,
+      "latestPrice": 19.15,
+      "dailyChange": 7.46,
       "scores": {
-        "oversold": 22,
-        "lowStructure": 14,
-        "falseBreak": 8,
-        "priceRise": 17,
+        "oversold": 17,
+        "lowStructure": 17,
+        "falseBreak": 3,
+        "priceRise": 13,
         "volume": 20,
         "candleQuality": 20,
         "turnover": 15,
@@ -254,199 +180,273 @@
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -35.44,
-        "breakPct": 6,
-        "recent5LowPremium": -4.65,
-        "volumeRatio": 3.57,
-        "entityStrength": 93,
-        "closePosition": 93.4,
-        "turnover": 16.73,
-        "mainNetInflow": 4057.6,
-        "mainNetRatio": 3.89,
-        "sectorFiveDayChange": 13.39
+        "dropFrom60High": -20.64,
+        "breakPct": 24.29,
+        "recent5LowPremium": -0.58,
+        "volumeRatio": 3.31,
+        "entityStrength": 86.1,
+        "closePosition": 86.1,
+        "turnover": 18.34,
+        "mainNetInflow": 3399.3,
+        "mainNetRatio": 3.49,
+        "sectorFiveDayChange": 9.02
       },
       "tradePlan": {
-        "buyPrice": 29.44,
-        "aggressiveBuyPrice": 30.35,
+        "buyPrice": 18.58,
+        "aggressiveBuyPrice": 19.15,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 28.26,
-        "structuralStop": 26.5,
-        "takeProfit1": 32.38,
-        "takeProfit2": 35.33,
+        "stopLoss": 17.84,
+        "structuralStop": 16.99,
+        "takeProfit1": 20.44,
+        "takeProfit2": 22.3,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -35.4%，近5日低点较前60日低点 -4.7%",
-        "前低关系 6%，假跌破作为加分项而非一票否决",
-        "当日涨幅 18.2%，量比 3.57",
-        "实体强度 93%，收盘位置 93.4%",
-        "主力净流入 4057.6 万元，行业5日强度排名前 4%",
+        "低位放量反弹：距60日高点 -20.6%，近5日低点较前60日低点 -0.6%",
+        "前低关系 24.3%，假跌破作为加分项而非一票否决",
+        "当日涨幅 7.5%，量比 3.31",
+        "实体强度 86.1%，收盘位置 86.1%",
+        "主力净流入 3399.3 万元，行业5日强度排名前 5%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "潜能恒信:关于蒙古Ergel-12区块重大合同进展公告",
-          "date": "2026-07-13",
-          "url": "https://data.eastmoney.com/notices/detail/300191/AN202607131826932961.html"
+          "title": "联环药业:联环药业2026年半年度业绩预告",
+          "date": "2026-07-15",
+          "url": "https://data.eastmoney.com/notices/detail/600513/AN202607141826955961.html"
         },
         {
-          "title": "潜能恒信:关于控股股东股权质押的公告",
-          "date": "2026-06-30",
-          "url": "https://data.eastmoney.com/notices/detail/300191/AN202606301826598068.html"
+          "title": "联环药业:关于江苏联环药业股份有限公司股票交易异常波动询证函的回复",
+          "date": "2026-07-14",
+          "url": "https://data.eastmoney.com/notices/detail/600513/AN202607131826929928.html"
         },
         {
-          "title": "潜能恒信:北京市君合律师事务所关于潜能恒信能源技术股份有限公司2026年第一次临时股东会的法律意见书",
-          "date": "2026-06-29",
-          "url": "https://data.eastmoney.com/notices/detail/300191/AN202606291826539198.html"
+          "title": "联环药业:联环药业股票交易异常波动的公告",
+          "date": "2026-07-14",
+          "url": "https://data.eastmoney.com/notices/detail/600513/AN202607131826929929.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-14",
-      "code": "000968",
-      "name": "蓝焰控股",
-      "industry": "油气开采Ⅱ",
-      "industryRank": 2,
-      "industryRankPercent": 2,
+      "tradeDate": "2026-07-15",
+      "code": "002365",
+      "name": "永安药业",
+      "industry": "化学制药",
+      "industryRank": 5,
+      "industryRankPercent": 5,
       "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 145,
-      "estimatedWinRate": 77,
-      "latestPrice": 7.04,
-      "dailyChange": 10,
+      "setupType": "板块放量弹性",
+      "totalScore": 130,
+      "estimatedWinRate": 72.3,
+      "latestPrice": 11.98,
+      "dailyChange": 10.01,
       "scores": {
-        "oversold": 17,
+        "oversold": 10,
+        "lowStructure": 9,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 20
+      },
+      "metrics": {
+        "dropFrom60High": -15.29,
+        "breakPct": 12.02,
+        "recent5LowPremium": 0.61,
+        "volumeRatio": 2.16,
+        "entityStrength": 77.6,
+        "closePosition": 100,
+        "turnover": 9.95,
+        "mainNetInflow": 4998.7,
+        "mainNetRatio": 17.58,
+        "sectorFiveDayChange": 9.02
+      },
+      "tradePlan": {
+        "buyPrice": 11.62,
+        "aggressiveBuyPrice": 11.98,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 11.16,
+        "structuralStop": 11,
+        "takeProfit1": 12.78,
+        "takeProfit2": 13.94,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 -15.3%，近5日低点较前60日低点 0.6%",
+        "前低关系 12%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 2.16",
+        "实体强度 77.6%，收盘位置 100%",
+        "主力净流入 4998.7 万元，行业5日强度排名前 5%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "永安药业:2026年半年度业绩预告",
+          "date": "2026-07-15",
+          "url": "https://data.eastmoney.com/notices/detail/002365/AN202607141826957262.html"
+        },
+        {
+          "title": "002365永安药业投资者关系管理信息20260709",
+          "date": "2026-07-09",
+          "url": "https://data.eastmoney.com/notices/detail/002365/AN202607091826850910.html"
+        },
+        {
+          "title": "永安药业:关于参加湖北辖区上市公司2026年投资者集体接待日活动暨2025年度业绩说明会的公告",
+          "date": "2026-07-02",
+          "url": "https://data.eastmoney.com/notices/detail/002365/AN202607011826630125.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-15",
+      "code": "002900",
+      "name": "哈三联",
+      "industry": "化学制药",
+      "industryRank": 5,
+      "industryRankPercent": 5,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 129,
+      "estimatedWinRate": 72,
+      "latestPrice": 11.19,
+      "dailyChange": 10.03,
+      "scores": {
+        "oversold": 4,
         "lowStructure": 9,
         "falseBreak": 8,
         "priceRise": 20,
-        "volume": 20,
+        "volume": 17,
         "candleQuality": 20,
         "turnover": 11,
         "moneyFlow": 20,
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -28.53,
-        "breakPct": 11.36,
-        "recent5LowPremium": 1.36,
-        "volumeRatio": 3.46,
-        "entityStrength": 97.9,
+        "dropFrom60High": -5.17,
+        "breakPct": 11.98,
+        "recent5LowPremium": 4.37,
+        "volumeRatio": 2.69,
+        "entityStrength": 95,
         "closePosition": 100,
-        "turnover": 6.96,
-        "mainNetInflow": 9438.4,
-        "mainNetRatio": 20.27,
-        "sectorFiveDayChange": 13.78
+        "turnover": 7.43,
+        "mainNetInflow": 4236,
+        "mainNetRatio": 32.4,
+        "sectorFiveDayChange": 9.02
       },
       "tradePlan": {
-        "buyPrice": 6.83,
-        "aggressiveBuyPrice": 7.04,
+        "buyPrice": 10.85,
+        "aggressiveBuyPrice": 11.19,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 6.56,
-        "structuralStop": 6.57,
-        "takeProfit1": 7.51,
-        "takeProfit2": 8.2,
+        "stopLoss": 10.42,
+        "structuralStop": 10,
+        "takeProfit1": 11.94,
+        "takeProfit2": 13.02,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -28.5%，近5日低点较前60日低点 1.4%",
-        "前低关系 11.4%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 3.46",
-        "实体强度 97.9%，收盘位置 100%",
-        "主力净流入 9438.4 万元，行业5日强度排名前 2%",
+        "板块放量弹性：距60日高点 -5.2%，近5日低点较前60日低点 4.4%",
+        "前低关系 12%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 2.69",
+        "实体强度 95%，收盘位置 100%",
+        "主力净流入 4236 万元，行业5日强度排名前 5%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "蓝焰控股:山西蓝焰控股股份有限公司关于与华新燃气集团有限公司签订股权托管协议之补充协议暨关联交易的公告",
-          "date": "2026-07-14",
-          "url": "https://data.eastmoney.com/notices/detail/000968/AN202607131826932875.html"
+          "title": "哈三联:2026年半年度业绩预告",
+          "date": "2026-07-15",
+          "url": "https://data.eastmoney.com/notices/detail/002900/AN202607141826963322.html"
         },
         {
-          "title": "蓝焰控股:第八届董事会第十一次会议决议公告",
-          "date": "2026-07-14",
-          "url": "https://data.eastmoney.com/notices/detail/000968/AN202607131826932874.html"
+          "title": "哈三联:关于公司控股股东、实际控制人部分股份解除质押及再质押的公告",
+          "date": "2026-06-02",
+          "url": "https://data.eastmoney.com/notices/detail/002900/AN202606011823127187.html"
         },
         {
-          "title": "蓝焰控股:山西蓝焰控股股份有限公司关于子公司获得政府补助款项的公告",
-          "date": "2026-07-07",
-          "url": "https://data.eastmoney.com/notices/detail/000968/AN202607061826749979.html"
+          "title": "哈三联:2025年年度股东会决议公告",
+          "date": "2026-05-20",
+          "url": "https://data.eastmoney.com/notices/detail/002900/AN202605191822449170.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-14",
-      "code": "002788",
-      "name": "鹭燕医药",
-      "industry": "医药商业",
-      "industryRank": 7,
-      "industryRankPercent": 7,
+      "tradeDate": "2026-07-15",
+      "code": "002891",
+      "name": "中宠股份",
+      "industry": "饲料",
+      "industryRank": 60,
+      "industryRankPercent": 60,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 135,
-      "estimatedWinRate": 73.8,
-      "latestPrice": 10.81,
-      "dailyChange": 7.24,
+      "totalScore": 129,
+      "estimatedWinRate": 72,
+      "latestPrice": 28.64,
+      "dailyChange": 9.98,
       "scores": {
         "oversold": 22,
         "lowStructure": 9,
-        "falseBreak": 8,
-        "priceRise": 13,
+        "falseBreak": 14,
+        "priceRise": 20,
         "volume": 12,
         "candleQuality": 20,
-        "turnover": 11,
+        "turnover": 7,
         "moneyFlow": 20,
-        "sector": 20
+        "sector": 5
       },
       "metrics": {
-        "dropFrom60High": -34.68,
-        "breakPct": 6.18,
-        "recent5LowPremium": 1.17,
-        "volumeRatio": 1.88,
-        "entityStrength": 77.6,
-        "closePosition": 85.7,
-        "turnover": 9.26,
-        "mainNetInflow": 4259.3,
-        "mainNetRatio": 11.34,
-        "sectorFiveDayChange": 7.06
+        "dropFrom60High": -33.52,
+        "breakPct": 2.7,
+        "recent5LowPremium": 2.47,
+        "volumeRatio": 1.61,
+        "entityStrength": 91.5,
+        "closePosition": 100,
+        "turnover": 3.08,
+        "mainNetInflow": 6072.9,
+        "mainNetRatio": 21.97,
+        "sectorFiveDayChange": 3.21
       },
       "tradePlan": {
-        "buyPrice": 10.49,
-        "aggressiveBuyPrice": 10.81,
+        "buyPrice": 27.78,
+        "aggressiveBuyPrice": 28.64,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 10.07,
-        "structuralStop": 9.97,
-        "takeProfit1": 11.54,
-        "takeProfit2": 12.59,
+        "stopLoss": 26.67,
+        "structuralStop": 25.82,
+        "takeProfit1": 30.56,
+        "takeProfit2": 33.34,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -34.7%，近5日低点较前60日低点 1.2%",
-        "前低关系 6.2%，假跌破作为加分项而非一票否决",
-        "当日涨幅 7.2%，量比 1.88",
-        "实体强度 77.6%，收盘位置 85.7%",
-        "主力净流入 4259.3 万元，行业5日强度排名前 7%",
+        "低位放量反弹：距60日高点 -33.5%，近5日低点较前60日低点 2.5%",
+        "前低关系 2.7%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.61",
+        "实体强度 91.5%，收盘位置 100%",
+        "主力净流入 6072.9 万元，行业5日强度排名前 60%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "鹭燕医药:2025年年度权益分派实施公告",
+          "title": "中宠股份:关于控股股东部分股份解除质押的公告",
           "date": "2026-07-03",
-          "url": "https://data.eastmoney.com/notices/detail/002788/AN202607021826663583.html"
+          "url": "https://data.eastmoney.com/notices/detail/002891/AN202607021826658588.html"
         },
         {
-          "title": "鹭燕医药:鹭燕医药股份有限公司投资者关系活动记录表20260515",
-          "date": "2026-05-15",
-          "url": "https://data.eastmoney.com/notices/detail/002788/AN202605151822349768.html"
+          "title": "中宠股份:关于回购公司股份的进展公告",
+          "date": "2026-07-02",
+          "url": "https://data.eastmoney.com/notices/detail/002891/AN202607011826630746.html"
         },
         {
-          "title": "鹭燕医药:2025年度股东会法律意见书",
-          "date": "2026-05-13",
-          "url": "https://data.eastmoney.com/notices/detail/002788/AN202605121822220044.html"
+          "title": "中宠股份:关于控股股东部分股份质押的公告",
+          "date": "2026-06-27",
+          "url": "https://data.eastmoney.com/notices/detail/002891/AN202606261824458001.html"
         }
       ]
     }
