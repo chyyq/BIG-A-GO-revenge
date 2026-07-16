@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/7/15 17:32:59",
-  "tradeDate": "2026-07-15",
+  "generatedAt": "2026/7/16 17:36:50",
+  "tradeDate": "2026-07-16",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 78,
-  "signalCount": 53,
+  "scannedCount": 37,
+  "signalCount": 22,
   "riskReview": {
-    "announcementCheckedCount": 78,
-    "excludedByAnnouncement": 17,
+    "announcementCheckedCount": 26,
+    "excludedByAnnouncement": 12,
     "announcementRiskSamples": [
       {
-        "code": "300255",
-        "name": "常山药业",
-        "title": "深交所:常山药业_监管函",
-        "date": "2026-05-11",
-        "url": "https://data.eastmoney.com/notices/detail/300255/AN202605111822163204.html"
-      },
-      {
-        "code": "603387",
-        "name": "基蛋生物",
-        "title": "基蛋生物:公证天业关于对基蛋生物2025年度财务报表发表非标准审计意见的专项说明",
-        "date": "2026-04-30",
-        "url": "https://data.eastmoney.com/notices/detail/603387/AN202604291821767429.html"
-      },
-      {
-        "code": "301333",
-        "name": "诺思格",
-        "title": "诺思格:关于控股股东未减持公司股份并提前终止减持计划的公告",
-        "date": "2026-06-15",
-        "url": "https://data.eastmoney.com/notices/detail/301333/AN202606151823571573.html"
-      },
-      {
-        "code": "600199",
-        "name": "金种子酒",
-        "title": "金种子酒:2026年半年度业绩预亏公告",
+        "code": "603108",
+        "name": "润达医疗",
+        "title": "润达医疗:2026年半年度业绩预亏公告",
         "date": "2026-07-15",
-        "url": "https://data.eastmoney.com/notices/detail/600199/AN202607141826957872.html"
+        "url": "https://data.eastmoney.com/notices/detail/603108/AN202607141826958436.html"
       },
       {
-        "code": "688356",
-        "name": "键凯科技",
-        "title": "键凯科技:持股5%以上股东减持股份计划公告",
-        "date": "2026-05-12",
-        "url": "https://data.eastmoney.com/notices/detail/688356/AN202605111822159883.html"
+        "code": "603567",
+        "name": "珍宝岛",
+        "title": "珍宝岛:关于黑龙江珍宝岛药业股份有限公司2025年度财务报表非标准审计意见的专项说明-中审亚太审字(2026)007413号——修订版",
+        "date": "2026-06-26",
+        "url": "https://data.eastmoney.com/notices/detail/603567/AN202606251823849120.html"
+      },
+      {
+        "code": "600882",
+        "name": "妙可蓝多",
+        "title": "妙可蓝多:关于使用公积金弥补亏损通知债权人的公告",
+        "date": "2026-05-19",
+        "url": "https://data.eastmoney.com/notices/detail/600882/AN202605181822402018.html"
+      },
+      {
+        "code": "002100",
+        "name": "天康生物",
+        "title": "天康生物:关于控股子公司公开发行股票并在北交所上市进展暨风险提示性公告",
+        "date": "2026-05-09",
+        "url": "https://data.eastmoney.com/notices/detail/002100/AN202605081822077737.html"
+      },
+      {
+        "code": "301293",
+        "name": "三博脑科",
+        "title": "三博脑科:关于持股5%以上股东减持股份的预披露公告",
+        "date": "2026-06-04",
+        "url": "https://data.eastmoney.com/notices/detail/301293/AN202606041823257404.html"
       }
     ],
     "riskKeywords": [
@@ -82,166 +82,192 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-15",
-      "code": "300683",
-      "name": "海特生物",
-      "industry": "医疗服务",
-      "industryRank": 2,
-      "industryRankPercent": 2,
+      "tradeDate": "2026-07-16",
+      "code": "300622",
+      "name": "博士眼镜",
+      "industry": "专业连锁Ⅱ",
+      "industryRank": 20,
+      "industryRankPercent": 20,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 143,
-      "estimatedWinRate": 76.3,
-      "latestPrice": 29.5,
-      "dailyChange": 16.51,
+      "totalScore": 154,
+      "estimatedWinRate": 79.7,
+      "latestPrice": 15.2,
+      "dailyChange": 11.52,
       "scores": {
         "oversold": 17,
-        "lowStructure": 9,
+        "lowStructure": 20,
         "falseBreak": 8,
         "priceRise": 17,
-        "volume": 17,
+        "volume": 20,
+        "candleQuality": 20,
+        "turnover": 15,
+        "moneyFlow": 20,
+        "sector": 17
+      },
+      "metrics": {
+        "dropFrom60High": -25.34,
+        "breakPct": 4.2,
+        "recent5LowPremium": -2.6,
+        "volumeRatio": 3.54,
+        "entityStrength": 81.2,
+        "closePosition": 81.2,
+        "turnover": 10.44,
+        "mainNetInflow": 3656.2,
+        "mainNetRatio": 10.87,
+        "sectorFiveDayChange": 9.31
+      },
+      "tradePlan": {
+        "buyPrice": 14.74,
+        "aggressiveBuyPrice": 15.2,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 14.15,
+        "structuralStop": 13.64,
+        "takeProfit1": 16.21,
+        "takeProfit2": 17.69,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -25.3%，近5日低点较前60日低点 -2.6%",
+        "前低关系 4.2%，假跌破作为加分项而非一票否决",
+        "当日涨幅 11.5%，量比 3.54",
+        "实体强度 81.2%，收盘位置 81.2%",
+        "主力净流入 3656.2 万元，行业5日强度排名前 20%",
+        "公告风控接口本次未能确认，需人工复核"
+      ],
+      "recentAnnouncements": []
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-16",
+      "code": "603716",
+      "name": "塞力医疗",
+      "industry": "医药商业",
+      "industryRank": 8,
+      "industryRankPercent": 8,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 146,
+      "estimatedWinRate": 77.3,
+      "latestPrice": 16.12,
+      "dailyChange": 10.03,
+      "scores": {
+        "oversold": 22,
+        "lowStructure": 9,
+        "falseBreak": 8,
+        "priceRise": 20,
+        "volume": 12,
         "candleQuality": 20,
         "turnover": 15,
         "moneyFlow": 20,
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -24.67,
-        "breakPct": 11.03,
-        "recent5LowPremium": 4.34,
-        "volumeRatio": 2.71,
-        "entityStrength": 83.8,
-        "closePosition": 88.4,
-        "turnover": 15.88,
-        "mainNetInflow": 6756.6,
-        "mainNetRatio": 12.44,
-        "sectorFiveDayChange": 13.06
+        "dropFrom60High": -31.61,
+        "breakPct": 10.6,
+        "recent5LowPremium": 1.16,
+        "volumeRatio": 1.81,
+        "entityStrength": 96.2,
+        "closePosition": 100,
+        "turnover": 12.13,
+        "mainNetInflow": 10478.7,
+        "mainNetRatio": 24.81,
+        "sectorFiveDayChange": 11.34
       },
       "tradePlan": {
-        "buyPrice": 28.61,
-        "aggressiveBuyPrice": 29.5,
+        "buyPrice": 15.64,
+        "aggressiveBuyPrice": 16.12,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 27.47,
-        "structuralStop": 25.07,
-        "takeProfit1": 31.47,
-        "takeProfit2": 34.33,
+        "stopLoss": 15.01,
+        "structuralStop": 14.29,
+        "takeProfit1": 17.2,
+        "takeProfit2": 18.77,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -24.7%，近5日低点较前60日低点 4.3%",
-        "前低关系 11%，假跌破作为加分项而非一票否决",
-        "当日涨幅 16.5%，量比 2.71",
-        "实体强度 83.8%，收盘位置 88.4%",
-        "主力净流入 6756.6 万元，行业5日强度排名前 2%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+        "低位放量反弹：距60日高点 -31.6%，近5日低点较前60日低点 1.2%",
+        "前低关系 10.6%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.81",
+        "实体强度 96.2%，收盘位置 100%",
+        "主力净流入 10478.7 万元，行业5日强度排名前 8%",
+        "公告风控接口本次未能确认，需人工复核"
       ],
-      "recentAnnouncements": [
-        {
-          "title": "300683海特生物投资者关系管理信息20260710",
-          "date": "2026-07-10",
-          "url": "https://data.eastmoney.com/notices/detail/300683/AN202607101826875695.html"
-        },
-        {
-          "title": "海特生物:关于参加湖北辖区上市公司2026年投资者集体接待日活动暨2025年度业绩说明会的公告",
-          "date": "2026-07-02",
-          "url": "https://data.eastmoney.com/notices/detail/300683/AN202607021826658586.html"
-        },
-        {
-          "title": "海特生物:北京高文(武汉)律师事务所关于公司2025年年度股东会的法律意见书",
-          "date": "2026-05-20",
-          "url": "https://data.eastmoney.com/notices/detail/300683/AN202605201822498592.html"
-        }
-      ]
+      "recentAnnouncements": []
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-15",
-      "code": "600513",
-      "name": "联环药业",
-      "industry": "化学制药",
-      "industryRank": 5,
-      "industryRankPercent": 5,
+      "tradeDate": "2026-07-16",
+      "code": "601595",
+      "name": "上海电影",
+      "industry": "影视院线",
+      "industryRank": 41,
+      "industryRankPercent": 41,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 136,
-      "estimatedWinRate": 74.2,
-      "latestPrice": 19.15,
-      "dailyChange": 7.46,
+      "totalScore": 138,
+      "estimatedWinRate": 74.8,
+      "latestPrice": 18.16,
+      "dailyChange": 9.99,
       "scores": {
         "oversold": 17,
-        "lowStructure": 17,
-        "falseBreak": 3,
-        "priceRise": 13,
-        "volume": 20,
+        "lowStructure": 20,
+        "falseBreak": 8,
+        "priceRise": 20,
+        "volume": 17,
         "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 11,
-        "sector": 20
+        "turnover": 7,
+        "moneyFlow": 20,
+        "sector": 9
       },
       "metrics": {
-        "dropFrom60High": -20.64,
-        "breakPct": 24.29,
-        "recent5LowPremium": -0.58,
-        "volumeRatio": 3.31,
-        "entityStrength": 86.1,
-        "closePosition": 86.1,
-        "turnover": 18.34,
-        "mainNetInflow": 3399.3,
-        "mainNetRatio": 3.49,
-        "sectorFiveDayChange": 9.02
+        "dropFrom60High": -29.88,
+        "breakPct": 5.03,
+        "recent5LowPremium": -3.08,
+        "volumeRatio": 2.33,
+        "entityStrength": 85.5,
+        "closePosition": 100,
+        "turnover": 3.21,
+        "mainNetInflow": 4893.6,
+        "mainNetRatio": 19.5,
+        "sectorFiveDayChange": 5.62
       },
       "tradePlan": {
-        "buyPrice": 18.58,
-        "aggressiveBuyPrice": 19.15,
+        "buyPrice": 17.62,
+        "aggressiveBuyPrice": 18.16,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 17.84,
-        "structuralStop": 16.99,
-        "takeProfit1": 20.44,
-        "takeProfit2": 22.3,
+        "stopLoss": 16.92,
+        "structuralStop": 16.5,
+        "takeProfit1": 19.38,
+        "takeProfit2": 21.14,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -20.6%，近5日低点较前60日低点 -0.6%",
-        "前低关系 24.3%，假跌破作为加分项而非一票否决",
-        "当日涨幅 7.5%，量比 3.31",
-        "实体强度 86.1%，收盘位置 86.1%",
-        "主力净流入 3399.3 万元，行业5日强度排名前 5%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+        "低位放量反弹：距60日高点 -29.9%，近5日低点较前60日低点 -3.1%",
+        "前低关系 5%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 2.33",
+        "实体强度 85.5%，收盘位置 100%",
+        "主力净流入 4893.6 万元，行业5日强度排名前 41%",
+        "公告风控接口本次未能确认，需人工复核"
       ],
-      "recentAnnouncements": [
-        {
-          "title": "联环药业:联环药业2026年半年度业绩预告",
-          "date": "2026-07-15",
-          "url": "https://data.eastmoney.com/notices/detail/600513/AN202607141826955961.html"
-        },
-        {
-          "title": "联环药业:关于江苏联环药业股份有限公司股票交易异常波动询证函的回复",
-          "date": "2026-07-14",
-          "url": "https://data.eastmoney.com/notices/detail/600513/AN202607131826929928.html"
-        },
-        {
-          "title": "联环药业:联环药业股票交易异常波动的公告",
-          "date": "2026-07-14",
-          "url": "https://data.eastmoney.com/notices/detail/600513/AN202607131826929929.html"
-        }
-      ]
+      "recentAnnouncements": []
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-15",
-      "code": "002365",
-      "name": "永安药业",
-      "industry": "化学制药",
-      "industryRank": 5,
-      "industryRankPercent": 5,
+      "tradeDate": "2026-07-16",
+      "code": "002788",
+      "name": "鹭燕医药",
+      "industry": "医药商业",
+      "industryRank": 8,
+      "industryRankPercent": 8,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 130,
-      "estimatedWinRate": 72.3,
-      "latestPrice": 11.98,
-      "dailyChange": 10.01,
+      "totalScore": 131,
+      "estimatedWinRate": 72.6,
+      "latestPrice": 12.3,
+      "dailyChange": 9.82,
       "scores": {
         "oversold": 10,
         "lowStructure": 9,
@@ -249,204 +275,114 @@
         "priceRise": 20,
         "volume": 17,
         "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 20,
+        "turnover": 15,
+        "moneyFlow": 17,
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -15.29,
-        "breakPct": 12.02,
-        "recent5LowPremium": 0.61,
-        "volumeRatio": 2.16,
-        "entityStrength": 77.6,
-        "closePosition": 100,
-        "turnover": 9.95,
-        "mainNetInflow": 4998.7,
-        "mainNetRatio": 17.58,
-        "sectorFiveDayChange": 9.02
+        "dropFrom60High": -19.87,
+        "breakPct": 15.76,
+        "recent5LowPremium": 2.88,
+        "volumeRatio": 2.79,
+        "entityStrength": 92.4,
+        "closePosition": 99.3,
+        "turnover": 16,
+        "mainNetInflow": 4363.2,
+        "mainNetRatio": 6.15,
+        "sectorFiveDayChange": 11.34
       },
       "tradePlan": {
-        "buyPrice": 11.62,
-        "aggressiveBuyPrice": 11.98,
+        "buyPrice": 11.93,
+        "aggressiveBuyPrice": 12.3,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 11.16,
-        "structuralStop": 11,
-        "takeProfit1": 12.78,
-        "takeProfit2": 13.94,
+        "stopLoss": 11.45,
+        "structuralStop": 10.87,
+        "takeProfit1": 13.12,
+        "takeProfit2": 14.32,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -15.3%，近5日低点较前60日低点 0.6%",
-        "前低关系 12%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 2.16",
-        "实体强度 77.6%，收盘位置 100%",
-        "主力净流入 4998.7 万元，行业5日强度排名前 5%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+        "板块放量弹性：距60日高点 -19.9%，近5日低点较前60日低点 2.9%",
+        "前低关系 15.8%，假跌破作为加分项而非一票否决",
+        "当日涨幅 9.8%，量比 2.79",
+        "实体强度 92.4%，收盘位置 99.3%",
+        "主力净流入 4363.2 万元，行业5日强度排名前 8%",
+        "公告风控接口本次未能确认，需人工复核"
       ],
-      "recentAnnouncements": [
-        {
-          "title": "永安药业:2026年半年度业绩预告",
-          "date": "2026-07-15",
-          "url": "https://data.eastmoney.com/notices/detail/002365/AN202607141826957262.html"
-        },
-        {
-          "title": "002365永安药业投资者关系管理信息20260709",
-          "date": "2026-07-09",
-          "url": "https://data.eastmoney.com/notices/detail/002365/AN202607091826850910.html"
-        },
-        {
-          "title": "永安药业:关于参加湖北辖区上市公司2026年投资者集体接待日活动暨2025年度业绩说明会的公告",
-          "date": "2026-07-02",
-          "url": "https://data.eastmoney.com/notices/detail/002365/AN202607011826630125.html"
-        }
-      ]
+      "recentAnnouncements": []
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-15",
-      "code": "002900",
-      "name": "哈三联",
-      "industry": "化学制药",
-      "industryRank": 5,
-      "industryRankPercent": 5,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 129,
-      "estimatedWinRate": 72,
-      "latestPrice": 11.19,
-      "dailyChange": 10.03,
-      "scores": {
-        "oversold": 4,
-        "lowStructure": 9,
-        "falseBreak": 8,
-        "priceRise": 20,
-        "volume": 17,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 20,
-        "sector": 20
-      },
-      "metrics": {
-        "dropFrom60High": -5.17,
-        "breakPct": 11.98,
-        "recent5LowPremium": 4.37,
-        "volumeRatio": 2.69,
-        "entityStrength": 95,
-        "closePosition": 100,
-        "turnover": 7.43,
-        "mainNetInflow": 4236,
-        "mainNetRatio": 32.4,
-        "sectorFiveDayChange": 9.02
-      },
-      "tradePlan": {
-        "buyPrice": 10.85,
-        "aggressiveBuyPrice": 11.19,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 10.42,
-        "structuralStop": 10,
-        "takeProfit1": 11.94,
-        "takeProfit2": 13.02,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "板块放量弹性：距60日高点 -5.2%，近5日低点较前60日低点 4.4%",
-        "前低关系 12%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 2.69",
-        "实体强度 95%，收盘位置 100%",
-        "主力净流入 4236 万元，行业5日强度排名前 5%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "哈三联:2026年半年度业绩预告",
-          "date": "2026-07-15",
-          "url": "https://data.eastmoney.com/notices/detail/002900/AN202607141826963322.html"
-        },
-        {
-          "title": "哈三联:关于公司控股股东、实际控制人部分股份解除质押及再质押的公告",
-          "date": "2026-06-02",
-          "url": "https://data.eastmoney.com/notices/detail/002900/AN202606011823127187.html"
-        },
-        {
-          "title": "哈三联:2025年年度股东会决议公告",
-          "date": "2026-05-20",
-          "url": "https://data.eastmoney.com/notices/detail/002900/AN202605191822449170.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-15",
-      "code": "002891",
-      "name": "中宠股份",
-      "industry": "饲料",
-      "industryRank": 60,
-      "industryRankPercent": 60,
+      "tradeDate": "2026-07-16",
+      "code": "300291",
+      "name": "百纳千成",
+      "industry": "影视院线",
+      "industryRank": 41,
+      "industryRankPercent": 41,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 129,
-      "estimatedWinRate": 72,
-      "latestPrice": 28.64,
-      "dailyChange": 9.98,
+      "totalScore": 131,
+      "estimatedWinRate": 72.6,
+      "latestPrice": 5.09,
+      "dailyChange": 6.49,
       "scores": {
         "oversold": 22,
-        "lowStructure": 9,
-        "falseBreak": 14,
-        "priceRise": 20,
-        "volume": 12,
-        "candleQuality": 20,
-        "turnover": 7,
-        "moneyFlow": 20,
-        "sector": 5
+        "lowStructure": 20,
+        "falseBreak": 8,
+        "priceRise": 13,
+        "volume": 17,
+        "candleQuality": 14,
+        "turnover": 11,
+        "moneyFlow": 17,
+        "sector": 9
       },
       "metrics": {
-        "dropFrom60High": -33.52,
-        "breakPct": 2.7,
-        "recent5LowPremium": 2.47,
-        "volumeRatio": 1.61,
-        "entityStrength": 91.5,
-        "closePosition": 100,
-        "turnover": 3.08,
-        "mainNetInflow": 6072.9,
-        "mainNetRatio": 21.97,
-        "sectorFiveDayChange": 3.21
+        "dropFrom60High": -30.08,
+        "breakPct": 4.7,
+        "recent5LowPremium": -1.97,
+        "volumeRatio": 2.07,
+        "entityStrength": 66.7,
+        "closePosition": 71.9,
+        "turnover": 6.4,
+        "mainNetInflow": 2894.1,
+        "mainNetRatio": 9.73,
+        "sectorFiveDayChange": 5.62
       },
       "tradePlan": {
-        "buyPrice": 27.78,
-        "aggressiveBuyPrice": 28.64,
+        "buyPrice": 4.94,
+        "aggressiveBuyPrice": 5.09,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 26.67,
-        "structuralStop": 25.82,
-        "takeProfit1": 30.56,
-        "takeProfit2": 33.34,
+        "stopLoss": 4.74,
+        "structuralStop": 4.68,
+        "takeProfit1": 5.43,
+        "takeProfit2": 5.93,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -33.5%，近5日低点较前60日低点 2.5%",
-        "前低关系 2.7%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 1.61",
-        "实体强度 91.5%，收盘位置 100%",
-        "主力净流入 6072.9 万元，行业5日强度排名前 60%",
+        "低位放量反弹：距60日高点 -30.1%，近5日低点较前60日低点 -2%",
+        "前低关系 4.7%，假跌破作为加分项而非一票否决",
+        "当日涨幅 6.5%，量比 2.07",
+        "实体强度 66.7%，收盘位置 71.9%",
+        "主力净流入 2894.1 万元，行业5日强度排名前 41%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "中宠股份:关于控股股东部分股份解除质押的公告",
-          "date": "2026-07-03",
-          "url": "https://data.eastmoney.com/notices/detail/002891/AN202607021826658588.html"
+          "title": "百纳千成:关于完成工商变更登记的公告",
+          "date": "2026-07-16",
+          "url": "https://data.eastmoney.com/notices/detail/300291/AN202607151826991545.html"
         },
         {
-          "title": "中宠股份:关于回购公司股份的进展公告",
-          "date": "2026-07-02",
-          "url": "https://data.eastmoney.com/notices/detail/002891/AN202607011826630746.html"
+          "title": "百纳千成:金诚同达关于百纳千成2026年第二次临时股东会的法律意见书",
+          "date": "2026-07-04",
+          "url": "https://data.eastmoney.com/notices/detail/300291/AN202607031826703558.html"
         },
         {
-          "title": "中宠股份:关于控股股东部分股份质押的公告",
-          "date": "2026-06-27",
-          "url": "https://data.eastmoney.com/notices/detail/002891/AN202606261824458001.html"
+          "title": "百纳千成:2026年第二次临时股东会决议公告",
+          "date": "2026-07-04",
+          "url": "https://data.eastmoney.com/notices/detail/300291/AN202607031826703507.html"
         }
       ]
     }
