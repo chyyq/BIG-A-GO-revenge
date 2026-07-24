@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/7/23 18:02:36",
-  "tradeDate": "2026-07-23",
+  "generatedAt": "2026/7/24 17:58:59",
+  "tradeDate": "2026-07-24",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,32 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 93,
-  "signalCount": 64,
+  "scannedCount": 14,
+  "signalCount": 7,
   "riskReview": {
-    "announcementCheckedCount": 88,
-    "excludedByAnnouncement": 15,
+    "announcementCheckedCount": 11,
+    "excludedByAnnouncement": 3,
     "announcementRiskSamples": [
       {
-        "code": "603727",
-        "name": "博迈科",
-        "title": "博迈科:博迈科海洋工程股份有限公司2026年半年度业绩预亏公告",
-        "date": "2026-07-15",
-        "url": "https://data.eastmoney.com/notices/detail/603727/AN202607141826955249.html"
+        "code": "688146",
+        "name": "中船特气",
+        "title": "中船特气:中船特气股票交易风险提示公告",
+        "date": "2026-07-10",
+        "url": "https://data.eastmoney.com/notices/detail/688146/AN202607091826848472.html"
       },
       {
-        "code": "600354",
-        "name": "敦煌种业",
-        "title": "敦煌种业:甘肃省敦煌种业集团股份有限公司关于重大诉讼的公告",
-        "date": "2026-06-02",
-        "url": "https://data.eastmoney.com/notices/detail/600354/AN202606011823128498.html"
+        "code": "300589",
+        "name": "江龙船艇",
+        "title": "江龙船艇:关于大股东的一致行动人权益变动触及1%及5%的整数倍、减持计划终止暨披露简式权益变动报告书的提示性公告",
+        "date": "2026-06-23",
+        "url": "https://data.eastmoney.com/notices/detail/300589/AN202606231823777962.html"
       },
       {
-        "code": "000533",
-        "name": "顺钠股份",
-        "title": "顺钠股份:关于持股5%以上股东减持股份计划预披露的公告",
-        "date": "2026-04-23",
-        "url": "https://data.eastmoney.com/notices/detail/000533/AN202604221821456483.html"
-      },
-      {
-        "code": "002300",
-        "name": "太阳电缆",
-        "title": "太阳电缆:关于持股5%以上股东减持股份预披露的公告",
-        "date": "2026-06-12",
-        "url": "https://data.eastmoney.com/notices/detail/002300/AN202606111823457153.html"
-      },
-      {
-        "code": "600268",
-        "name": "国电南自",
-        "title": "国电南自:国电南自关于仲裁进展的公告",
-        "date": "2026-05-23",
-        "url": "https://data.eastmoney.com/notices/detail/600268/AN202605221822687791.html"
+        "code": "600206",
+        "name": "有研新材",
+        "title": "有研新材:有研新材料股份有限公司股票交易风险提示公告",
+        "date": "2026-07-01",
+        "url": "https://data.eastmoney.com/notices/detail/600206/AN202606301826598583.html"
       }
     ],
     "riskKeywords": [
@@ -82,357 +68,341 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-23",
-      "code": "300062",
-      "name": "中能电气",
-      "industry": "电网设备",
-      "industryRank": 29,
-      "industryRankPercent": 29,
+      "tradeDate": "2026-07-24",
+      "code": "000670",
+      "name": "盈方微",
+      "industry": "其他电子Ⅱ",
+      "industryRank": 51,
+      "industryRankPercent": 51,
       "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 159,
-      "estimatedWinRate": 81.3,
-      "latestPrice": 6.35,
-      "dailyChange": 20.04,
+      "setupType": "板块放量弹性",
+      "totalScore": 134,
+      "estimatedWinRate": 73.5,
+      "latestPrice": 6.34,
+      "dailyChange": 10.07,
       "scores": {
         "oversold": 22,
         "lowStructure": 20,
         "falseBreak": 8,
         "priceRise": 20,
-        "volume": 20,
+        "volume": 8,
         "candleQuality": 20,
-        "turnover": 15,
+        "turnover": 11,
         "moneyFlow": 20,
-        "sector": 14
+        "sector": 5
       },
       "metrics": {
-        "dropFrom60High": -31.35,
-        "breakPct": 3.33,
-        "recent5LowPremium": -0.78,
-        "volumeRatio": 3.29,
-        "entityStrength": 99.1,
+        "dropFrom60High": -38.86,
+        "breakPct": 11.26,
+        "recent5LowPremium": -9.96,
+        "volumeRatio": 1.42,
+        "entityStrength": 95.8,
         "closePosition": 100,
-        "turnover": 11.6,
-        "mainNetInflow": 9484,
-        "mainNetRatio": 29.75,
-        "sectorFiveDayChange": 1.82
+        "turnover": 6.79,
+        "mainNetInflow": 8314.4,
+        "mainNetRatio": 24.3,
+        "sectorFiveDayChange": -1.73
       },
       "tradePlan": {
-        "buyPrice": 6.16,
-        "aggressiveBuyPrice": 6.35,
+        "buyPrice": 6.15,
+        "aggressiveBuyPrice": 6.34,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 5.91,
-        "structuralStop": 5.27,
-        "takeProfit1": 6.78,
-        "takeProfit2": 7.39,
+        "stopLoss": 5.9,
+        "structuralStop": 5.63,
+        "takeProfit1": 6.77,
+        "takeProfit2": 7.38,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -31.4%，近5日低点较前60日低点 -0.8%",
-        "前低关系 3.3%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 3.29",
-        "实体强度 99.1%，收盘位置 100%",
-        "主力净流入 9484 万元，行业5日强度排名前 29%",
+        "板块放量弹性：距60日高点 -38.9%，近5日低点较前60日低点 -10%",
+        "前低关系 11.3%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10.1%，量比 1.42",
+        "实体强度 95.8%，收盘位置 100%",
+        "主力净流入 8314.4 万元，行业5日强度排名前 51%",
         "公告风控接口本次未能确认，需人工复核"
       ],
       "recentAnnouncements": []
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-23",
-      "code": "300444",
-      "name": "双杰电气",
-      "industry": "电网设备",
-      "industryRank": 29,
-      "industryRankPercent": 29,
+      "tradeDate": "2026-07-24",
+      "code": "601606",
+      "name": "长城军工",
+      "industry": "地面兵装Ⅱ",
+      "industryRank": 2,
+      "industryRankPercent": 2,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 156,
-      "estimatedWinRate": 80.4,
-      "latestPrice": 9.54,
+      "totalScore": 128,
+      "estimatedWinRate": 71.7,
+      "latestPrice": 32.05,
+      "dailyChange": 9.99,
+      "scores": {
+        "oversold": 17,
+        "lowStructure": 9,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 12,
+        "candleQuality": 20,
+        "turnover": 7,
+        "moneyFlow": 20,
+        "sector": 20
+      },
+      "metrics": {
+        "dropFrom60High": -23.84,
+        "breakPct": 20.12,
+        "recent5LowPremium": 0.56,
+        "volumeRatio": 1.91,
+        "entityStrength": 70.3,
+        "closePosition": 100,
+        "turnover": 4.18,
+        "mainNetInflow": 24925.2,
+        "mainNetRatio": 26.11,
+        "sectorFiveDayChange": 10.11
+      },
+      "tradePlan": {
+        "buyPrice": 31.34,
+        "aggressiveBuyPrice": 32.05,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 30.09,
+        "structuralStop": 30.03,
+        "takeProfit1": 34.47,
+        "takeProfit2": 37.61,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -23.8%，近5日低点较前60日低点 0.6%",
+        "前低关系 20.1%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.91",
+        "实体强度 70.3%，收盘位置 100%",
+        "主力净流入 24925.2 万元，行业5日强度排名前 2%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "长城军工:安徽长城军工股份有限公司股票交易异常波动公告",
+          "date": "2026-07-25",
+          "url": "https://data.eastmoney.com/notices/detail/601606/AN202607241827321003.html"
+        },
+        {
+          "title": "长城军工:安徽长城军工股份有限公司2026年半年度业绩预告",
+          "date": "2026-07-14",
+          "url": "https://data.eastmoney.com/notices/detail/601606/AN202607131826927858.html"
+        },
+        {
+          "title": "长城军工:安徽长城军工股份有限公司2025年年度权益分派实施公告",
+          "date": "2026-07-09",
+          "url": "https://data.eastmoney.com/notices/detail/601606/AN202607081826816651.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-24",
+      "code": "688237",
+      "name": "超卓航科",
+      "industry": "航空装备Ⅱ",
+      "industryRank": 25,
+      "industryRankPercent": 25,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 110,
+      "estimatedWinRate": 66.1,
+      "latestPrice": 65.45,
       "dailyChange": 20,
       "scores": {
-        "oversold": 25,
-        "lowStructure": 17,
-        "falseBreak": 8,
+        "oversold": 4,
+        "lowStructure": 4,
+        "falseBreak": 3,
         "priceRise": 20,
         "volume": 17,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 17,
+        "sector": 14
+      },
+      "metrics": {
+        "dropFrom60High": 8.58,
+        "breakPct": 17.9,
+        "recent5LowPremium": 13.67,
+        "volumeRatio": 2.21,
+        "entityStrength": 90.1,
+        "closePosition": 100,
+        "turnover": 8.47,
+        "mainNetInflow": 3361.4,
+        "mainNetRatio": 7.38,
+        "sectorFiveDayChange": 0.22
+      },
+      "tradePlan": {
+        "buyPrice": 63.49,
+        "aggressiveBuyPrice": 65.45,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 60.95,
+        "structuralStop": 52.77,
+        "takeProfit1": 69.84,
+        "takeProfit2": 76.19,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 8.6%，近5日低点较前60日低点 13.7%",
+        "前低关系 17.9%，假跌破作为加分项而非一票否决",
+        "当日涨幅 20%，量比 2.21",
+        "实体强度 90.1%，收盘位置 100%",
+        "主力净流入 3361.4 万元，行业5日强度排名前 25%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "超卓航科:超卓航科关于控股股东、实际控制人拟发生变更的提示性公告",
+          "date": "2026-07-23",
+          "url": "https://data.eastmoney.com/notices/detail/688237/AN202607221827266242.html"
+        },
+        {
+          "title": "超卓航科:超卓航科关于控股股东、实际控制人筹划重大事项进展暨复牌公告",
+          "date": "2026-07-23",
+          "url": "https://data.eastmoney.com/notices/detail/688237/AN202607221827266243.html"
+        },
+        {
+          "title": "超卓航科:上海市锦天城律师事务所关于湖北超卓航空科技集团股份有限公司2022年限制性股票激励计划相关事项的法律意见书",
+          "date": "2026-07-18",
+          "url": "https://data.eastmoney.com/notices/detail/688237/AN202607171827055008.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-24",
+      "code": "688049",
+      "name": "炬芯科技",
+      "industry": "半导体",
+      "industryRank": 49,
+      "industryRankPercent": 49,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 103,
+      "estimatedWinRate": 63.9,
+      "latestPrice": 44.37,
+      "dailyChange": 7.04,
+      "scores": {
+        "oversold": 10,
+        "lowStructure": 20,
+        "falseBreak": 3,
+        "priceRise": 13,
+        "volume": 12,
+        "candleQuality": 8,
+        "turnover": 11,
+        "moneyFlow": 17,
+        "sector": 9
+      },
+      "metrics": {
+        "dropFrom60High": -16.31,
+        "breakPct": 20.38,
+        "recent5LowPremium": -7.48,
+        "volumeRatio": 1.78,
+        "entityStrength": 62.8,
+        "closePosition": 64.1,
+        "turnover": 9.21,
+        "mainNetInflow": 4228.5,
+        "mainNetRatio": 5.93,
+        "sectorFiveDayChange": -1.67
+      },
+      "tradePlan": {
+        "buyPrice": 43.04,
+        "aggressiveBuyPrice": 44.37,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 41.32,
+        "structuralStop": 40.93,
+        "takeProfit1": 47.34,
+        "takeProfit2": 51.65,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 -16.3%，近5日低点较前60日低点 -7.5%",
+        "前低关系 20.4%，假跌破作为加分项而非一票否决",
+        "当日涨幅 7%，量比 1.78",
+        "实体强度 62.8%，收盘位置 64.1%",
+        "主力净流入 4228.5 万元，行业5日强度排名前 49%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "炬芯科技:关于公司端侧AI芯片推广及研发进展的自愿性披露公告",
+          "date": "2026-07-21",
+          "url": "https://data.eastmoney.com/notices/detail/688049/AN202607201827148238.html"
+        },
+        {
+          "title": "炬芯科技:炬芯科技股份有限公司投资者关系活动记录表(2026-006)",
+          "date": "2026-07-02",
+          "url": "https://data.eastmoney.com/notices/detail/688049/AN202607021826661508.html"
+        },
+        {
+          "title": "炬芯科技:第三届董事会第三次会议决议公告",
+          "date": "2026-06-25",
+          "url": "https://data.eastmoney.com/notices/detail/688049/AN202606241823818093.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-24",
+      "code": "002156",
+      "name": "通富微电",
+      "industry": "半导体",
+      "industryRank": 49,
+      "industryRankPercent": 49,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 100,
+      "estimatedWinRate": 63,
+      "latestPrice": 76.64,
+      "dailyChange": 9.77,
+      "scores": {
+        "oversold": 4,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 17,
+        "volume": 8,
         "candleQuality": 20,
         "turnover": 15,
         "moneyFlow": 20,
-        "sector": 14
+        "sector": 9
       },
       "metrics": {
-        "dropFrom60High": -48.79,
-        "breakPct": 3.01,
-        "recent5LowPremium": -5.91,
-        "volumeRatio": 2.57,
-        "entityStrength": 95.8,
-        "closePosition": 100,
-        "turnover": 17.06,
-        "mainNetInflow": 17099,
-        "mainNetRatio": 18.11,
-        "sectorFiveDayChange": 1.82
+        "dropFrom60High": -9.52,
+        "breakPct": 41.64,
+        "recent5LowPremium": 23.32,
+        "volumeRatio": 1.43,
+        "entityStrength": 98.2,
+        "closePosition": 98.2,
+        "turnover": 17.36,
+        "mainNetInflow": 247176.9,
+        "mainNetRatio": 12.47,
+        "sectorFiveDayChange": -1.67
       },
       "tradePlan": {
-        "buyPrice": 9.25,
-        "aggressiveBuyPrice": 9.54,
+        "buyPrice": 74.34,
+        "aggressiveBuyPrice": 76.64,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 8.88,
-        "structuralStop": 7.87,
-        "takeProfit1": 10.18,
-        "takeProfit2": 11.1,
+        "stopLoss": 71.37,
+        "structuralStop": 68.03,
+        "takeProfit1": 81.77,
+        "takeProfit2": 89.21,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -48.8%，近5日低点较前60日低点 -5.9%",
-        "前低关系 3%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 2.57",
-        "实体强度 95.8%，收盘位置 100%",
-        "主力净流入 17099 万元，行业5日强度排名前 29%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+        "板块放量弹性：距60日高点 -9.5%，近5日低点较前60日低点 23.3%",
+        "前低关系 41.6%，假跌破作为加分项而非一票否决",
+        "当日涨幅 9.8%，量比 1.43",
+        "实体强度 98.2%，收盘位置 98.2%",
+        "主力净流入 247176.9 万元，行业5日强度排名前 49%",
+        "公告风控接口本次未能确认，需人工复核"
       ],
-      "recentAnnouncements": [
-        {
-          "title": "双杰电气:北京双杰电气股份有限公司关于与客户合作相关情况说明的公告",
-          "date": "2026-07-13",
-          "url": "https://data.eastmoney.com/notices/detail/300444/AN202607131826933897.html"
-        },
-        {
-          "title": "双杰电气:关于独立董事取得独立董事资格证书的公告",
-          "date": "2026-06-15",
-          "url": "https://data.eastmoney.com/notices/detail/300444/AN202606151823571579.html"
-        },
-        {
-          "title": "双杰电气:关于公司董事股份减持计划到期暨减持股份进展的公告",
-          "date": "2026-06-10",
-          "url": "https://data.eastmoney.com/notices/detail/300444/AN202606101823427143.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-23",
-      "code": "603191",
-      "name": "望变电气",
-      "industry": "电网设备",
-      "industryRank": 29,
-      "industryRankPercent": 29,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 155,
-      "estimatedWinRate": 80,
-      "latestPrice": 13.4,
-      "dailyChange": 10.02,
-      "scores": {
-        "oversold": 25,
-        "lowStructure": 20,
-        "falseBreak": 8,
-        "priceRise": 20,
-        "volume": 17,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 20,
-        "sector": 14
-      },
-      "metrics": {
-        "dropFrom60High": -44.31,
-        "breakPct": 4.28,
-        "recent5LowPremium": -9.81,
-        "volumeRatio": 2.18,
-        "entityStrength": 100,
-        "closePosition": 100,
-        "turnover": 5.33,
-        "mainNetInflow": 5319.1,
-        "mainNetRatio": 23.19,
-        "sectorFiveDayChange": 1.82
-      },
-      "tradePlan": {
-        "buyPrice": 13,
-        "aggressiveBuyPrice": 13.4,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 12.48,
-        "structuralStop": 12.18,
-        "takeProfit1": 14.3,
-        "takeProfit2": 15.6,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -44.3%，近5日低点较前60日低点 -9.8%",
-        "前低关系 4.3%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 2.18",
-        "实体强度 100%，收盘位置 100%",
-        "主力净流入 5319.1 万元，行业5日强度排名前 29%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "望变电气:2026年半年度业绩预告",
-          "date": "2026-07-15",
-          "url": "https://data.eastmoney.com/notices/detail/603191/AN202607141826958793.html"
-        },
-        {
-          "title": "望变电气:2026年6月对子公司提供担保的进展公告",
-          "date": "2026-07-04",
-          "url": "https://data.eastmoney.com/notices/detail/603191/AN202607031826694791.html"
-        },
-        {
-          "title": "望变电气:关于向特定对象发行股票申请获得上海证券交易所审核通过的公告",
-          "date": "2026-07-01",
-          "url": "https://data.eastmoney.com/notices/detail/603191/AN202606301826596727.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-23",
-      "code": "002358",
-      "name": "森源电气",
-      "industry": "电网设备",
-      "industryRank": 29,
-      "industryRankPercent": 29,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 155,
-      "estimatedWinRate": 80,
-      "latestPrice": 5.5,
-      "dailyChange": 10,
-      "scores": {
-        "oversold": 22,
-        "lowStructure": 17,
-        "falseBreak": 14,
-        "priceRise": 20,
-        "volume": 17,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 20,
-        "sector": 14
-      },
-      "metrics": {
-        "dropFrom60High": -31.34,
-        "breakPct": 2.04,
-        "recent5LowPremium": -1.21,
-        "volumeRatio": 2.78,
-        "entityStrength": 96,
-        "closePosition": 100,
-        "turnover": 5.21,
-        "mainNetInflow": 5991.7,
-        "mainNetRatio": 23.41,
-        "sectorFiveDayChange": 1.82
-      },
-      "tradePlan": {
-        "buyPrice": 5.33,
-        "aggressiveBuyPrice": 5.5,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 5.12,
-        "structuralStop": 5,
-        "takeProfit1": 5.86,
-        "takeProfit2": 6.4,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -31.3%，近5日低点较前60日低点 -1.2%",
-        "前低关系 2%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 2.78",
-        "实体强度 96%，收盘位置 100%",
-        "主力净流入 5991.7 万元，行业5日强度排名前 29%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "森源电气:森源电气2025年年度权益分派实施公告",
-          "date": "2026-07-10",
-          "url": "https://data.eastmoney.com/notices/detail/002358/AN202607091826844984.html"
-        },
-        {
-          "title": "森源电气:森源电气第八届董事会第十一次会议决议公告",
-          "date": "2026-07-02",
-          "url": "https://data.eastmoney.com/notices/detail/002358/AN202607011826638037.html"
-        },
-        {
-          "title": "森源电气:森源电气关于取消召开2026年第一次临时股东会的公告",
-          "date": "2026-07-02",
-          "url": "https://data.eastmoney.com/notices/detail/002358/AN202607011826638027.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-23",
-      "code": "002339",
-      "name": "积成电子",
-      "industry": "电网设备",
-      "industryRank": 29,
-      "industryRankPercent": 29,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 155,
-      "estimatedWinRate": 80,
-      "latestPrice": 7.04,
-      "dailyChange": 10,
-      "scores": {
-        "oversold": 22,
-        "lowStructure": 20,
-        "falseBreak": 8,
-        "priceRise": 20,
-        "volume": 20,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 20,
-        "sector": 14
-      },
-      "metrics": {
-        "dropFrom60High": -33.71,
-        "breakPct": 3.56,
-        "recent5LowPremium": -1.28,
-        "volumeRatio": 3.35,
-        "entityStrength": 95.3,
-        "closePosition": 100,
-        "turnover": 9.34,
-        "mainNetInflow": 6986.9,
-        "mainNetRatio": 22.95,
-        "sectorFiveDayChange": 1.82
-      },
-      "tradePlan": {
-        "buyPrice": 6.83,
-        "aggressiveBuyPrice": 7.04,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 6.56,
-        "structuralStop": 6.4,
-        "takeProfit1": 7.51,
-        "takeProfit2": 8.2,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -33.7%，近5日低点较前60日低点 -1.3%",
-        "前低关系 3.6%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 3.35",
-        "实体强度 95.3%，收盘位置 100%",
-        "主力净流入 6986.9 万元，行业5日强度排名前 29%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "积成电子:2026年半年度业绩预告",
-          "date": "2026-07-15",
-          "url": "https://data.eastmoney.com/notices/detail/002339/AN202607141826962079.html"
-        },
-        {
-          "title": "积成电子:关于控股子公司签署办公区租赁合同的公告",
-          "date": "2026-06-03",
-          "url": "https://data.eastmoney.com/notices/detail/002339/AN202606021823161474.html"
-        },
-        {
-          "title": "积成电子:2025年度权益分派实施公告",
-          "date": "2026-05-28",
-          "url": "https://data.eastmoney.com/notices/detail/002339/AN202605271822913981.html"
-        }
-      ]
+      "recentAnnouncements": []
     }
   ],
   "notes": [
