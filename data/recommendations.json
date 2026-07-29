@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/7/28 18:11:58",
-  "tradeDate": "2026-07-28",
+  "generatedAt": "2026/7/29 18:14:49",
+  "tradeDate": "2026-07-29",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,18 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 9,
-  "signalCount": 8,
+  "scannedCount": 36,
+  "signalCount": 16,
   "riskReview": {
-    "announcementCheckedCount": 9,
-    "excludedByAnnouncement": 1,
+    "announcementCheckedCount": 36,
+    "excludedByAnnouncement": 15,
     "announcementRiskSamples": [
       {
-        "code": "000779",
-        "name": "甘咨询",
-        "title": "甘咨询:甘肃工程咨询集团股份有限公司关于股票交易异常波动及风险提示公告",
-        "date": "2026-07-18",
-        "url": "https://data.eastmoney.com/notices/detail/000779/AN202607171827061751.html"
+        "code": "002607",
+        "name": "中公教育",
+        "title": "中公教育:关于股票交易风险提示公告",
+        "date": "2026-07-06",
+        "url": "https://data.eastmoney.com/notices/detail/002607/AN202607061826740393.html"
+      },
+      {
+        "code": "300530",
+        "name": "领湃科技",
+        "title": "领湃科技:关于累计诉讼、仲裁案件情况的公告",
+        "date": "2026-06-03",
+        "url": "https://data.eastmoney.com/notices/detail/300530/AN202606021823160500.html"
+      },
+      {
+        "code": "002956",
+        "name": "西麦食品",
+        "title": "西麦食品:关于公司实际控制人及其一致行动人减持计划的预披露公告",
+        "date": "2026-07-02",
+        "url": "https://data.eastmoney.com/notices/detail/002956/AN202607011826637970.html"
+      },
+      {
+        "code": "603399",
+        "name": "永杉锂业",
+        "title": "永杉锂业:永杉锂业关于向特定对象发行A股股票摊薄即期回报的风险提示及填补措施与相关主体承诺(修订稿)的公告",
+        "date": "2026-06-13",
+        "url": "https://data.eastmoney.com/notices/detail/603399/AN202606121823514934.html"
+      },
+      {
+        "code": "300997",
+        "name": "欢乐家",
+        "title": "欢乐家:关于公司全资子公司之分公司银行账户及资金解除冻结的公告",
+        "date": "2026-07-20",
+        "url": "https://data.eastmoney.com/notices/detail/300997/AN202607201827143568.html"
       }
     ],
     "riskKeywords": [
@@ -54,371 +82,371 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-28",
-      "code": "600191",
-      "name": "华资实业",
-      "industry": "农产品加工",
-      "industryRank": 32,
-      "industryRankPercent": 32,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 130,
-      "estimatedWinRate": 72.3,
-      "latestPrice": 9.46,
-      "dailyChange": 10,
-      "scores": {
-        "oversold": 17,
-        "lowStructure": 9,
-        "falseBreak": 8,
-        "priceRise": 20,
-        "volume": 20,
-        "candleQuality": 20,
-        "turnover": 7,
-        "moneyFlow": 20,
-        "sector": 9
-      },
-      "metrics": {
-        "dropFrom60High": -28.06,
-        "breakPct": 6.82,
-        "recent5LowPremium": 2.11,
-        "volumeRatio": 3.27,
-        "entityStrength": 100,
-        "closePosition": 100,
-        "turnover": 4.41,
-        "mainNetInflow": 4155.6,
-        "mainNetRatio": 20.86,
-        "sectorFiveDayChange": 3.57
-      },
-      "tradePlan": {
-        "buyPrice": 9.18,
-        "aggressiveBuyPrice": 9.46,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 8.81,
-        "structuralStop": 8.61,
-        "takeProfit1": 10.1,
-        "takeProfit2": 11.02,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -28.1%，近5日低点较前60日低点 2.1%",
-        "前低关系 6.8%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 3.27",
-        "实体强度 100%，收盘位置 100%",
-        "主力净流入 4155.6 万元，行业5日强度排名前 32%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "华资实业:华资实业2026年半年度业绩预增公告",
-          "date": "2026-07-15",
-          "url": "https://data.eastmoney.com/notices/detail/600191/AN202607141826955257.html"
-        },
-        {
-          "title": "华资实业:华资实业第十届董事会第一次会议决议公告",
-          "date": "2026-07-01",
-          "url": "https://data.eastmoney.com/notices/detail/600191/AN202606301826583889.html"
-        },
-        {
-          "title": "华资实业:华资实业关于董事会完成换届暨聘任高级管理人员及证券事务代表的公告",
-          "date": "2026-07-01",
-          "url": "https://data.eastmoney.com/notices/detail/600191/AN202606301826583885.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-28",
-      "code": "300901",
-      "name": "中胤时尚",
-      "industry": "服装家纺",
-      "industryRank": 38,
-      "industryRankPercent": 38,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 126,
-      "estimatedWinRate": 71.1,
-      "latestPrice": 15.23,
-      "dailyChange": 17.15,
-      "scores": {
-        "oversold": 17,
-        "lowStructure": 9,
-        "falseBreak": 3,
-        "priceRise": 17,
-        "volume": 20,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 20,
-        "sector": 9
-      },
-      "metrics": {
-        "dropFrom60High": -23.39,
-        "breakPct": 18.37,
-        "recent5LowPremium": 2.5,
-        "volumeRatio": 5.19,
-        "entityStrength": 83.8,
-        "closePosition": 87,
-        "turnover": 5.92,
-        "mainNetInflow": 2878.8,
-        "mainNetRatio": 13.95,
-        "sectorFiveDayChange": 3.41
-      },
-      "tradePlan": {
-        "buyPrice": 14.77,
-        "aggressiveBuyPrice": 15.23,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 14.18,
-        "structuralStop": 12.76,
-        "takeProfit1": 16.25,
-        "takeProfit2": 17.72,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -23.4%，近5日低点较前60日低点 2.5%",
-        "前低关系 18.4%，假跌破作为加分项而非一票否决",
-        "当日涨幅 17.1%，量比 5.19",
-        "实体强度 83.8%，收盘位置 87%",
-        "主力净流入 2878.8 万元，行业5日强度排名前 38%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "中胤时尚:股票交易异常波动公告",
-          "date": "2026-07-28",
-          "url": "https://data.eastmoney.com/notices/detail/300901/AN202607281827422443.html"
-        },
-        {
-          "title": "中胤时尚:关于持股5%以上股东股份减持超过1%暨减持计划期限届满的公告",
-          "date": "2026-06-30",
-          "url": "https://data.eastmoney.com/notices/detail/300901/AN202606301826592108.html"
-        },
-        {
-          "title": "中胤时尚:关于控股股东股份质押的公告",
-          "date": "2026-06-24",
-          "url": "https://data.eastmoney.com/notices/detail/300901/AN202606241823811791.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-28",
-      "code": "000428",
-      "name": "华天酒店",
-      "industry": "酒店餐饮",
-      "industryRank": 13,
-      "industryRankPercent": 13,
+      "tradeDate": "2026-07-29",
+      "code": "001318",
+      "name": "阳光乳业",
+      "industry": "饮料乳品",
+      "industryRank": 6,
+      "industryRankPercent": 6,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 117,
-      "estimatedWinRate": 68.3,
-      "latestPrice": 3.67,
-      "dailyChange": 9.88,
+      "totalScore": 145,
+      "estimatedWinRate": 77,
+      "latestPrice": 11.1,
+      "dailyChange": 10.01,
       "scores": {
-        "oversold": 4,
-        "lowStructure": 9,
-        "falseBreak": 3,
+        "oversold": 10,
+        "lowStructure": 20,
+        "falseBreak": 8,
         "priceRise": 20,
-        "volume": 17,
+        "volume": 20,
         "candleQuality": 20,
         "turnover": 7,
         "moneyFlow": 20,
-        "sector": 17
+        "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -7.09,
-        "breakPct": 14.77,
-        "recent5LowPremium": 0.34,
-        "volumeRatio": 2.52,
-        "entityStrength": 100,
+        "dropFrom60High": -16.79,
+        "breakPct": 6.42,
+        "recent5LowPremium": -1.35,
+        "volumeRatio": 3.43,
+        "entityStrength": 99,
         "closePosition": 100,
-        "turnover": 3.09,
-        "mainNetInflow": 1991.1,
-        "mainNetRatio": 17.66,
-        "sectorFiveDayChange": 6.16
+        "turnover": 4.11,
+        "mainNetInflow": 3798.7,
+        "mainNetRatio": 30.23,
+        "sectorFiveDayChange": 10.58
       },
       "tradePlan": {
-        "buyPrice": 3.56,
-        "aggressiveBuyPrice": 3.67,
+        "buyPrice": 10.77,
+        "aggressiveBuyPrice": 11.1,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 3.42,
-        "structuralStop": 3.42,
-        "takeProfit1": 3.92,
-        "takeProfit2": 4.27,
+        "stopLoss": 10.34,
+        "structuralStop": 10.11,
+        "takeProfit1": 11.85,
+        "takeProfit2": 12.92,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -7.1%，近5日低点较前60日低点 0.3%",
-        "前低关系 14.8%，假跌破作为加分项而非一票否决",
-        "当日涨幅 9.9%，量比 2.52",
-        "实体强度 100%，收盘位置 100%",
-        "主力净流入 1991.1 万元，行业5日强度排名前 13%",
+        "板块放量弹性：距60日高点 -16.8%，近5日低点较前60日低点 -1.3%",
+        "前低关系 6.4%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 3.43",
+        "实体强度 99%，收盘位置 100%",
+        "主力净流入 3798.7 万元，行业5日强度排名前 6%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "华天酒店:部分资产抵押贷款的公告",
-          "date": "2026-07-25",
-          "url": "https://data.eastmoney.com/notices/detail/000428/AN202607241827320395.html"
+          "title": "阳光乳业:江西阳光乳业股份有限公司2025年年度权益分派实施公告",
+          "date": "2026-06-09",
+          "url": "https://data.eastmoney.com/notices/detail/001318/AN202606081823359250.html"
         },
         {
-          "title": "华天酒店:2026年半年度业绩预告",
-          "date": "2026-07-15",
-          "url": "https://data.eastmoney.com/notices/detail/000428/AN202607141826957030.html"
+          "title": "阳光乳业:2025年度股东会决议公告",
+          "date": "2026-05-20",
+          "url": "https://data.eastmoney.com/notices/detail/001318/AN202605191822448151.html"
         },
         {
-          "title": "华天酒店:2025年度股东会决议公告",
-          "date": "2026-05-21",
-          "url": "https://data.eastmoney.com/notices/detail/000428/AN202605201822499250.html"
+          "title": "阳光乳业:上海中联(南昌)律师事务所关于江西阳光乳业股份有限公司2025年度股东会法律意见书",
+          "date": "2026-05-20",
+          "url": "https://data.eastmoney.com/notices/detail/001318/AN202605191822448154.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-28",
-      "code": "002582",
-      "name": "好想你",
-      "industry": "休闲食品",
-      "industryRank": 29,
-      "industryRankPercent": 29,
+      "tradeDate": "2026-07-29",
+      "code": "301073",
+      "name": "君亭酒店",
+      "industry": "酒店餐饮",
+      "industryRank": 16,
+      "industryRankPercent": 16,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 113,
-      "estimatedWinRate": 67,
-      "latestPrice": 9.59,
-      "dailyChange": 6.32,
+      "totalScore": 129,
+      "estimatedWinRate": 72,
+      "latestPrice": 18.2,
+      "dailyChange": 4.78,
       "scores": {
         "oversold": 17,
-        "lowStructure": 9,
+        "lowStructure": 20,
         "falseBreak": 8,
-        "priceRise": 13,
-        "volume": 12,
+        "priceRise": 8,
+        "volume": 17,
         "candleQuality": 14,
-        "turnover": 15,
-        "moneyFlow": 11,
-        "sector": 14
-      },
-      "metrics": {
-        "dropFrom60High": -22.41,
-        "breakPct": 7.33,
-        "recent5LowPremium": 4.33,
-        "volumeRatio": 1.9,
-        "entityStrength": 70.8,
-        "closePosition": 74.2,
-        "turnover": 11.43,
-        "mainNetInflow": 883.3,
-        "mainNetRatio": 2.38,
-        "sectorFiveDayChange": 3.82
-      },
-      "tradePlan": {
-        "buyPrice": 9.3,
-        "aggressiveBuyPrice": 9.59,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 8.93,
-        "structuralStop": 8.93,
-        "takeProfit1": 10.23,
-        "takeProfit2": 11.16,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -22.4%，近5日低点较前60日低点 4.3%",
-        "前低关系 7.3%，假跌破作为加分项而非一票否决",
-        "当日涨幅 6.3%，量比 1.9",
-        "实体强度 70.8%，收盘位置 74.2%",
-        "主力净流入 883.3 万元，行业5日强度排名前 29%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "002582好想你投资者关系管理信息20260722",
-          "date": "2026-07-22",
-          "url": "https://data.eastmoney.com/notices/detail/002582/AN202607221827266527.html"
-        },
-        {
-          "title": "好想你:2026年半年度业绩预告",
-          "date": "2026-07-15",
-          "url": "https://data.eastmoney.com/notices/detail/002582/AN202607141826961491.html"
-        },
-        {
-          "title": "好想你:002582好想你投资者关系管理信息20260615",
-          "date": "2026-06-15",
-          "url": "https://data.eastmoney.com/notices/detail/002582/AN202606151823558721.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-28",
-      "code": "300825",
-      "name": "阿尔特",
-      "industry": "汽车服务",
-      "industryRank": 19,
-      "industryRankPercent": 19,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 111,
-      "estimatedWinRate": 66.4,
-      "latestPrice": 11.99,
-      "dailyChange": 7.15,
-      "scores": {
-        "oversold": 22,
-        "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 13,
-        "volume": 12,
-        "candleQuality": 8,
-        "turnover": 15,
+        "turnover": 11,
         "moneyFlow": 17,
         "sector": 17
       },
       "metrics": {
-        "dropFrom60High": -34.12,
-        "breakPct": 40.63,
-        "recent5LowPremium": 10.25,
-        "volumeRatio": 1.96,
-        "entityStrength": 50,
-        "closePosition": 69.8,
-        "turnover": 12.17,
-        "mainNetInflow": 4369.8,
-        "mainNetRatio": 6.23,
-        "sectorFiveDayChange": 4.97
+        "dropFrom60High": -28.82,
+        "breakPct": 11.7,
+        "recent5LowPremium": -1.71,
+        "volumeRatio": 2.92,
+        "entityStrength": 73.5,
+        "closePosition": 73.5,
+        "turnover": 9.48,
+        "mainNetInflow": 2224.6,
+        "mainNetRatio": 7.34,
+        "sectorFiveDayChange": 8.79
       },
       "tradePlan": {
-        "buyPrice": 11.68,
-        "aggressiveBuyPrice": 11.99,
+        "buyPrice": 17.79,
+        "aggressiveBuyPrice": 18.2,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 11.21,
-        "structuralStop": 11.11,
-        "takeProfit1": 12.85,
-        "takeProfit2": 14.02,
+        "stopLoss": 17.08,
+        "structuralStop": 17.37,
+        "takeProfit1": 19.57,
+        "takeProfit2": 21.35,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -34.1%，近5日低点较前60日低点 10.3%",
-        "前低关系 40.6%，假跌破作为加分项而非一票否决",
-        "当日涨幅 7.2%，量比 1.96",
-        "实体强度 50%，收盘位置 69.8%",
-        "主力净流入 4369.8 万元，行业5日强度排名前 19%",
+        "低位放量反弹：距60日高点 -28.8%，近5日低点较前60日低点 -1.7%",
+        "前低关系 11.7%，假跌破作为加分项而非一票否决",
+        "当日涨幅 4.8%，量比 2.92",
+        "实体强度 73.5%，收盘位置 73.5%",
+        "主力净流入 2224.6 万元，行业5日强度排名前 16%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "阿尔特:关于公司控股股东部分股份解除质押及质押的公告",
-          "date": "2026-07-14",
-          "url": "https://data.eastmoney.com/notices/detail/300825/AN202607141826960365.html"
+          "title": "君亭酒店:公司章程",
+          "date": "2026-07-30",
+          "url": "https://data.eastmoney.com/notices/detail/301073/AN202607291827454870.html"
         },
         {
-          "title": "阿尔特:关于中标项目合同终止的进展公告",
-          "date": "2026-07-14",
-          "url": "https://data.eastmoney.com/notices/detail/300825/AN202607141826960360.html"
+          "title": "君亭酒店:第四届董事会第十次会议决议公告",
+          "date": "2026-07-30",
+          "url": "https://data.eastmoney.com/notices/detail/301073/AN202607291827454868.html"
         },
         {
-          "title": "阿尔特:《信息披露暂缓与豁免管理制度》(2026年6月)",
-          "date": "2026-06-23",
-          "url": "https://data.eastmoney.com/notices/detail/300825/AN202606231823777415.html"
+          "title": "君亭酒店:君亭酒店集团股份有限公司关于召开2026年第一次临时股东会的通知",
+          "date": "2026-07-30",
+          "url": "https://data.eastmoney.com/notices/detail/301073/AN202607291827454867.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-29",
+      "code": "300207",
+      "name": "欣旺达",
+      "industry": "电池",
+      "industryRank": 33,
+      "industryRankPercent": 33,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 121,
+      "estimatedWinRate": 69.5,
+      "latestPrice": 19.11,
+      "dailyChange": 6.28,
+      "scores": {
+        "oversold": 22,
+        "lowStructure": 4,
+        "falseBreak": 8,
+        "priceRise": 13,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 17,
+        "sector": 9
+      },
+      "metrics": {
+        "dropFrom60High": -32.21,
+        "breakPct": 11.81,
+        "recent5LowPremium": 5.25,
+        "volumeRatio": 2.18,
+        "entityStrength": 76.9,
+        "closePosition": 84.6,
+        "turnover": 6.12,
+        "mainNetInflow": 10516.5,
+        "mainNetRatio": 5.35,
+        "sectorFiveDayChange": 6.97
+      },
+      "tradePlan": {
+        "buyPrice": 18.56,
+        "aggressiveBuyPrice": 19.11,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 17.82,
+        "structuralStop": 17.9,
+        "takeProfit1": 20.42,
+        "takeProfit2": 22.27,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -32.2%，近5日低点较前60日低点 5.2%",
+        "前低关系 11.8%，假跌破作为加分项而非一票否决",
+        "当日涨幅 6.3%，量比 2.18",
+        "实体强度 76.9%，收盘位置 84.6%",
+        "主力净流入 10516.5 万元，行业5日强度排名前 33%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "欣旺达:关于子公司欣旺达动力科技股份有限公司增资扩股的公告",
+          "date": "2026-07-24",
+          "url": "https://data.eastmoney.com/notices/detail/300207/AN202607241827324942.html"
+        },
+        {
+          "title": "欣旺达:第六届董事会第二十九次会议决议公告",
+          "date": "2026-07-24",
+          "url": "https://data.eastmoney.com/notices/detail/300207/AN202607241827324943.html"
+        },
+        {
+          "title": "欣旺达:关于全资子公司与专业投资机构共同投资的进展公告",
+          "date": "2026-07-23",
+          "url": "https://data.eastmoney.com/notices/detail/300207/AN202607231827288899.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-29",
+      "code": "600693",
+      "name": "东百集团",
+      "industry": "一般零售",
+      "industryRank": 49,
+      "industryRankPercent": 49,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 117,
+      "estimatedWinRate": 68.3,
+      "latestPrice": 9.47,
+      "dailyChange": 9.99,
+      "scores": {
+        "oversold": 10,
+        "lowStructure": 9,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 20,
+        "candleQuality": 14,
+        "turnover": 15,
+        "moneyFlow": 17,
+        "sector": 9
+      },
+      "metrics": {
+        "dropFrom60High": -19.61,
+        "breakPct": 19.41,
+        "recent5LowPremium": 3.49,
+        "volumeRatio": 3.06,
+        "entityStrength": 56.5,
+        "closePosition": 100,
+        "turnover": 13.74,
+        "mainNetInflow": 5619.2,
+        "mainNetRatio": 5.18,
+        "sectorFiveDayChange": 5.53
+      },
+      "tradePlan": {
+        "buyPrice": 9.21,
+        "aggressiveBuyPrice": 9.47,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 8.84,
+        "structuralStop": 8.55,
+        "takeProfit1": 10.13,
+        "takeProfit2": 11.05,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 -19.6%，近5日低点较前60日低点 3.5%",
+        "前低关系 19.4%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 3.06",
+        "实体强度 56.5%，收盘位置 100%",
+        "主力净流入 5619.2 万元，行业5日强度排名前 49%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "东百集团:东百集团2025年年度权益分派实施公告",
+          "date": "2026-07-10",
+          "url": "https://data.eastmoney.com/notices/detail/600693/AN202607091826845564.html"
+        },
+        {
+          "title": "东百集团:东百集团关于转让全资子公司100%股权的进展公告",
+          "date": "2026-07-04",
+          "url": "https://data.eastmoney.com/notices/detail/600693/AN202607031826699618.html"
+        },
+        {
+          "title": "东百集团:东百集团2026年第一次临时股东会的法律意见书",
+          "date": "2026-07-02",
+          "url": "https://data.eastmoney.com/notices/detail/600693/AN202607011826635495.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-29",
+      "code": "300783",
+      "name": "三只松鼠",
+      "industry": "休闲食品",
+      "industryRank": 17,
+      "industryRankPercent": 17,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 111,
+      "estimatedWinRate": 66.4,
+      "latestPrice": 17.94,
+      "dailyChange": 5.47,
+      "scores": {
+        "oversold": 10,
+        "lowStructure": 9,
+        "falseBreak": 8,
+        "priceRise": 8,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 11,
+        "sector": 17
+      },
+      "metrics": {
+        "dropFrom60High": -13,
+        "breakPct": 10.62,
+        "recent5LowPremium": 4.26,
+        "volumeRatio": 2.96,
+        "entityStrength": 79,
+        "closePosition": 89.1,
+        "turnover": 6.87,
+        "mainNetInflow": 1408.5,
+        "mainNetRatio": 4.12,
+        "sectorFiveDayChange": 8.75
+      },
+      "tradePlan": {
+        "buyPrice": 17.47,
+        "aggressiveBuyPrice": 17.94,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 16.77,
+        "structuralStop": 16.88,
+        "takeProfit1": 19.22,
+        "takeProfit2": 20.96,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 -13%，近5日低点较前60日低点 4.3%",
+        "前低关系 10.6%，假跌破作为加分项而非一票否决",
+        "当日涨幅 5.5%，量比 2.96",
+        "实体强度 79%，收盘位置 89.1%",
+        "主力净流入 1408.5 万元，行业5日强度排名前 17%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "三只松鼠:关于2021年事业合伙人持股计划第四批股份锁定期届满的提示性公告",
+          "date": "2026-07-15",
+          "url": "https://data.eastmoney.com/notices/detail/300783/AN202607151826989225.html"
+        },
+        {
+          "title": "三只松鼠:关于回购公司股份的进展公告",
+          "date": "2026-07-01",
+          "url": "https://data.eastmoney.com/notices/detail/300783/AN202607011826630676.html"
+        },
+        {
+          "title": "三只松鼠:关于获得政府补助的公告",
+          "date": "2026-06-30",
+          "url": "https://data.eastmoney.com/notices/detail/300783/AN202606301826587523.html"
         }
       ]
     }
