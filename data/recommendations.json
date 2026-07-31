@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/7/30 18:01:18",
-  "tradeDate": "2026-07-30",
+  "generatedAt": "2026/7/31 18:10:42",
+  "tradeDate": "2026-07-31",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 23,
-  "signalCount": 13,
+  "scannedCount": 158,
+  "signalCount": 84,
   "riskReview": {
-    "announcementCheckedCount": 23,
-    "excludedByAnnouncement": 7,
+    "announcementCheckedCount": 158,
+    "excludedByAnnouncement": 44,
     "announcementRiskSamples": [
       {
-        "code": "600199",
-        "name": "金种子酒",
-        "title": "金种子酒:2026年半年度业绩预亏公告",
-        "date": "2026-07-15",
-        "url": "https://data.eastmoney.com/notices/detail/600199/AN202607141826957872.html"
+        "code": "300378",
+        "name": "鼎捷数智",
+        "title": "鼎捷数智:关于持股5%以上股东减持股份的预披露公告",
+        "date": "2026-06-04",
+        "url": "https://data.eastmoney.com/notices/detail/300378/AN202606031823215180.html"
       },
       {
-        "code": "601606",
-        "name": "长城军工",
-        "title": "长城军工:安徽长城军工股份有限公司股票交易风险提示公告",
-        "date": "2026-07-28",
-        "url": "https://data.eastmoney.com/notices/detail/601606/AN202607271827388763.html"
+        "code": "300364",
+        "name": "中文在线",
+        "title": "中文在线:关于重大仲裁的公告",
+        "date": "2026-07-22",
+        "url": "https://data.eastmoney.com/notices/detail/300364/AN202607221827265887.html"
       },
       {
-        "code": "002258",
-        "name": "利尔化学",
-        "title": "利尔化学:关于持股5%以上股东减持股份预披露公告",
-        "date": "2026-06-12",
-        "url": "https://data.eastmoney.com/notices/detail/002258/AN202606111823462120.html"
+        "code": "300137",
+        "name": "先河环保",
+        "title": "先河环保:关于向特定对象发行股票摊薄即期回报的风险提示、填补措施及相关主体承诺的公告",
+        "date": "2026-06-08",
+        "url": "https://data.eastmoney.com/notices/detail/300137/AN202606081823364231.html"
       },
       {
-        "code": "003032",
-        "name": "传智教育",
-        "title": "*ST传智:关于公司股票交易撤销退市风险警示暨股票停复牌的公告",
-        "date": "2026-06-10",
-        "url": "https://data.eastmoney.com/notices/detail/003032/AN202606091823399275.html"
+        "code": "300506",
+        "name": "名家汇",
+        "title": "名家汇:关于累计及重大诉讼、仲裁情况的进展公告(二十五)",
+        "date": "2026-07-13",
+        "url": "https://data.eastmoney.com/notices/detail/300506/AN202607131826933092.html"
       },
       {
-        "code": "600686",
-        "name": "金龙汽车",
-        "title": "金龙汽车:金龙汽车关于持股5%以上股东减持股份计划公告",
-        "date": "2026-06-27",
-        "url": "https://data.eastmoney.com/notices/detail/600686/AN202606261824693731.html"
+        "code": "688507",
+        "name": "索辰科技",
+        "title": "索辰科技:股票交易风险提示公告",
+        "date": "2026-06-13",
+        "url": "https://data.eastmoney.com/notices/detail/688507/AN202606121823516899.html"
       }
     ],
     "riskKeywords": [
@@ -82,371 +82,371 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-30",
-      "code": "603919",
-      "name": "金徽酒",
-      "industry": "白酒Ⅱ",
-      "industryRank": 13,
-      "industryRankPercent": 13,
+      "tradeDate": "2026-07-31",
+      "code": "300058",
+      "name": "蓝色光标",
+      "industry": "广告营销",
+      "industryRank": 12,
+      "industryRankPercent": 12,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 135,
-      "estimatedWinRate": 73.8,
-      "latestPrice": 16.89,
-      "dailyChange": 10.03,
+      "totalScore": 151,
+      "estimatedWinRate": 78.8,
+      "latestPrice": 14.35,
+      "dailyChange": 19.98,
       "scores": {
         "oversold": 17,
-        "lowStructure": 9,
+        "lowStructure": 17,
         "falseBreak": 8,
         "priceRise": 20,
         "volume": 17,
         "candleQuality": 20,
-        "turnover": 7,
+        "turnover": 15,
         "moneyFlow": 20,
         "sector": 17
       },
       "metrics": {
-        "dropFrom60High": -25.3,
-        "breakPct": 8.42,
-        "recent5LowPremium": 2.16,
-        "volumeRatio": 2.64,
-        "entityStrength": 84.1,
-        "closePosition": 100,
-        "turnover": 4.56,
-        "mainNetInflow": 8603.9,
-        "mainNetRatio": 22.77,
-        "sectorFiveDayChange": 6.73
-      },
-      "tradePlan": {
-        "buyPrice": 16.38,
-        "aggressiveBuyPrice": 16.89,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 15.72,
-        "structuralStop": 15.07,
-        "takeProfit1": 18.02,
-        "takeProfit2": 19.66,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -25.3%，近5日低点较前60日低点 2.2%",
-        "前低关系 8.4%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 2.64",
-        "实体强度 84.1%，收盘位置 100%",
-        "主力净流入 8603.9 万元，行业5日强度排名前 13%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "金徽酒:金徽酒股份有限公司独立董事关于公司2025年年报问询函涉及事项的独立意见",
-          "date": "2026-07-07",
-          "url": "https://data.eastmoney.com/notices/detail/603919/AN202607061826748446.html"
-        },
-        {
-          "title": "金徽酒:金徽酒股份有限公司关于上海证券交易所有关2025年年度报告的信息披露监管问询函的回复公告",
-          "date": "2026-07-07",
-          "url": "https://data.eastmoney.com/notices/detail/603919/AN202607061826748441.html"
-        },
-        {
-          "title": "金徽酒:关于金徽酒股份有限公司2025年年度报告信息披露监管问询函中就相关事项会计师发表意见",
-          "date": "2026-07-07",
-          "url": "https://data.eastmoney.com/notices/detail/603919/AN202607061826748437.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-30",
-      "code": "600702",
-      "name": "舍得酒业",
-      "industry": "白酒Ⅱ",
-      "industryRank": 13,
-      "industryRankPercent": 13,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 123,
-      "estimatedWinRate": 70.1,
-      "latestPrice": 37.49,
-      "dailyChange": 10.01,
-      "scores": {
-        "oversold": 10,
-        "lowStructure": 9,
-        "falseBreak": 8,
-        "priceRise": 20,
-        "volume": 12,
-        "candleQuality": 20,
-        "turnover": 7,
-        "moneyFlow": 20,
-        "sector": 17
-      },
-      "metrics": {
-        "dropFrom60High": -17.42,
-        "breakPct": 5.44,
-        "recent5LowPremium": 0.03,
-        "volumeRatio": 1.65,
+        "dropFrom60High": -27.78,
+        "breakPct": 7.22,
+        "recent5LowPremium": -1.07,
+        "volumeRatio": 2.22,
         "entityStrength": 100,
         "closePosition": 100,
-        "turnover": 4.28,
-        "mainNetInflow": 20598.2,
-        "mainNetRatio": 39.44,
-        "sectorFiveDayChange": 6.73
+        "turnover": 18.17,
+        "mainNetInflow": 239363.7,
+        "mainNetRatio": 27.99,
+        "sectorFiveDayChange": 13.76
       },
       "tradePlan": {
-        "buyPrice": 36.37,
-        "aggressiveBuyPrice": 37.49,
+        "buyPrice": 13.92,
+        "aggressiveBuyPrice": 14.35,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 34.92,
-        "structuralStop": 33.9,
-        "takeProfit1": 40.01,
-        "takeProfit2": 43.64,
+        "stopLoss": 13.36,
+        "structuralStop": 11.88,
+        "takeProfit1": 15.31,
+        "takeProfit2": 16.7,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -17.4%，近5日低点较前60日低点 0%",
-        "前低关系 5.4%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 1.65",
+        "低位放量反弹：距60日高点 -27.8%，近5日低点较前60日低点 -1.1%",
+        "前低关系 7.2%，假跌破作为加分项而非一票否决",
+        "当日涨幅 20%，量比 2.22",
         "实体强度 100%，收盘位置 100%",
-        "主力净流入 20598.2 万元，行业5日强度排名前 13%",
+        "主力净流入 239363.7 万元，行业5日强度排名前 12%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "舍得酒业:舍得酒业2026年半年度业绩预减公告",
-          "date": "2026-07-11",
-          "url": "https://data.eastmoney.com/notices/detail/600702/AN202607101826873875.html"
+          "title": "蓝色光标:2025年年度权益分派实施公告",
+          "date": "2026-06-18",
+          "url": "https://data.eastmoney.com/notices/detail/300058/AN202606181823669535.html"
         },
         {
-          "title": "舍得酒业:舍得酒业关于注销部分已回购股份的实施公告",
-          "date": "2026-06-16",
-          "url": "https://data.eastmoney.com/notices/detail/600702/AN202606151823577540.html"
+          "title": "蓝色光标:关于公司部分董事减持计划期限届满暨实施结果的公告",
+          "date": "2026-06-03",
+          "url": "https://data.eastmoney.com/notices/detail/300058/AN202606031823213764.html"
         },
         {
-          "title": "舍得酒业:舍得酒业2025年年度权益分派实施公告",
-          "date": "2026-05-20",
-          "url": "https://data.eastmoney.com/notices/detail/600702/AN202605191822451730.html"
+          "title": "蓝色光标:关于全资子公司对外担保的公告",
+          "date": "2026-05-29",
+          "url": "https://data.eastmoney.com/notices/detail/300058/AN202605291823011860.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-30",
-      "code": "300192",
-      "name": "科德教育",
-      "industry": "教育",
-      "industryRank": 3,
-      "industryRankPercent": 3,
+      "tradeDate": "2026-07-31",
+      "code": "300418",
+      "name": "昆仑万维",
+      "industry": "数字媒体",
+      "industryRank": 7,
+      "industryRankPercent": 7,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 118,
-      "estimatedWinRate": 68.6,
-      "latestPrice": 11.44,
-      "dailyChange": 4.86,
+      "totalScore": 149,
+      "estimatedWinRate": 78.2,
+      "latestPrice": 43.2,
+      "dailyChange": 20,
       "scores": {
         "oversold": 17,
-        "lowStructure": 9,
+        "lowStructure": 17,
         "falseBreak": 8,
-        "priceRise": 8,
-        "volume": 17,
-        "candleQuality": 8,
-        "turnover": 11,
+        "priceRise": 20,
+        "volume": 12,
+        "candleQuality": 20,
+        "turnover": 15,
         "moneyFlow": 20,
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -22.75,
-        "breakPct": 10.55,
-        "recent5LowPremium": 1.61,
-        "volumeRatio": 2.25,
-        "entityStrength": 68.3,
-        "closePosition": 69.8,
-        "turnover": 5.41,
-        "mainNetInflow": 2969.2,
-        "mainNetRatio": 10.63,
-        "sectorFiveDayChange": 11.51
+        "dropFrom60High": -22.4,
+        "breakPct": 4.22,
+        "recent5LowPremium": -3.71,
+        "volumeRatio": 1.5,
+        "entityStrength": 100,
+        "closePosition": 100,
+        "turnover": 12.57,
+        "mainNetInflow": 103412,
+        "mainNetRatio": 17.05,
+        "sectorFiveDayChange": 16.03
       },
       "tradePlan": {
-        "buyPrice": 11.22,
-        "aggressiveBuyPrice": 11.44,
+        "buyPrice": 41.9,
+        "aggressiveBuyPrice": 43.2,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 10.77,
-        "structuralStop": 11,
-        "takeProfit1": 12.34,
-        "takeProfit2": 13.46,
+        "stopLoss": 40.22,
+        "structuralStop": 36.78,
+        "takeProfit1": 46.09,
+        "takeProfit2": 50.28,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -22.8%，近5日低点较前60日低点 1.6%",
-        "前低关系 10.6%，假跌破作为加分项而非一票否决",
-        "当日涨幅 4.9%，量比 2.25",
-        "实体强度 68.3%，收盘位置 69.8%",
-        "主力净流入 2969.2 万元，行业5日强度排名前 3%",
+        "低位放量反弹：距60日高点 -22.4%，近5日低点较前60日低点 -3.7%",
+        "前低关系 4.2%，假跌破作为加分项而非一票否决",
+        "当日涨幅 20%，量比 1.5",
+        "实体强度 100%，收盘位置 100%",
+        "主力净流入 103412 万元，行业5日强度排名前 7%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "科德教育:关于“跃迁者”第一期员工持股计划实施进展的公告",
-          "date": "2026-07-30",
-          "url": "https://data.eastmoney.com/notices/detail/300192/AN202607301827490431.html"
+          "title": "昆仑万维:北京市天元律师事务所关于昆仑万维科技股份有限公司2026年第三次临时股东会的法律意见",
+          "date": "2026-07-10",
+          "url": "https://data.eastmoney.com/notices/detail/300418/AN202607101826878842.html"
         },
         {
-          "title": "科德教育:关于股份回购事项股东会股权登记日前十大股东和前十大无限售条件股东持股情况的公告",
-          "date": "2026-07-30",
-          "url": "https://data.eastmoney.com/notices/detail/300192/AN202607301827490426.html"
+          "title": "昆仑万维:关于董事会完成换届选举的公告",
+          "date": "2026-07-10",
+          "url": "https://data.eastmoney.com/notices/detail/300418/AN202607101826878843.html"
         },
         {
-          "title": "科德教育:关于回购股份事项前十大股东及前十大无限售条件股东持股情况的公告",
-          "date": "2026-07-22",
-          "url": "https://data.eastmoney.com/notices/detail/300192/AN202607221827258421.html"
+          "title": "昆仑万维:第六届董事会第一次会议决议公告",
+          "date": "2026-07-10",
+          "url": "https://data.eastmoney.com/notices/detail/300418/AN202607101826878841.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-30",
-      "code": "300894",
-      "name": "火星人",
-      "industry": "厨卫电器",
-      "industryRank": 15,
-      "industryRankPercent": 15,
+      "tradeDate": "2026-07-31",
+      "code": "300063",
+      "name": "天龙集团",
+      "industry": "广告营销",
+      "industryRank": 12,
+      "industryRankPercent": 12,
       "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 116,
-      "estimatedWinRate": 68,
-      "latestPrice": 11.8,
-      "dailyChange": 20.04,
+      "setupType": "低位放量反弹",
+      "totalScore": 148,
+      "estimatedWinRate": 77.9,
+      "latestPrice": 9.1,
+      "dailyChange": 17.27,
       "scores": {
-        "oversold": 4,
+        "oversold": 22,
         "lowStructure": 9,
-        "falseBreak": 3,
-        "priceRise": 20,
-        "volume": 12,
+        "falseBreak": 8,
+        "priceRise": 17,
+        "volume": 20,
         "candleQuality": 20,
-        "turnover": 11,
+        "turnover": 15,
         "moneyFlow": 20,
         "sector": 17
       },
       "metrics": {
-        "dropFrom60High": -10.27,
-        "breakPct": 15.95,
-        "recent5LowPremium": 2.38,
-        "volumeRatio": 1.78,
-        "entityStrength": 99,
-        "closePosition": 100,
-        "turnover": 6.7,
-        "mainNetInflow": 5120.7,
-        "mainNetRatio": 23.35,
-        "sectorFiveDayChange": 6.41
+        "dropFrom60High": -34.44,
+        "breakPct": 8.08,
+        "recent5LowPremium": 0.84,
+        "volumeRatio": 3.93,
+        "entityStrength": 86.5,
+        "closePosition": 86.5,
+        "turnover": 23.85,
+        "mainNetInflow": 28639.6,
+        "mainNetRatio": 21.74,
+        "sectorFiveDayChange": 13.76
       },
       "tradePlan": {
-        "buyPrice": 11.45,
-        "aggressiveBuyPrice": 11.8,
+        "buyPrice": 8.83,
+        "aggressiveBuyPrice": 9.1,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 10.99,
-        "structuralStop": 9.74,
-        "takeProfit1": 12.6,
-        "takeProfit2": 13.74,
+        "stopLoss": 8.48,
+        "structuralStop": 7.76,
+        "takeProfit1": 9.71,
+        "takeProfit2": 10.6,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -10.3%，近5日低点较前60日低点 2.4%",
-        "前低关系 16%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 1.78",
-        "实体强度 99%，收盘位置 100%",
-        "主力净流入 5120.7 万元，行业5日强度排名前 15%",
+        "低位放量反弹：距60日高点 -34.4%，近5日低点较前60日低点 0.8%",
+        "前低关系 8.1%，假跌破作为加分项而非一票否决",
+        "当日涨幅 17.3%，量比 3.93",
+        "实体强度 86.5%，收盘位置 86.5%",
+        "主力净流入 28639.6 万元，行业5日强度排名前 12%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "火星人:关于“火星转债”回售结果的公告",
-          "date": "2026-07-29",
-          "url": "https://data.eastmoney.com/notices/detail/300894/AN202607291827462014.html"
+          "title": "天龙集团:关于为子公司提供担保及接受子公司担保的进展公告",
+          "date": "2026-07-22",
+          "url": "https://data.eastmoney.com/notices/detail/300063/AN202607221827260893.html"
         },
         {
-          "title": "火星人:关于部分限制性股票回购注销完成的公告",
-          "date": "2026-07-29",
-          "url": "https://data.eastmoney.com/notices/detail/300894/AN202607291827461224.html"
+          "title": "天龙集团:关于为子公司提供担保的进展公告",
+          "date": "2026-06-26",
+          "url": "https://data.eastmoney.com/notices/detail/300063/AN202606261824739376.html"
         },
         {
-          "title": "火星人:关于部分限制性股票回购注销调整可转债转股价格的公告",
-          "date": "2026-07-29",
-          "url": "https://data.eastmoney.com/notices/detail/300894/AN202607291827461216.html"
+          "title": "天龙集团:关于为子公司提供担保的进展公告",
+          "date": "2026-06-17",
+          "url": "https://data.eastmoney.com/notices/detail/300063/AN202606171823637704.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-07-30",
-      "code": "000526",
-      "name": "学大教育",
-      "industry": "教育",
-      "industryRank": 3,
-      "industryRankPercent": 3,
+      "tradeDate": "2026-07-31",
+      "code": "300182",
+      "name": "捷成股份",
+      "industry": "影视院线",
+      "industryRank": 21,
+      "industryRankPercent": 21,
       "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 110,
-      "estimatedWinRate": 66.1,
-      "latestPrice": 36.33,
-      "dailyChange": 9.99,
+      "setupType": "低位放量反弹",
+      "totalScore": 148,
+      "estimatedWinRate": 77.9,
+      "latestPrice": 5.1,
+      "dailyChange": 10.63,
       "scores": {
-        "oversold": 4,
-        "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 20,
-        "volume": 8,
+        "oversold": 17,
+        "lowStructure": 20,
+        "falseBreak": 8,
+        "priceRise": 17,
+        "volume": 20,
         "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 20,
-        "sector": 20
+        "turnover": 15,
+        "moneyFlow": 17,
+        "sector": 14
       },
       "metrics": {
-        "dropFrom60High": 0.19,
-        "breakPct": 40.34,
-        "recent5LowPremium": 34.03,
-        "volumeRatio": 1.4,
-        "entityStrength": 96.2,
-        "closePosition": 100,
-        "turnover": 5.13,
-        "mainNetInflow": 6885.7,
-        "mainNetRatio": 31.17,
-        "sectorFiveDayChange": 11.51
+        "dropFrom60High": -24.78,
+        "breakPct": 9.13,
+        "recent5LowPremium": -0.7,
+        "volumeRatio": 3.13,
+        "entityStrength": 77.8,
+        "closePosition": 81.5,
+        "turnover": 11.01,
+        "mainNetInflow": 6655.6,
+        "mainNetRatio": 5.34,
+        "sectorFiveDayChange": 10.45
       },
       "tradePlan": {
-        "buyPrice": 35.24,
-        "aggressiveBuyPrice": 36.33,
+        "buyPrice": 4.95,
+        "aggressiveBuyPrice": 5.1,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 33.83,
-        "structuralStop": 33.4,
-        "takeProfit1": 38.76,
-        "takeProfit2": 42.29,
+        "stopLoss": 4.75,
+        "structuralStop": 4.66,
+        "takeProfit1": 5.45,
+        "takeProfit2": 5.94,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 0.2%，近5日低点较前60日低点 34%",
-        "前低关系 40.3%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 1.4",
-        "实体强度 96.2%，收盘位置 100%",
-        "主力净流入 6885.7 万元，行业5日强度排名前 3%",
+        "低位放量反弹：距60日高点 -24.8%，近5日低点较前60日低点 -0.7%",
+        "前低关系 9.1%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10.6%，量比 3.13",
+        "实体强度 77.8%，收盘位置 81.5%",
+        "主力净流入 6655.6 万元，行业5日强度排名前 21%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "学大教育:关于股东股份解除质押及质押的公告",
-          "date": "2026-07-29",
-          "url": "https://data.eastmoney.com/notices/detail/000526/AN202607281827423665.html"
+          "title": "捷成股份:2025年年度权益分派实施公告",
+          "date": "2026-07-21",
+          "url": "https://data.eastmoney.com/notices/detail/300182/AN202607211827207233.html"
         },
         {
-          "title": "学大教育:股票交易异常波动公告",
-          "date": "2026-07-23",
-          "url": "https://data.eastmoney.com/notices/detail/000526/AN202607221827262149.html"
+          "title": "捷成股份:第六届董事会第十七次会议决议公告",
+          "date": "2026-07-16",
+          "url": "https://data.eastmoney.com/notices/detail/300182/AN202607161827023116.html"
         },
         {
-          "title": "学大教育:关于2023年限制性股票激励计划首次授予第三个解除限售期解除限售股份上市流通的提示性公告",
-          "date": "2026-07-22",
-          "url": "https://data.eastmoney.com/notices/detail/000526/AN202607211827216352.html"
+          "title": "捷成股份:第六届董事会第十六次会议决议公告",
+          "date": "2026-07-06",
+          "url": "https://data.eastmoney.com/notices/detail/300182/AN202607061826745713.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-07-31",
+      "code": "300785",
+      "name": "值得买",
+      "industry": "数字媒体",
+      "industryRank": 7,
+      "industryRankPercent": 7,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 145,
+      "estimatedWinRate": 77,
+      "latestPrice": 38.2,
+      "dailyChange": 15.16,
+      "scores": {
+        "oversold": 22,
+        "lowStructure": 9,
+        "falseBreak": 8,
+        "priceRise": 17,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 15,
+        "moneyFlow": 17,
+        "sector": 20
+      },
+      "metrics": {
+        "dropFrom60High": -32.82,
+        "breakPct": 5.04,
+        "recent5LowPremium": 2.33,
+        "volumeRatio": 2.65,
+        "entityStrength": 88,
+        "closePosition": 88,
+        "turnover": 18.11,
+        "mainNetInflow": 6849.3,
+        "mainNetRatio": 8.39,
+        "sectorFiveDayChange": 16.03
+      },
+      "tradePlan": {
+        "buyPrice": 37.05,
+        "aggressiveBuyPrice": 38.2,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 35.57,
+        "structuralStop": 32.5,
+        "takeProfit1": 40.76,
+        "takeProfit2": 44.46,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -32.8%，近5日低点较前60日低点 2.3%",
+        "前低关系 5%，假跌破作为加分项而非一票否决",
+        "当日涨幅 15.2%，量比 2.65",
+        "实体强度 88%，收盘位置 88%",
+        "主力净流入 6849.3 万元，行业5日强度排名前 7%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "值得买:关于变更首席财务官的公告",
+          "date": "2026-06-29",
+          "url": "https://data.eastmoney.com/notices/detail/300785/AN202606291826544611.html"
+        },
+        {
+          "title": "值得买:关于变更内审部门负责人的公告",
+          "date": "2026-06-29",
+          "url": "https://data.eastmoney.com/notices/detail/300785/AN202606291826544607.html"
+        },
+        {
+          "title": "值得买:第四届董事会第十五次会议决议公告",
+          "date": "2026-06-29",
+          "url": "https://data.eastmoney.com/notices/detail/300785/AN202606291826544612.html"
         }
       ]
     }
