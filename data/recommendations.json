@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/8/6 18:14:37",
-  "tradeDate": "2026-08-06",
+  "generatedAt": "2026/8/7 16:36:26",
+  "tradeDate": "2026-08-07",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 91,
-  "signalCount": 45,
+  "scannedCount": 139,
+  "signalCount": 83,
   "riskReview": {
-    "announcementCheckedCount": 91,
-    "excludedByAnnouncement": 31,
+    "announcementCheckedCount": 139,
+    "excludedByAnnouncement": 36,
     "announcementRiskSamples": [
       {
-        "code": "300615",
-        "name": "欣天科技",
-        "title": "欣天科技:关于持股5%以上股东未减持股份并提前终止股份减持计划的公告",
-        "date": "2026-08-03",
-        "url": "https://data.eastmoney.com/notices/detail/300615/AN202608021827568155.html"
+        "code": "300363",
+        "name": "博腾股份",
+        "title": "博腾股份:关于对外投资进展及重大风险提示的公告",
+        "date": "2026-05-13",
+        "url": "https://data.eastmoney.com/notices/detail/300363/AN202605131822267984.html"
       },
       {
-        "code": "688432",
-        "name": "有研硅",
-        "title": "有研硅:有研硅股票交易严重异常波动暨风险提示公告",
-        "date": "2026-07-10",
-        "url": "https://data.eastmoney.com/notices/detail/688432/AN202607091826849985.html"
+        "code": "688020",
+        "name": "方邦股份",
+        "title": "方邦股份:股票交易风险提示公告",
+        "date": "2026-07-01",
+        "url": "https://data.eastmoney.com/notices/detail/688020/AN202606301826598920.html"
       },
       {
-        "code": "688549",
-        "name": "中巨芯-U",
-        "title": "中巨芯:关于股票交易风险提示公告",
+        "code": "688105",
+        "name": "诺唯赞",
+        "title": "诺唯赞:诺唯赞关于持股5%以上股东减持股份计划的公告",
         "date": "2026-06-30",
-        "url": "https://data.eastmoney.com/notices/detail/688549/AN202606291826548589.html"
+        "url": "https://data.eastmoney.com/notices/detail/688105/AN202606291826545726.html"
       },
       {
-        "code": "688530",
-        "name": "欧莱新材",
-        "title": "欧莱新材:欧莱新材股票交易风险提示公告",
-        "date": "2026-06-30",
-        "url": "https://data.eastmoney.com/notices/detail/688530/AN202606291826549898.html"
+        "code": "688202",
+        "name": "美迪西",
+        "title": "美迪西:关于股东部分股份解除冻结的公告",
+        "date": "2026-06-02",
+        "url": "https://data.eastmoney.com/notices/detail/688202/AN202606011823126658.html"
       },
       {
-        "code": "300134",
-        "name": "大富科技",
-        "title": "大富科技:2025年度商誉减值测试报告",
-        "date": "2026-04-27",
-        "url": "https://data.eastmoney.com/notices/detail/300134/AN202604261821589103.html"
+        "code": "688655",
+        "name": "迅捷兴",
+        "title": "迅捷兴:股票交易异常波动及风险提示公告",
+        "date": "2026-05-13",
+        "url": "https://data.eastmoney.com/notices/detail/688655/AN202605121822221607.html"
       }
     ],
     "riskKeywords": [
@@ -82,58 +82,58 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-06",
+      "tradeDate": "2026-08-07",
       "code": "300903",
       "name": "科翔股份",
       "industry": "元件",
-      "industryRank": 6,
-      "industryRankPercent": 6,
+      "industryRank": 5,
+      "industryRankPercent": 5,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 146,
-      "estimatedWinRate": 77.3,
-      "latestPrice": 64.32,
-      "dailyChange": 20,
+      "totalScore": 145,
+      "estimatedWinRate": 77,
+      "latestPrice": 72.33,
+      "dailyChange": 12.45,
       "scores": {
-        "oversold": 25,
+        "oversold": 22,
         "lowStructure": 14,
         "falseBreak": 3,
-        "priceRise": 20,
-        "volume": 12,
+        "priceRise": 17,
+        "volume": 17,
         "candleQuality": 20,
         "turnover": 15,
         "moneyFlow": 17,
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -44.97,
-        "breakPct": 21.15,
+        "dropFrom60High": -38.12,
+        "breakPct": 52.88,
         "recent5LowPremium": -4.07,
-        "volumeRatio": 1.6,
-        "entityStrength": 92.2,
-        "closePosition": 100,
-        "turnover": 12.21,
-        "mainNetInflow": 18877.8,
-        "mainNetRatio": 7.48,
-        "sectorFiveDayChange": 20.31
+        "volumeRatio": 2.18,
+        "entityStrength": 73.8,
+        "closePosition": 94.8,
+        "turnover": 17.41,
+        "mainNetInflow": 39791.7,
+        "mainNetRatio": 9.37,
+        "sectorFiveDayChange": 22.51
       },
       "tradePlan": {
-        "buyPrice": 62.39,
-        "aggressiveBuyPrice": 64.32,
+        "buyPrice": 70.16,
+        "aggressiveBuyPrice": 72.33,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 59.89,
-        "structuralStop": 52.3,
-        "takeProfit1": 68.63,
-        "takeProfit2": 74.87,
+        "stopLoss": 67.35,
+        "structuralStop": 66,
+        "takeProfit1": 77.18,
+        "takeProfit2": 84.19,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -45%，近5日低点较前60日低点 -4.1%",
-        "前低关系 21.1%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 1.6",
-        "实体强度 92.2%，收盘位置 100%",
-        "主力净流入 18877.8 万元，行业5日强度排名前 6%",
+        "低位放量反弹：距60日高点 -38.1%，近5日低点较前60日低点 -4.1%",
+        "前低关系 52.9%，假跌破作为加分项而非一票否决",
+        "当日涨幅 12.4%，量比 2.18",
+        "实体强度 73.8%，收盘位置 94.8%",
+        "主力净流入 39791.7 万元，行业5日强度排名前 5%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
@@ -156,132 +156,280 @@
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-06",
-      "code": "001267",
-      "name": "汇绿生态",
-      "industry": "通信设备",
-      "industryRank": 14,
-      "industryRankPercent": 14,
+      "tradeDate": "2026-08-07",
+      "code": "300576",
+      "name": "容大感光",
+      "industry": "电子化学品Ⅱ",
+      "industryRank": 8,
+      "industryRankPercent": 8,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 141,
-      "estimatedWinRate": 75.7,
-      "latestPrice": 38.81,
-      "dailyChange": 10.01,
+      "totalScore": 136,
+      "estimatedWinRate": 74.2,
+      "latestPrice": 31.99,
+      "dailyChange": 7.67,
       "scores": {
         "oversold": 25,
-        "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 20,
-        "volume": 17,
-        "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 20,
-        "sector": 17
-      },
-      "metrics": {
-        "dropFrom60High": -44.33,
-        "breakPct": 30.39,
-        "recent5LowPremium": 6.97,
-        "volumeRatio": 2.46,
-        "entityStrength": 86.7,
-        "closePosition": 100,
-        "turnover": 12.21,
-        "mainNetInflow": 31109.8,
-        "mainNetRatio": 11.2,
-        "sectorFiveDayChange": 17.79
-      },
-      "tradePlan": {
-        "buyPrice": 37.65,
-        "aggressiveBuyPrice": 38.81,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 36.14,
-        "structuralStop": 35.35,
-        "takeProfit1": 41.41,
-        "takeProfit2": 45.18,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -44.3%，近5日低点较前60日低点 7%",
-        "前低关系 30.4%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 2.46",
-        "实体强度 86.7%，收盘位置 100%",
-        "主力净流入 31109.8 万元，行业5日强度排名前 14%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "汇绿生态:关于重大资产重组进展的提示性公告",
-          "date": "2026-07-11",
-          "url": "https://data.eastmoney.com/notices/detail/001267/AN202607101826873470.html"
-        },
-        {
-          "title": "汇绿生态:001267汇绿生态投资者关系管理信息20260709",
-          "date": "2026-07-09",
-          "url": "https://data.eastmoney.com/notices/detail/001267/AN202607091826848165.html"
-        },
-        {
-          "title": "汇绿生态:关于赎回投资基金份额的公告",
-          "date": "2026-07-09",
-          "url": "https://data.eastmoney.com/notices/detail/001267/AN202607081826819257.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-06",
-      "code": "301251",
-      "name": "威尔高",
-      "industry": "元件",
-      "industryRank": 6,
-      "industryRankPercent": 6,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 137,
-      "estimatedWinRate": 74.5,
-      "latestPrice": 39.83,
-      "dailyChange": 20.01,
-      "scores": {
-        "oversold": 22,
         "lowStructure": 9,
         "falseBreak": 3,
-        "priceRise": 20,
-        "volume": 8,
-        "candleQuality": 20,
+        "priceRise": 13,
+        "volume": 17,
+        "candleQuality": 14,
         "turnover": 15,
         "moneyFlow": 20,
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -34.62,
-        "breakPct": 21,
-        "recent5LowPremium": 4.44,
-        "volumeRatio": 1.49,
-        "entityStrength": 95.1,
-        "closePosition": 100,
-        "turnover": 17.76,
-        "mainNetInflow": 9052.9,
-        "mainNetRatio": 18.17,
-        "sectorFiveDayChange": 20.31
+        "dropFrom60High": -42.7,
+        "breakPct": 19.95,
+        "recent5LowPremium": 2.59,
+        "volumeRatio": 2.21,
+        "entityStrength": 55.8,
+        "closePosition": 76.6,
+        "turnover": 21.36,
+        "mainNetInflow": 20200.6,
+        "mainNetRatio": 12.02,
+        "sectorFiveDayChange": 20.05
       },
       "tradePlan": {
-        "buyPrice": 38.64,
-        "aggressiveBuyPrice": 39.83,
+        "buyPrice": 31.03,
+        "aggressiveBuyPrice": 31.99,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 37.09,
-        "structuralStop": 32.15,
-        "takeProfit1": 42.5,
-        "takeProfit2": 46.37,
+        "stopLoss": 29.79,
+        "structuralStop": 28.68,
+        "takeProfit1": 34.13,
+        "takeProfit2": 37.24,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -34.6%，近5日低点较前60日低点 4.4%",
-        "前低关系 21%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 1.49",
-        "实体强度 95.1%，收盘位置 100%",
-        "主力净流入 9052.9 万元，行业5日强度排名前 6%",
+        "低位放量反弹：距60日高点 -42.7%，近5日低点较前60日低点 2.6%",
+        "前低关系 19.9%，假跌破作为加分项而非一票否决",
+        "当日涨幅 7.7%，量比 2.21",
+        "实体强度 55.8%，收盘位置 76.6%",
+        "主力净流入 20200.6 万元，行业5日强度排名前 8%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "容大感光:关于2026年度向特定对象发行股票摊薄即期回报、采取填补措施及相关主体承诺的公告",
+          "date": "2026-07-24",
+          "url": "https://data.eastmoney.com/notices/detail/300576/AN202607241827322122.html"
+        },
+        {
+          "title": "容大感光:关于暂不召开股东会的公告",
+          "date": "2026-07-24",
+          "url": "https://data.eastmoney.com/notices/detail/300576/AN202607241827322130.html"
+        },
+        {
+          "title": "容大感光:独立董事关于公司2026年度向特定对象发行股票方案的论证分析报告的专项意见",
+          "date": "2026-07-24",
+          "url": "https://data.eastmoney.com/notices/detail/300576/AN202607241827322133.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-08-07",
+      "code": "000657",
+      "name": "中钨高新",
+      "industry": "小金属",
+      "industryRank": 16,
+      "industryRankPercent": 16,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 136,
+      "estimatedWinRate": 74.2,
+      "latestPrice": 67.01,
+      "dailyChange": 7.22,
+      "scores": {
+        "oversold": 25,
+        "lowStructure": 9,
+        "falseBreak": 3,
+        "priceRise": 13,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 15,
+        "moneyFlow": 17,
+        "sector": 17
+      },
+      "metrics": {
+        "dropFrom60High": -41.1,
+        "breakPct": 31.24,
+        "recent5LowPremium": 0.4,
+        "volumeRatio": 2.14,
+        "entityStrength": 79.8,
+        "closePosition": 82.8,
+        "turnover": 10.52,
+        "mainNetInflow": 60948.5,
+        "mainNetRatio": 6.13,
+        "sectorFiveDayChange": 17.3
+      },
+      "tradePlan": {
+        "buyPrice": 65,
+        "aggressiveBuyPrice": 67.01,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 62.4,
+        "structuralStop": 62.3,
+        "takeProfit1": 71.5,
+        "takeProfit2": 78,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -41.1%，近5日低点较前60日低点 0.4%",
+        "前低关系 31.2%，假跌破作为加分项而非一票否决",
+        "当日涨幅 7.2%，量比 2.14",
+        "实体强度 79.8%，收盘位置 82.8%",
+        "主力净流入 60948.5 万元，行业5日强度排名前 16%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "中钨高新:股票交易异常波动公告",
+          "date": "2026-08-07",
+          "url": "https://data.eastmoney.com/notices/detail/000657/AN202608061827714081.html"
+        },
+        {
+          "title": "中钨高新:关于2021年限制性股票激励计划预留授予部分第三个解锁期解锁股份上市流通的提示性公告",
+          "date": "2026-07-31",
+          "url": "https://data.eastmoney.com/notices/detail/000657/AN202607301827495981.html"
+        },
+        {
+          "title": "中钨高新:关于变更财务总监的公告",
+          "date": "2026-07-29",
+          "url": "https://data.eastmoney.com/notices/detail/000657/AN202607281827419383.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-08-07",
+      "code": "300964",
+      "name": "本川智能",
+      "industry": "元件",
+      "industryRank": 5,
+      "industryRankPercent": 5,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 135,
+      "estimatedWinRate": 73.8,
+      "latestPrice": 59.18,
+      "dailyChange": 8.63,
+      "scores": {
+        "oversold": 22,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 17,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 15,
+        "moneyFlow": 17,
+        "sector": 20
+      },
+      "metrics": {
+        "dropFrom60High": -33.21,
+        "breakPct": 29.18,
+        "recent5LowPremium": 8.45,
+        "volumeRatio": 2.02,
+        "entityStrength": 86.2,
+        "closePosition": 86.9,
+        "turnover": 13.76,
+        "mainNetInflow": 3342,
+        "mainNetRatio": 5.34,
+        "sectorFiveDayChange": 22.51
+      },
+      "tradePlan": {
+        "buyPrice": 57.4,
+        "aggressiveBuyPrice": 59.18,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 55.1,
+        "structuralStop": 53.96,
+        "takeProfit1": 63.14,
+        "takeProfit2": 68.88,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -33.2%，近5日低点较前60日低点 8.5%",
+        "前低关系 29.2%，假跌破作为加分项而非一票否决",
+        "当日涨幅 8.6%，量比 2.02",
+        "实体强度 86.2%，收盘位置 86.9%",
+        "主力净流入 3342 万元，行业5日强度排名前 5%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "本川智能:关于使用部分闲置自有资金进行委托理财的公告",
+          "date": "2026-08-06",
+          "url": "https://data.eastmoney.com/notices/detail/300964/AN202608061827714912.html"
+        },
+        {
+          "title": "本川智能:东北证券股份有限公司关于江苏本川智能电路科技股份有限公司开展外汇套期保值业务的核查意见",
+          "date": "2026-08-06",
+          "url": "https://data.eastmoney.com/notices/detail/300964/AN202608061827714909.html"
+        },
+        {
+          "title": "本川智能:第四届董事会第四次会议决议公告",
+          "date": "2026-08-06",
+          "url": "https://data.eastmoney.com/notices/detail/300964/AN202608061827714917.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-08-07",
+      "code": "301251",
+      "name": "威尔高",
+      "industry": "元件",
+      "industryRank": 5,
+      "industryRankPercent": 5,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 134,
+      "estimatedWinRate": 73.5,
+      "latestPrice": 46.58,
+      "dailyChange": 16.95,
+      "scores": {
+        "oversold": 17,
+        "lowStructure": 9,
+        "falseBreak": 3,
+        "priceRise": 17,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 20
+      },
+      "metrics": {
+        "dropFrom60High": -23.54,
+        "breakPct": 50.55,
+        "recent5LowPremium": 4.44,
+        "volumeRatio": 2.85,
+        "entityStrength": 71,
+        "closePosition": 92.2,
+        "turnover": 31.66,
+        "mainNetInflow": 13060.3,
+        "mainNetRatio": 12.27,
+        "sectorFiveDayChange": 22.51
+      },
+      "tradePlan": {
+        "buyPrice": 45.18,
+        "aggressiveBuyPrice": 46.58,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 43.37,
+        "structuralStop": 40,
+        "takeProfit1": 49.7,
+        "takeProfit2": 54.22,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -23.5%，近5日低点较前60日低点 4.4%",
+        "前低关系 50.5%，假跌破作为加分项而非一票否决",
+        "当日涨幅 16.9%，量比 2.85",
+        "实体强度 71%，收盘位置 92.2%",
+        "主力净流入 13060.3 万元，行业5日强度排名前 5%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
@@ -299,154 +447,6 @@
           "title": "威尔高:2026年限制性股票激励计划内幕信息知情人买卖公司股票情况的自查报告",
           "date": "2026-07-29",
           "url": "https://data.eastmoney.com/notices/detail/301251/AN202607291827462387.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-06",
-      "code": "688800",
-      "name": "瑞可达",
-      "industry": "其他电子Ⅱ",
-      "industryRank": 38,
-      "industryRankPercent": 38,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 136,
-      "estimatedWinRate": 74.2,
-      "latestPrice": 58.48,
-      "dailyChange": 9.97,
-      "scores": {
-        "oversold": 25,
-        "lowStructure": 17,
-        "falseBreak": 8,
-        "priceRise": 17,
-        "volume": 12,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 17,
-        "sector": 9
-      },
-      "metrics": {
-        "dropFrom60High": -44.64,
-        "breakPct": 11.32,
-        "recent5LowPremium": -0.9,
-        "volumeRatio": 1.92,
-        "entityStrength": 84.4,
-        "closePosition": 88.1,
-        "turnover": 8.51,
-        "mainNetInflow": 10356.8,
-        "mainNetRatio": 7.5,
-        "sectorFiveDayChange": 13.35
-      },
-      "tradePlan": {
-        "buyPrice": 56.73,
-        "aggressiveBuyPrice": 58.48,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 54.46,
-        "structuralStop": 51.74,
-        "takeProfit1": 62.4,
-        "takeProfit2": 68.08,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -44.6%，近5日低点较前60日低点 -0.9%",
-        "前低关系 11.3%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 1.92",
-        "实体强度 84.4%，收盘位置 88.1%",
-        "主力净流入 10356.8 万元，行业5日强度排名前 38%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "瑞可达:关于2026年第二期员工持股计划完成股票购买的公告",
-          "date": "2026-07-30",
-          "url": "https://data.eastmoney.com/notices/detail/688800/AN202607291827457225.html"
-        },
-        {
-          "title": "瑞可达:北京国枫(南京)律师事务所关于苏州瑞可达连接系统股份有限公司2026年第四次临时股东会的法律意见书(1)",
-          "date": "2026-07-25",
-          "url": "https://data.eastmoney.com/notices/detail/688800/AN202607241827320278.html"
-        },
-        {
-          "title": "瑞可达:2026年第四次临时股东会决议公告",
-          "date": "2026-07-25",
-          "url": "https://data.eastmoney.com/notices/detail/688800/AN202607241827320276.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-06",
-      "code": "301319",
-      "name": "唯特偶",
-      "industry": "电子化学品Ⅱ",
-      "industryRank": 9,
-      "industryRankPercent": 9,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 133,
-      "estimatedWinRate": 73.2,
-      "latestPrice": 108.3,
-      "dailyChange": 10.5,
-      "scores": {
-        "oversold": 25,
-        "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 17,
-        "volume": 12,
-        "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 17,
-        "sector": 20
-      },
-      "metrics": {
-        "dropFrom60High": -51.87,
-        "breakPct": 43.19,
-        "recent5LowPremium": 49.55,
-        "volumeRatio": 1.9,
-        "entityStrength": 94.7,
-        "closePosition": 94.7,
-        "turnover": 15.73,
-        "mainNetInflow": 21447.3,
-        "mainNetRatio": 9.99,
-        "sectorFiveDayChange": 18.77
-      },
-      "tradePlan": {
-        "buyPrice": 105.05,
-        "aggressiveBuyPrice": 108.3,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 100.85,
-        "structuralStop": 91.34,
-        "takeProfit1": 115.56,
-        "takeProfit2": 126.06,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -51.9%，近5日低点较前60日低点 49.5%",
-        "前低关系 43.2%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10.5%，量比 1.9",
-        "实体强度 94.7%，收盘位置 94.7%",
-        "主力净流入 21447.3 万元，行业5日强度排名前 9%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "唯特偶:关于变更会计师事务所的公告",
-          "date": "2026-08-06",
-          "url": "https://data.eastmoney.com/notices/detail/301319/AN202608051827676262.html"
-        },
-        {
-          "title": "唯特偶:深圳市唯特偶新材料股份有限公司章程(2026年8月)",
-          "date": "2026-08-06",
-          "url": "https://data.eastmoney.com/notices/detail/301319/AN202608051827676269.html"
-        },
-        {
-          "title": "唯特偶:关于注销部分股票期权的公告",
-          "date": "2026-08-06",
-          "url": "https://data.eastmoney.com/notices/detail/301319/AN202608051827676258.html"
         }
       ]
     }
