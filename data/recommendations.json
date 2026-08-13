@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/8/12 16:50:03",
-  "tradeDate": "2026-08-12",
+  "generatedAt": "2026/8/13 16:53:19",
+  "tradeDate": "2026-08-13",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 40,
-  "signalCount": 23,
+  "scannedCount": 45,
+  "signalCount": 32,
   "riskReview": {
-    "announcementCheckedCount": 40,
-    "excludedByAnnouncement": 13,
+    "announcementCheckedCount": 45,
+    "excludedByAnnouncement": 9,
     "announcementRiskSamples": [
       {
-        "code": "600266",
-        "name": "城建发展",
-        "title": "城建发展:城建发展2026年半年度业绩预亏公告",
-        "date": "2026-07-15",
-        "url": "https://data.eastmoney.com/notices/detail/600266/AN202607141826955207.html"
+        "code": "600881",
+        "name": "亚泰集团",
+        "title": "亚泰集团:吉林亚泰(集团)股份有限公司股票交易风险提示公告",
+        "date": "2026-08-14",
+        "url": "https://data.eastmoney.com/notices/detail/600881/AN202608131827940835.html"
       },
       {
-        "code": "000802",
-        "name": "北京文化",
-        "title": "北京文化:关于持股5%以上股东减持股份预披露公告",
-        "date": "2026-06-13",
-        "url": "https://data.eastmoney.com/notices/detail/000802/AN202606121823518486.html"
+        "code": "002437",
+        "name": "誉衡药业",
+        "title": "誉衡药业:关于使用公积金弥补亏损通知债权人的公告",
+        "date": "2026-05-19",
+        "url": "https://data.eastmoney.com/notices/detail/002437/AN202605181822401888.html"
       },
       {
-        "code": "688143",
-        "name": "长盈通",
-        "title": "长盈通:关于股票交易风险提示暨停牌核查的公告",
-        "date": "2026-06-17",
-        "url": "https://data.eastmoney.com/notices/detail/688143/AN202606161823609122.html"
+        "code": "600613",
+        "name": "神奇制药",
+        "title": "神奇制药:上海神奇制药投资管理股份有限公司关于控股股东的一致行动人减持股份计划的公告",
+        "date": "2026-05-01",
+        "url": "https://data.eastmoney.com/notices/detail/600613/AN202604301821841585.html"
       },
       {
-        "code": "603269",
-        "name": "海鸥股份",
-        "title": "海鸥股份:江苏海鸥冷却塔股份有限公司控股股东减持股份计划公告",
-        "date": "2026-07-04",
-        "url": "https://data.eastmoney.com/notices/detail/603269/AN202607031826698337.html"
+        "code": "300039",
+        "name": "上海凯宝",
+        "title": "深交所:上海凯宝_监管函",
+        "date": "2026-06-09",
+        "url": "https://data.eastmoney.com/notices/detail/300039/AN202606091823396093.html"
       },
       {
-        "code": "300615",
-        "name": "欣天科技",
-        "title": "欣天科技:关于持股5%以上股东未减持股份并提前终止股份减持计划的公告",
-        "date": "2026-08-03",
-        "url": "https://data.eastmoney.com/notices/detail/300615/AN202608021827568155.html"
+        "code": "688758",
+        "name": "赛分科技",
+        "title": "赛分科技:苏州赛分科技股份有限公司关于持股5%以上股东、董事减持股份计划的公告",
+        "date": "2026-07-28",
+        "url": "https://data.eastmoney.com/notices/detail/688758/AN202607271827389352.html"
       }
     ],
     "riskKeywords": [
@@ -82,371 +82,371 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-12",
-      "code": "002792",
-      "name": "通宇通讯",
-      "industry": "通信设备",
-      "industryRank": 32,
-      "industryRankPercent": 32,
+      "tradeDate": "2026-08-13",
+      "code": "688137",
+      "name": "近岸蛋白",
+      "industry": "生物制品",
+      "industryRank": 5,
+      "industryRankPercent": 5,
       "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 124,
-      "estimatedWinRate": 70.4,
-      "latestPrice": 37.11,
-      "dailyChange": 9.99,
+      "setupType": "板块放量弹性",
+      "totalScore": 126,
+      "estimatedWinRate": 71.1,
+      "latestPrice": 64,
+      "dailyChange": 20.01,
       "scores": {
-        "oversold": 17,
+        "oversold": 4,
         "lowStructure": 4,
         "falseBreak": 3,
         "priceRise": 20,
         "volume": 20,
         "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 20,
-        "sector": 9
-      },
-      "metrics": {
-        "dropFrom60High": -26.98,
-        "breakPct": 54.66,
-        "recent5LowPremium": 46.83,
-        "volumeRatio": 3.35,
-        "entityStrength": 75.9,
-        "closePosition": 100,
-        "turnover": 27.19,
-        "mainNetInflow": 39720.4,
-        "mainNetRatio": 12.11,
-        "sectorFiveDayChange": 6.23
-      },
-      "tradePlan": {
-        "buyPrice": 36,
-        "aggressiveBuyPrice": 37.11,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 34.56,
-        "structuralStop": 33.16,
-        "takeProfit1": 39.6,
-        "takeProfit2": 43.2,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -27%，近5日低点较前60日低点 46.8%",
-        "前低关系 54.7%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 3.35",
-        "实体强度 75.9%，收盘位置 100%",
-        "主力净流入 39720.4 万元，行业5日强度排名前 32%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "通宇通讯:股票交易异常波动公告",
-          "date": "2026-08-08",
-          "url": "https://data.eastmoney.com/notices/detail/002792/AN202608071827752723.html"
-        },
-        {
-          "title": "通宇通讯:关于市场传闻的澄清公告",
-          "date": "2026-08-07",
-          "url": "https://data.eastmoney.com/notices/detail/002792/AN202608061827719772.html"
-        },
-        {
-          "title": "通宇通讯:第六届董事会第六次会议决议公告",
-          "date": "2026-08-05",
-          "url": "https://data.eastmoney.com/notices/detail/002792/AN202608041827630416.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-12",
-      "code": "301282",
-      "name": "金禄电子",
-      "industry": "元件",
-      "industryRank": 6,
-      "industryRankPercent": 6,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 114,
-      "estimatedWinRate": 67.3,
-      "latestPrice": 26.45,
-      "dailyChange": 11.13,
-      "scores": {
-        "oversold": 10,
-        "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 17,
-        "volume": 17,
-        "candleQuality": 8,
         "turnover": 15,
         "moneyFlow": 20,
         "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -19.9,
-        "breakPct": 39.98,
-        "recent5LowPremium": 30.72,
-        "volumeRatio": 2.33,
-        "entityStrength": 68.8,
-        "closePosition": 69.1,
-        "turnover": 11.36,
-        "mainNetInflow": 6625.8,
-        "mainNetRatio": 12.74,
-        "sectorFiveDayChange": 11.1
+        "dropFrom60High": 2.73,
+        "breakPct": 56.66,
+        "recent5LowPremium": 16.14,
+        "volumeRatio": 3.38,
+        "entityStrength": 92.3,
+        "closePosition": 100,
+        "turnover": 10.42,
+        "mainNetInflow": 7414.9,
+        "mainNetRatio": 17.45,
+        "sectorFiveDayChange": 11.07
       },
       "tradePlan": {
-        "buyPrice": 25.66,
-        "aggressiveBuyPrice": 26.45,
+        "buyPrice": 62.08,
+        "aggressiveBuyPrice": 64,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 24.63,
-        "structuralStop": 23.88,
-        "takeProfit1": 28.23,
-        "takeProfit2": 30.79,
+        "stopLoss": 59.6,
+        "structuralStop": 52.01,
+        "takeProfit1": 68.29,
+        "takeProfit2": 74.5,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -19.9%，近5日低点较前60日低点 30.7%",
-        "前低关系 40%，假跌破作为加分项而非一票否决",
-        "当日涨幅 11.1%，量比 2.33",
-        "实体强度 68.8%，收盘位置 69.1%",
-        "主力净流入 6625.8 万元，行业5日强度排名前 6%",
+        "板块放量弹性：距60日高点 2.7%，近5日低点较前60日低点 16.1%",
+        "前低关系 56.7%，假跌破作为加分项而非一票否决",
+        "当日涨幅 20%，量比 3.38",
+        "实体强度 92.3%，收盘位置 100%",
+        "主力净流入 7414.9 万元，行业5日强度排名前 5%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "金禄电子:2026年半年度业绩预告",
-          "date": "2026-07-20",
-          "url": "https://data.eastmoney.com/notices/detail/301282/AN202607201827146659.html"
+          "title": "近岸蛋白:股票交易异常波动公告",
+          "date": "2026-08-11",
+          "url": "https://data.eastmoney.com/notices/detail/688137/AN202608101827813323.html"
         },
         {
-          "title": "金禄电子:关于近期投资者关注有关事项的情况说明公告",
-          "date": "2026-06-11",
-          "url": "https://data.eastmoney.com/notices/detail/301282/AN202606111823456058.html"
+          "title": "近岸蛋白:2025年度暨2026年第一季度业绩说明会投资者关系活动记录表",
+          "date": "2026-06-30",
+          "url": "https://data.eastmoney.com/notices/detail/688137/AN202606301826596041.html"
         },
         {
-          "title": "金禄电子:关于向2026年限制性股票激励计划激励对象首次授予限制性股票的公告",
-          "date": "2026-06-10",
-          "url": "https://data.eastmoney.com/notices/detail/301282/AN202606091823396963.html"
+          "title": "近岸蛋白:关于召开2025年度暨2026年第一季度业绩说明会的公告",
+          "date": "2026-06-24",
+          "url": "https://data.eastmoney.com/notices/detail/688137/AN202606231823771636.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-12",
-      "code": "002164",
-      "name": "宁波东力",
-      "industry": "通用设备",
-      "industryRank": 55,
-      "industryRankPercent": 55,
+      "tradeDate": "2026-08-13",
+      "code": "301060",
+      "name": "兰卫医学",
+      "industry": "医疗服务",
+      "industryRank": 2,
+      "industryRankPercent": 2,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 113,
-      "estimatedWinRate": 67,
-      "latestPrice": 13.09,
-      "dailyChange": 10,
+      "totalScore": 126,
+      "estimatedWinRate": 71.1,
+      "latestPrice": 11.96,
+      "dailyChange": 19.96,
       "scores": {
-        "oversold": 10,
+        "oversold": 4,
         "lowStructure": 4,
         "falseBreak": 3,
         "priceRise": 20,
         "volume": 20,
         "candleQuality": 20,
-        "turnover": 11,
+        "turnover": 15,
         "moneyFlow": 20,
-        "sector": 5
+        "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -14.22,
-        "breakPct": 21.38,
-        "recent5LowPremium": 15.31,
-        "volumeRatio": 3.85,
-        "entityStrength": 88.3,
+        "dropFrom60High": 10.63,
+        "breakPct": 25.19,
+        "recent5LowPremium": 12.98,
+        "volumeRatio": 3.87,
+        "entityStrength": 100,
         "closePosition": 100,
-        "turnover": 7.32,
-        "mainNetInflow": 13020.7,
-        "mainNetRatio": 29,
-        "sectorFiveDayChange": 5.07
+        "turnover": 10.65,
+        "mainNetInflow": 9437.4,
+        "mainNetRatio": 22.15,
+        "sectorFiveDayChange": 19.17
       },
       "tradePlan": {
-        "buyPrice": 12.7,
-        "aggressiveBuyPrice": 13.09,
+        "buyPrice": 11.6,
+        "aggressiveBuyPrice": 11.96,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 12.19,
-        "structuralStop": 11.81,
-        "takeProfit1": 13.97,
-        "takeProfit2": 15.24,
+        "stopLoss": 11.14,
+        "structuralStop": 9.84,
+        "takeProfit1": 12.76,
+        "takeProfit2": 13.92,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -14.2%，近5日低点较前60日低点 15.3%",
-        "前低关系 21.4%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 3.85",
-        "实体强度 88.3%，收盘位置 100%",
-        "主力净流入 13020.7 万元，行业5日强度排名前 55%",
+        "板块放量弹性：距60日高点 10.6%，近5日低点较前60日低点 13%",
+        "前低关系 25.2%，假跌破作为加分项而非一票否决",
+        "当日涨幅 20%，量比 3.87",
+        "实体强度 100%，收盘位置 100%",
+        "主力净流入 9437.4 万元，行业5日强度排名前 2%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "宁波东力:关于回购公司股份实施结果暨股份变动的公告",
-          "date": "2026-08-05",
-          "url": "https://data.eastmoney.com/notices/detail/002164/AN202608041827623958.html"
+          "title": "兰卫医学:关于公司为控股子公司提供担保的进展公告",
+          "date": "2026-07-14",
+          "url": "https://data.eastmoney.com/notices/detail/301060/AN202607141826963746.html"
         },
         {
-          "title": "宁波东力:第七届董事会第十四次会议决议公告",
-          "date": "2026-07-21",
-          "url": "https://data.eastmoney.com/notices/detail/002164/AN202607201827154746.html"
+          "title": "兰卫医学:2025年年度权益分派实施公告",
+          "date": "2026-05-29",
+          "url": "https://data.eastmoney.com/notices/detail/301060/AN202605291823019454.html"
         },
         {
-          "title": "宁波东力:关于向控股子公司增资的公告",
-          "date": "2026-07-21",
-          "url": "https://data.eastmoney.com/notices/detail/002164/AN202607201827154747.html"
+          "title": "兰卫医学:2025年年度股东会决议公告",
+          "date": "2026-05-22",
+          "url": "https://data.eastmoney.com/notices/detail/301060/AN202605221822690203.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-12",
-      "code": "301129",
-      "name": "瑞纳智能",
-      "industry": "通用设备",
-      "industryRank": 55,
-      "industryRankPercent": 55,
+      "tradeDate": "2026-08-13",
+      "code": "300404",
+      "name": "博济医药",
+      "industry": "医疗服务",
+      "industryRank": 2,
+      "industryRankPercent": 2,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 111,
-      "estimatedWinRate": 66.4,
-      "latestPrice": 24.88,
-      "dailyChange": 17.25,
+      "totalScore": 123,
+      "estimatedWinRate": 70.1,
+      "latestPrice": 14.45,
+      "dailyChange": 20.02,
       "scores": {
-        "oversold": 10,
+        "oversold": 4,
         "lowStructure": 4,
         "falseBreak": 3,
-        "priceRise": 17,
-        "volume": 20,
+        "priceRise": 20,
+        "volume": 17,
         "candleQuality": 20,
         "turnover": 15,
-        "moneyFlow": 17,
-        "sector": 5
+        "moneyFlow": 20,
+        "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -15.4,
-        "breakPct": 21.37,
-        "recent5LowPremium": 18.49,
-        "volumeRatio": 5.13,
-        "entityStrength": 82.2,
-        "closePosition": 87,
-        "turnover": 11.66,
-        "mainNetInflow": 1567.1,
-        "mainNetRatio": 8.28,
-        "sectorFiveDayChange": 5.07
+        "dropFrom60High": 12.19,
+        "breakPct": 46.13,
+        "recent5LowPremium": 20.98,
+        "volumeRatio": 2.06,
+        "entityStrength": 99.6,
+        "closePosition": 100,
+        "turnover": 21.43,
+        "mainNetInflow": 13900.2,
+        "mainNetRatio": 16.89,
+        "sectorFiveDayChange": 19.17
       },
       "tradePlan": {
-        "buyPrice": 24.13,
-        "aggressiveBuyPrice": 24.88,
+        "buyPrice": 14.02,
+        "aggressiveBuyPrice": 14.45,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 23.16,
-        "structuralStop": 21.01,
-        "takeProfit1": 26.54,
-        "takeProfit2": 28.96,
+        "stopLoss": 13.46,
+        "structuralStop": 11.91,
+        "takeProfit1": 15.42,
+        "takeProfit2": 16.82,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -15.4%，近5日低点较前60日低点 18.5%",
-        "前低关系 21.4%，假跌破作为加分项而非一票否决",
-        "当日涨幅 17.2%，量比 5.13",
-        "实体强度 82.2%，收盘位置 87%",
-        "主力净流入 1567.1 万元，行业5日强度排名前 55%",
+        "板块放量弹性：距60日高点 12.2%，近5日低点较前60日低点 21%",
+        "前低关系 46.1%，假跌破作为加分项而非一票否决",
+        "当日涨幅 20%，量比 2.06",
+        "实体强度 99.6%，收盘位置 100%",
+        "主力净流入 13900.2 万元，行业5日强度排名前 2%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "瑞纳智能:关于完成工商变更登记并取得换发营业执照的公告",
-          "date": "2026-08-08",
-          "url": "https://data.eastmoney.com/notices/detail/301129/AN202608071827754679.html"
+          "title": "博济医药:关于公司董事会完成换届选举及聘任公司高级管理人员、证券事务代表、内审部负责人的公告",
+          "date": "2026-08-01",
+          "url": "https://data.eastmoney.com/notices/detail/300404/AN202607311827535882.html"
         },
         {
-          "title": "瑞纳智能:北京炜衡(上海)律师事务所关于瑞纳智能设备股份有限公司2024年限制性股票激励计划回购注销部分限制性股票实施情况的法律意见书",
-          "date": "2026-07-20",
-          "url": "https://data.eastmoney.com/notices/detail/301129/AN202607201827144504.html"
+          "title": "博济医药:第六届董事会第一次会议决议公告",
+          "date": "2026-08-01",
+          "url": "https://data.eastmoney.com/notices/detail/300404/AN202607311827535887.html"
         },
         {
-          "title": "瑞纳智能:2024年限制性股票激励计划部分限制性股票注销完成的公告",
-          "date": "2026-07-20",
-          "url": "https://data.eastmoney.com/notices/detail/301129/AN202607201827144505.html"
+          "title": "博济医药:关于全资子公司参与投资的新药产业投资基金解散清算的公告",
+          "date": "2026-08-01",
+          "url": "https://data.eastmoney.com/notices/detail/300404/AN202607311827535892.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-12",
-      "code": "002885",
-      "name": "京泉华",
-      "industry": "其他电子Ⅱ",
+      "tradeDate": "2026-08-13",
+      "code": "603998",
+      "name": "方盛制药",
+      "industry": "中药Ⅱ",
       "industryRank": 25,
       "industryRankPercent": 25,
       "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 111,
-      "estimatedWinRate": 66.4,
-      "latestPrice": 31.88,
-      "dailyChange": 4.9,
+      "setupType": "板块放量弹性",
+      "totalScore": 121,
+      "estimatedWinRate": 69.5,
+      "latestPrice": 10.77,
+      "dailyChange": 10.01,
       "scores": {
-        "oversold": 25,
+        "oversold": 4,
         "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 8,
-        "volume": 17,
-        "candleQuality": 14,
-        "turnover": 15,
-        "moneyFlow": 11,
+        "falseBreak": 8,
+        "priceRise": 20,
+        "volume": 20,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 20,
         "sector": 14
       },
       "metrics": {
-        "dropFrom60High": -42.83,
-        "breakPct": 43.94,
-        "recent5LowPremium": 21.43,
-        "volumeRatio": 2.41,
-        "entityStrength": 71.5,
-        "closePosition": 71.5,
-        "turnover": 18.01,
-        "mainNetInflow": 2832.5,
-        "mainNetRatio": 2.1,
-        "sectorFiveDayChange": 7.13
+        "dropFrom60High": 3.76,
+        "breakPct": 11.46,
+        "recent5LowPremium": 8.33,
+        "volumeRatio": 4.22,
+        "entityStrength": 91.2,
+        "closePosition": 100,
+        "turnover": 9.05,
+        "mainNetInflow": 10097.3,
+        "mainNetRatio": 24.36,
+        "sectorFiveDayChange": 4.54
       },
       "tradePlan": {
-        "buyPrice": 31.19,
-        "aggressiveBuyPrice": 31.88,
+        "buyPrice": 10.45,
+        "aggressiveBuyPrice": 10.77,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 29.94,
-        "structuralStop": 30.5,
-        "takeProfit1": 34.31,
-        "takeProfit2": 37.43,
+        "stopLoss": 10.03,
+        "structuralStop": 9.63,
+        "takeProfit1": 11.5,
+        "takeProfit2": 12.54,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -42.8%，近5日低点较前60日低点 21.4%",
-        "前低关系 43.9%，假跌破作为加分项而非一票否决",
-        "当日涨幅 4.9%，量比 2.41",
-        "实体强度 71.5%，收盘位置 71.5%",
-        "主力净流入 2832.5 万元，行业5日强度排名前 25%",
+        "板块放量弹性：距60日高点 3.8%，近5日低点较前60日低点 8.3%",
+        "前低关系 11.5%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 4.22",
+        "实体强度 91.2%，收盘位置 100%",
+        "主力净流入 10097.3 万元，行业5日强度排名前 25%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "京泉华:关于证券事务代表辞职的公告",
-          "date": "2026-07-14",
-          "url": "https://data.eastmoney.com/notices/detail/002885/AN202607131826930767.html"
+          "title": "方盛制药:投资者关系活动记录表(2026-014)",
+          "date": "2026-08-06",
+          "url": "https://data.eastmoney.com/notices/detail/603998/AN202608061827712057.html"
         },
         {
-          "title": "京泉华:2026年半年度业绩预告",
-          "date": "2026-07-14",
-          "url": "https://data.eastmoney.com/notices/detail/002885/AN202607131826929465.html"
+          "title": "方盛制药:方盛制药关于公司产品拟中选第十二批国家组织药品集中带量采购的公告",
+          "date": "2026-08-04",
+          "url": "https://data.eastmoney.com/notices/detail/603998/AN202608031827592700.html"
         },
         {
-          "title": "京泉华:关于股东减持股份预披露的公告",
-          "date": "2026-06-22",
-          "url": "https://data.eastmoney.com/notices/detail/002885/AN202606211823708643.html"
+          "title": "方盛制药:投资者关系活动记录表(2026-012、013)",
+          "date": "2026-07-31",
+          "url": "https://data.eastmoney.com/notices/detail/603998/AN202607311827526023.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-08-13",
+      "code": "002219",
+      "name": "新里程",
+      "industry": "医疗服务",
+      "industryRank": 2,
+      "industryRankPercent": 2,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 119,
+      "estimatedWinRate": 68.9,
+      "latestPrice": 2.5,
+      "dailyChange": 10.13,
+      "scores": {
+        "oversold": 4,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 20
+      },
+      "metrics": {
+        "dropFrom60High": 7.76,
+        "breakPct": 31.95,
+        "recent5LowPremium": 21.89,
+        "volumeRatio": 2.64,
+        "entityStrength": 96.3,
+        "closePosition": 100,
+        "turnover": 7.56,
+        "mainNetInflow": 13667,
+        "mainNetRatio": 22.81,
+        "sectorFiveDayChange": 19.17
+      },
+      "tradePlan": {
+        "buyPrice": 2.42,
+        "aggressiveBuyPrice": 2.5,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 2.32,
+        "structuralStop": 2.23,
+        "takeProfit1": 2.66,
+        "takeProfit2": 2.9,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 7.8%，近5日低点较前60日低点 21.9%",
+        "前低关系 32%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10.1%，量比 2.64",
+        "实体强度 96.3%，收盘位置 100%",
+        "主力净流入 13667 万元，行业5日强度排名前 2%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "新里程:关于为下属医院提供担保的进展公告",
+          "date": "2026-08-11",
+          "url": "https://data.eastmoney.com/notices/detail/002219/AN202608101827810988.html"
+        },
+        {
+          "title": "新里程:关于为下属医院提供担保的进展公告",
+          "date": "2026-08-06",
+          "url": "https://data.eastmoney.com/notices/detail/002219/AN202608051827674325.html"
+        },
+        {
+          "title": "新里程:关于为下属医院提供担保的进展公告",
+          "date": "2026-07-30",
+          "url": "https://data.eastmoney.com/notices/detail/002219/AN202607291827458654.html"
         }
       ]
     }
