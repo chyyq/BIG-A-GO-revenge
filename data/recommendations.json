@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/8/20 16:08:08",
-  "tradeDate": "2026-08-20",
+  "generatedAt": "2026/8/21 16:09:25",
+  "tradeDate": "2026-08-21",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 80,
-  "signalCount": 38,
+  "scannedCount": 41,
+  "signalCount": 25,
   "riskReview": {
-    "announcementCheckedCount": 80,
-    "excludedByAnnouncement": 10,
+    "announcementCheckedCount": 41,
+    "excludedByAnnouncement": 9,
     "announcementRiskSamples": [
       {
-        "code": "688143",
-        "name": "长盈通",
-        "title": "长盈通:关于股票交易风险提示暨停牌核查的公告",
-        "date": "2026-06-17",
-        "url": "https://data.eastmoney.com/notices/detail/688143/AN202606161823609122.html"
+        "code": "300128",
+        "name": "锦富技术",
+        "title": "锦富技术:关于持股5%以上股东未减持股份并提前终止减持计划的公告",
+        "date": "2026-07-20",
+        "url": "https://data.eastmoney.com/notices/detail/300128/AN202607201827150165.html"
       },
       {
-        "code": "002313",
-        "name": "日海智能",
-        "title": "日海智能:关于新增累计诉讼、仲裁案件情况的公告",
-        "date": "2026-07-21",
-        "url": "https://data.eastmoney.com/notices/detail/002313/AN202607201827148940.html"
+        "code": "002638",
+        "name": "勤上股份",
+        "title": "勤上股份:关于公司申请仲裁的进展公告",
+        "date": "2026-08-21",
+        "url": "https://data.eastmoney.com/notices/detail/002638/AN202608201828207562.html"
       },
       {
-        "code": "688758",
-        "name": "赛分科技",
-        "title": "赛分科技:苏州赛分科技股份有限公司关于持股5%以上股东、董事减持股份计划的公告",
-        "date": "2026-07-28",
-        "url": "https://data.eastmoney.com/notices/detail/688758/AN202607271827389352.html"
+        "code": "603330",
+        "name": "天洋新材",
+        "title": "天洋新材:股票交易风险提示公告",
+        "date": "2026-08-15",
+        "url": "https://data.eastmoney.com/notices/detail/603330/AN202608141827985640.html"
       },
       {
-        "code": "603199",
-        "name": "九华旅游",
-        "title": "九华旅游:九华旅游关于副总经理被立案审查调查并留置的公告",
-        "date": "2026-05-23",
-        "url": "https://data.eastmoney.com/notices/detail/603199/AN202605221822688315.html"
+        "code": "300839",
+        "name": "博汇股份",
+        "title": "博汇股份:关于公司重大仲裁事项的进展公告",
+        "date": "2026-06-08",
+        "url": "https://data.eastmoney.com/notices/detail/300839/AN202606081823364604.html"
       },
       {
-        "code": "002693",
-        "name": "双成药业",
-        "title": "*ST双成:海南双成药业股份有限公司关于公司股票交易撤销退市风险警示暨停复牌的公告",
-        "date": "2026-05-22",
-        "url": "https://data.eastmoney.com/notices/detail/002693/AN202605211822654760.html"
+        "code": "603580",
+        "name": "艾艾精工",
+        "title": "艾艾精工:艾艾精工股票交易风险提示公告",
+        "date": "2026-08-21",
+        "url": "https://data.eastmoney.com/notices/detail/603580/AN202608201828209072.html"
       }
     ],
     "riskKeywords": [
@@ -82,371 +82,371 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-20",
-      "code": "605080",
-      "name": "浙江自然",
-      "industry": "文娱用品",
-      "industryRank": 28,
-      "industryRankPercent": 28,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 127,
-      "estimatedWinRate": 71.4,
-      "latestPrice": 22.34,
-      "dailyChange": 10,
-      "scores": {
-        "oversold": 10,
-        "lowStructure": 4,
-        "falseBreak": 8,
-        "priceRise": 20,
-        "volume": 20,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 20,
-        "sector": 14
-      },
-      "metrics": {
-        "dropFrom60High": -15.54,
-        "breakPct": 8.89,
-        "recent5LowPremium": 7.38,
-        "volumeRatio": 6.77,
-        "entityStrength": 96.2,
-        "closePosition": 100,
-        "turnover": 7.25,
-        "mainNetInflow": 5137.9,
-        "mainNetRatio": 23.08,
-        "sectorFiveDayChange": 0.81
-      },
-      "tradePlan": {
-        "buyPrice": 21.67,
-        "aggressiveBuyPrice": 22.34,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 20.8,
-        "structuralStop": 20.21,
-        "takeProfit1": 23.84,
-        "takeProfit2": 26,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "板块放量弹性：距60日高点 -15.5%，近5日低点较前60日低点 7.4%",
-        "前低关系 8.9%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 6.77",
-        "实体强度 96.2%，收盘位置 100%",
-        "主力净流入 5137.9 万元，行业5日强度排名前 28%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "浙江自然:浙江自然关于使用部分闲置募集资金进行现金管理的进展公告",
-          "date": "2026-07-23",
-          "url": "https://data.eastmoney.com/notices/detail/605080/AN202607221827258954.html"
-        },
-        {
-          "title": "浙江自然:浙江自然关于使用部分闲置募集资金进行现金管理部分赎回的公告",
-          "date": "2026-07-11",
-          "url": "https://data.eastmoney.com/notices/detail/605080/AN202607101826873197.html"
-        },
-        {
-          "title": "浙江自然:浙江自然2025年年度权益分派实施公告",
-          "date": "2026-07-10",
-          "url": "https://data.eastmoney.com/notices/detail/605080/AN202607091826846702.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-20",
-      "code": "300710",
-      "name": "万隆光电",
-      "industry": "通信设备",
+      "tradeDate": "2026-08-21",
+      "code": "301591",
+      "name": "肯特股份",
+      "industry": "塑料",
       "industryRank": 46,
       "industryRankPercent": 46,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 126,
-      "estimatedWinRate": 71.1,
-      "latestPrice": 32.27,
+      "totalScore": 125,
+      "estimatedWinRate": 70.8,
+      "latestPrice": 37.78,
       "dailyChange": 20.01,
       "scores": {
         "oversold": 22,
         "lowStructure": 4,
         "falseBreak": 3,
         "priceRise": 20,
+        "volume": 12,
+        "candleQuality": 20,
+        "turnover": 15,
+        "moneyFlow": 20,
+        "sector": 9
+      },
+      "metrics": {
+        "dropFrom60High": -36.79,
+        "breakPct": 32.54,
+        "recent5LowPremium": 32.54,
+        "volumeRatio": 1.92,
+        "entityStrength": 86.7,
+        "closePosition": 100,
+        "turnover": 24.9,
+        "mainNetInflow": 6955.5,
+        "mainNetRatio": 18.25,
+        "sectorFiveDayChange": 0.17
+      },
+      "tradePlan": {
+        "buyPrice": 36.65,
+        "aggressiveBuyPrice": 37.78,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 35.18,
+        "structuralStop": 30.51,
+        "takeProfit1": 40.32,
+        "takeProfit2": 43.98,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -36.8%，近5日低点较前60日低点 32.5%",
+        "前低关系 32.5%，假跌破作为加分项而非一票否决",
+        "当日涨幅 20%，量比 1.92",
+        "实体强度 86.7%，收盘位置 100%",
+        "主力净流入 6955.5 万元，行业5日强度排名前 46%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "肯特股份:董事会薪酬与考核委员会关于公司2026年限制性股票激励计划首次授予激励对象名单的公示情况说明及核查意见",
+          "date": "2026-08-17",
+          "url": "https://data.eastmoney.com/notices/detail/301591/AN202608171828052990.html"
+        },
+        {
+          "title": "肯特股份:2026年限制性股票激励计划(草案)摘要",
+          "date": "2026-08-07",
+          "url": "https://data.eastmoney.com/notices/detail/301591/AN202608061827719469.html"
+        },
+        {
+          "title": "肯特股份:2026年限制性股票激励计划实施考核管理办法",
+          "date": "2026-08-07",
+          "url": "https://data.eastmoney.com/notices/detail/301591/AN202608061827719470.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-08-21",
+      "code": "000628",
+      "name": "高新发展",
+      "industry": "房屋建设Ⅱ",
+      "industryRank": 15,
+      "industryRankPercent": 15,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 124,
+      "estimatedWinRate": 70.4,
+      "latestPrice": 45.35,
+      "dailyChange": 9.99,
+      "scores": {
+        "oversold": 17,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 12,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 17
+      },
+      "metrics": {
+        "dropFrom60High": -28.24,
+        "breakPct": 25.31,
+        "recent5LowPremium": 19.96,
+        "volumeRatio": 1.66,
+        "entityStrength": 90.3,
+        "closePosition": 100,
+        "turnover": 8.72,
+        "mainNetInflow": 17092.3,
+        "mainNetRatio": 23.36,
+        "sectorFiveDayChange": 3.19
+      },
+      "tradePlan": {
+        "buyPrice": 43.99,
+        "aggressiveBuyPrice": 45.35,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 42.23,
+        "structuralStop": 40.8,
+        "takeProfit1": 48.39,
+        "takeProfit2": 52.79,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -28.2%，近5日低点较前60日低点 20%",
+        "前低关系 25.3%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.66",
+        "实体强度 90.3%，收盘位置 100%",
+        "主力净流入 17092.3 万元，行业5日强度排名前 15%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "高新发展:成都高新发展股份有限公司第九届董事会第十二次临时会议决议公告",
+          "date": "2026-08-15",
+          "url": "https://data.eastmoney.com/notices/detail/000628/AN202608141827987234.html"
+        },
+        {
+          "title": "高新发展:成都高新发展股份有限公司董事会战略与ESG委员会工作规程",
+          "date": "2026-08-15",
+          "url": "https://data.eastmoney.com/notices/detail/000628/AN202608141827987220.html"
+        },
+        {
+          "title": "高新发展:成都高新发展股份有限公司关于建筑业务2026年第二季度经营情况的公告",
+          "date": "2026-07-31",
+          "url": "https://data.eastmoney.com/notices/detail/000628/AN202607301827492477.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-08-21",
+      "code": "002716",
+      "name": "湖南白银",
+      "industry": "贵金属",
+      "industryRank": 2,
+      "industryRankPercent": 2,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 123,
+      "estimatedWinRate": 70.1,
+      "latestPrice": 10.42,
+      "dailyChange": 10.03,
+      "scores": {
+        "oversold": 4,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 20,
         "volume": 17,
+        "candleQuality": 20,
+        "turnover": 15,
+        "moneyFlow": 20,
+        "sector": 20
+      },
+      "metrics": {
+        "dropFrom60High": 0.77,
+        "breakPct": 40.09,
+        "recent5LowPremium": 32.79,
+        "volumeRatio": 2.08,
+        "entityStrength": 75.5,
+        "closePosition": 100,
+        "turnover": 18.29,
+        "mainNetInflow": 105591.5,
+        "mainNetRatio": 24.48,
+        "sectorFiveDayChange": 15.14
+      },
+      "tradePlan": {
+        "buyPrice": 10.11,
+        "aggressiveBuyPrice": 10.42,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 9.71,
+        "structuralStop": 9.4,
+        "takeProfit1": 11.12,
+        "takeProfit2": 12.13,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 0.8%，近5日低点较前60日低点 32.8%",
+        "前低关系 40.1%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 2.08",
+        "实体强度 75.5%，收盘位置 100%",
+        "主力净流入 105591.5 万元，行业5日强度排名前 2%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "湖南白银:2026年半年度报告",
+          "date": "2026-08-21",
+          "url": "https://data.eastmoney.com/notices/detail/002716/AN202608201828210251.html"
+        },
+        {
+          "title": "湖南白银:关于2026年半年度计提资产减值准备的公告",
+          "date": "2026-08-21",
+          "url": "https://data.eastmoney.com/notices/detail/002716/AN202608201828210222.html"
+        },
+        {
+          "title": "湖南白银:关于续聘2026年度审计机构的公告",
+          "date": "2026-08-21",
+          "url": "https://data.eastmoney.com/notices/detail/002716/AN202608201828210215.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-08-21",
+      "code": "002988",
+      "name": "豪美新材",
+      "industry": "工业金属",
+      "industryRank": 26,
+      "industryRankPercent": 26,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 122,
+      "estimatedWinRate": 69.8,
+      "latestPrice": 24.11,
+      "dailyChange": 9.99,
+      "scores": {
+        "oversold": 17,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 7,
+        "moneyFlow": 20,
+        "sector": 14
+      },
+      "metrics": {
+        "dropFrom60High": -26.94,
+        "breakPct": 19.25,
+        "recent5LowPremium": 19.09,
+        "volumeRatio": 2.46,
+        "entityStrength": 95.1,
+        "closePosition": 100,
+        "turnover": 4.75,
+        "mainNetInflow": 6477,
+        "mainNetRatio": 23.1,
+        "sectorFiveDayChange": 2.11
+      },
+      "tradePlan": {
+        "buyPrice": 23.39,
+        "aggressiveBuyPrice": 24.11,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 22.45,
+        "structuralStop": 21.68,
+        "takeProfit1": 25.73,
+        "takeProfit2": 28.07,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -26.9%，近5日低点较前60日低点 19.1%",
+        "前低关系 19.3%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 2.46",
+        "实体强度 95.1%，收盘位置 100%",
+        "主力净流入 6477 万元，行业5日强度排名前 26%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "豪美新材:关于与专业投资机构共同投资设立产业基金的公告",
+          "date": "2026-08-18",
+          "url": "https://data.eastmoney.com/notices/detail/002988/AN202608171828056046.html"
+        },
+        {
+          "title": "豪美新材:关于公司全资子公司签订租赁合同的公告",
+          "date": "2026-07-16",
+          "url": "https://data.eastmoney.com/notices/detail/002988/AN202607151826991197.html"
+        },
+        {
+          "title": "豪美新材:第五届董事会第十次会议决议公告",
+          "date": "2026-07-16",
+          "url": "https://data.eastmoney.com/notices/detail/002988/AN202607151826991198.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-08-21",
+      "code": "002886",
+      "name": "沃特股份",
+      "industry": "塑料",
+      "industryRank": 46,
+      "industryRankPercent": 46,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 121,
+      "estimatedWinRate": 69.5,
+      "latestPrice": 21.24,
+      "dailyChange": 9.99,
+      "scores": {
+        "oversold": 22,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 12,
         "candleQuality": 20,
         "turnover": 11,
         "moneyFlow": 20,
         "sector": 9
       },
       "metrics": {
-        "dropFrom60High": -32.77,
-        "breakPct": 16.72,
-        "recent5LowPremium": 15.85,
-        "volumeRatio": 2.96,
-        "entityStrength": 94.8,
+        "dropFrom60High": -36.18,
+        "breakPct": 21.87,
+        "recent5LowPremium": 21.87,
+        "volumeRatio": 1.74,
+        "entityStrength": 86,
         "closePosition": 100,
-        "turnover": 8.85,
-        "mainNetInflow": 5047.5,
-        "mainNetRatio": 25.08,
+        "turnover": 8.3,
+        "mainNetInflow": 7458.7,
+        "mainNetRatio": 21.31,
         "sectorFiveDayChange": 0.17
       },
       "tradePlan": {
-        "buyPrice": 31.3,
-        "aggressiveBuyPrice": 32.27,
+        "buyPrice": 20.6,
+        "aggressiveBuyPrice": 21.24,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 30.05,
-        "structuralStop": 26.88,
-        "takeProfit1": 34.43,
-        "takeProfit2": 37.56,
+        "stopLoss": 19.78,
+        "structuralStop": 18.89,
+        "takeProfit1": 22.66,
+        "takeProfit2": 24.72,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -32.8%，近5日低点较前60日低点 15.8%",
-        "前低关系 16.7%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 2.96",
-        "实体强度 94.8%，收盘位置 100%",
-        "主力净流入 5047.5 万元，行业5日强度排名前 46%",
+        "低位放量反弹：距60日高点 -36.2%，近5日低点较前60日低点 21.9%",
+        "前低关系 21.9%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.74",
+        "实体强度 86%，收盘位置 100%",
+        "主力净流入 7458.7 万元，行业5日强度排名前 46%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "万隆光电:关于延期回复《关于杭州万隆光电设备股份有限公司发行股份及支付现金购买资产并募集配套资金申请的审核问询函》的公告",
-          "date": "2026-08-10",
-          "url": "https://data.eastmoney.com/notices/detail/300710/AN202608101827810644.html"
+          "title": "沃特股份:2026年8月18日投资者关系活动记录表",
+          "date": "2026-08-19",
+          "url": "https://data.eastmoney.com/notices/detail/002886/AN202608191828162276.html"
         },
         {
-          "title": "万隆光电:关于发行股份及支付现金购买资产并募集配套资金暨关联交易的申请文件获得深圳证券交易所受理的公告",
-          "date": "2026-06-30",
-          "url": "https://data.eastmoney.com/notices/detail/300710/AN202606301826583337.html"
+          "title": "沃特股份:关于使用部分闲置募集资金和自有资金进行现金管理的公告",
+          "date": "2026-08-19",
+          "url": "https://data.eastmoney.com/notices/detail/002886/AN202608181828113402.html"
         },
         {
-          "title": "万隆光电:关于发行股份及支付现金购买资产并募集配套资金暨关联交易报告书(草案)(申报稿)修订说明的公告",
-          "date": "2026-06-30",
-          "url": "https://data.eastmoney.com/notices/detail/300710/AN202606301826583331.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-20",
-      "code": "300009",
-      "name": "安科生物",
-      "industry": "生物制品",
-      "industryRank": 7,
-      "industryRankPercent": 7,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 126,
-      "estimatedWinRate": 71.1,
-      "latestPrice": 10.15,
-      "dailyChange": 19.98,
-      "scores": {
-        "oversold": 4,
-        "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 20,
-        "volume": 20,
-        "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 20,
-        "sector": 20
-      },
-      "metrics": {
-        "dropFrom60High": 10.57,
-        "breakPct": 26.67,
-        "recent5LowPremium": 14.56,
-        "volumeRatio": 7.74,
-        "entityStrength": 89.3,
-        "closePosition": 100,
-        "turnover": 16.32,
-        "mainNetInflow": 41414,
-        "mainNetRatio": 21.06,
-        "sectorFiveDayChange": 4.46
-      },
-      "tradePlan": {
-        "buyPrice": 9.85,
-        "aggressiveBuyPrice": 10.15,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 9.46,
-        "structuralStop": 9.31,
-        "takeProfit1": 10.84,
-        "takeProfit2": 11.82,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "板块放量弹性：距60日高点 10.6%，近5日低点较前60日低点 14.6%",
-        "前低关系 26.7%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 7.74",
-        "实体强度 89.3%，收盘位置 100%",
-        "主力净流入 41414 万元，行业5日强度排名前 7%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "安科生物:关于获得注射用醋酸西曲瑞克药品注册上市许可《受理通知书》的公告",
-          "date": "2026-08-17",
-          "url": "https://data.eastmoney.com/notices/detail/300009/AN202608171828059402.html"
-        },
-        {
-          "title": "安科生物:关于公司第4期员工持股计划第一个锁定期届满暨解锁条件成就的公告",
-          "date": "2026-08-05",
-          "url": "https://data.eastmoney.com/notices/detail/300009/AN202608051827675595.html"
-        },
-        {
-          "title": "安科生物:关于第九届董事会第七次会议决议的公告",
-          "date": "2026-08-05",
-          "url": "https://data.eastmoney.com/notices/detail/300009/AN202608051827675596.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-20",
-      "code": "300601",
-      "name": "康泰生物",
-      "industry": "生物制品",
-      "industryRank": 7,
-      "industryRankPercent": 7,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 126,
-      "estimatedWinRate": 71.1,
-      "latestPrice": 14.47,
-      "dailyChange": 19.98,
-      "scores": {
-        "oversold": 4,
-        "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 20,
-        "volume": 20,
-        "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 20,
-        "sector": 20
-      },
-      "metrics": {
-        "dropFrom60High": 9.54,
-        "breakPct": 26.26,
-        "recent5LowPremium": 12.06,
-        "volumeRatio": 6.97,
-        "entityStrength": 100,
-        "closePosition": 100,
-        "turnover": 11.36,
-        "mainNetInflow": 25291.5,
-        "mainNetRatio": 17.47,
-        "sectorFiveDayChange": 4.46
-      },
-      "tradePlan": {
-        "buyPrice": 14.04,
-        "aggressiveBuyPrice": 14.47,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 13.48,
-        "structuralStop": 13.51,
-        "takeProfit1": 15.44,
-        "takeProfit2": 16.85,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "板块放量弹性：距60日高点 9.5%，近5日低点较前60日低点 12.1%",
-        "前低关系 26.3%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 6.97",
-        "实体强度 100%，收盘位置 100%",
-        "主力净流入 25291.5 万元，行业5日强度排名前 7%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "康泰生物:关于召开2026年第一次临时股东会的通知",
-          "date": "2026-08-06",
-          "url": "https://data.eastmoney.com/notices/detail/300601/AN202608051827674026.html"
-        },
-        {
-          "title": "康泰生物:第八届董事会第十一次会议决议公告",
-          "date": "2026-08-06",
-          "url": "https://data.eastmoney.com/notices/detail/300601/AN202608051827674024.html"
-        },
-        {
-          "title": "康泰生物:关于董事会提议向下修正“康泰转2”转股价格及承诺未来期间不再提议向下修正转股价格的公告",
-          "date": "2026-08-06",
-          "url": "https://data.eastmoney.com/notices/detail/300601/AN202608051827674028.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-20",
-      "code": "600211",
-      "name": "西藏药业",
-      "industry": "生物制品",
-      "industryRank": 7,
-      "industryRankPercent": 7,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 118,
-      "estimatedWinRate": 68.6,
-      "latestPrice": 41.86,
-      "dailyChange": 10.01,
-      "scores": {
-        "oversold": 4,
-        "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 20,
-        "volume": 20,
-        "candleQuality": 20,
-        "turnover": 7,
-        "moneyFlow": 20,
-        "sector": 20
-      },
-      "metrics": {
-        "dropFrom60High": 2.85,
-        "breakPct": 14.71,
-        "recent5LowPremium": 9.05,
-        "volumeRatio": 3.42,
-        "entityStrength": 83,
-        "closePosition": 100,
-        "turnover": 4.5,
-        "mainNetInflow": 9055.7,
-        "mainNetRatio": 15.19,
-        "sectorFiveDayChange": 4.46
-      },
-      "tradePlan": {
-        "buyPrice": 41.05,
-        "aggressiveBuyPrice": 41.86,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 39.41,
-        "structuralStop": 39.92,
-        "takeProfit1": 45.16,
-        "takeProfit2": 49.26,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "板块放量弹性：距60日高点 2.9%，近5日低点较前60日低点 9.1%",
-        "前低关系 14.7%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 3.42",
-        "实体强度 83%，收盘位置 100%",
-        "主力净流入 9055.7 万元，行业5日强度排名前 7%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "西藏药业:西藏药业2026年半年度报告摘要",
-          "date": "2026-08-14",
-          "url": "https://data.eastmoney.com/notices/detail/600211/AN202608131827939998.html"
-        },
-        {
-          "title": "西藏药业:董事会薪酬与考核委员会实施细则",
-          "date": "2026-08-14",
-          "url": "https://data.eastmoney.com/notices/detail/600211/AN202608131827939995.html"
-        },
-        {
-          "title": "西藏药业:董事会战略与ESG委员会实施细则",
-          "date": "2026-08-14",
-          "url": "https://data.eastmoney.com/notices/detail/600211/AN202608131827939996.html"
+          "title": "沃特股份:国信证券关于深圳市沃特新材料股份有限公司使用部分闲置募集资金和自有资金进行现金管理的核查意见",
+          "date": "2026-08-19",
+          "url": "https://data.eastmoney.com/notices/detail/002886/AN202608181828113400.html"
         }
       ]
     }
