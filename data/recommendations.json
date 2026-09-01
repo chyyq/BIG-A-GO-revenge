@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/8/31 23:22:02",
-  "tradeDate": "2026-08-31",
+  "generatedAt": "2026/9/1 20:43:45",
+  "tradeDate": "2026-09-01",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,25 +8,39 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 75,
+  "scannedCount": 54,
   "signalCount": 35,
   "riskReview": {
-    "announcementCheckedCount": 75,
-    "excludedByAnnouncement": 19,
+    "announcementCheckedCount": 54,
+    "excludedByAnnouncement": 15,
     "announcementRiskSamples": [
       {
-        "code": "300364",
-        "name": "中文在线",
-        "title": "中文在线:关于重大仲裁的公告",
-        "date": "2026-07-22",
-        "url": "https://data.eastmoney.com/notices/detail/300364/AN202607221827265887.html"
+        "code": "600551",
+        "name": "时代出版",
+        "title": "时代出版:时代出版关于股票交易风险提示性公告",
+        "date": "2026-09-02",
+        "url": "https://data.eastmoney.com/notices/detail/600551/AN202609011828886596.html"
       },
       {
-        "code": "600121",
-        "name": "郑州煤电",
-        "title": "郑州煤电:郑州煤电股份有限公司2026年半年度业绩预亏公告",
+        "code": "600540",
+        "name": "新赛股份",
+        "title": "新赛股份:新疆赛里木现代农业股份有限公司关于股票交易风险提示公告",
+        "date": "2026-09-01",
+        "url": "https://data.eastmoney.com/notices/detail/600540/AN202608311828810395.html"
+      },
+      {
+        "code": "603123",
+        "name": "翠微股份",
+        "title": "翠微股份:翠微股份2026年半年度业绩预亏公告",
         "date": "2026-07-15",
-        "url": "https://data.eastmoney.com/notices/detail/600121/AN202607141826957508.html"
+        "url": "https://data.eastmoney.com/notices/detail/603123/AN202607141826958977.html"
+      },
+      {
+        "code": "600371",
+        "name": "万向德农",
+        "title": "万向德农:万向德农股份有限公司关于股票交易风险提示公告",
+        "date": "2026-09-02",
+        "url": "https://data.eastmoney.com/notices/detail/600371/AN202609011828885603.html"
       },
       {
         "code": "001330",
@@ -34,20 +48,6 @@
         "title": "博纳影业:关于持股5%以上股东及其一致行动人减持股份计划预披露公告",
         "date": "2026-06-03",
         "url": "https://data.eastmoney.com/notices/detail/001330/AN202606021823164386.html"
-      },
-      {
-        "code": "601595",
-        "name": "上海电影",
-        "title": "上海电影:关于累计涉及诉讼、仲裁的公告",
-        "date": "2026-08-22",
-        "url": "https://data.eastmoney.com/notices/detail/601595/AN202608211828286877.html"
-      },
-      {
-        "code": "603989",
-        "name": "艾华集团",
-        "title": "艾华集团:湖南艾华集团股份有限公司股票交易风险提示公告",
-        "date": "2026-06-19",
-        "url": "https://data.eastmoney.com/notices/detail/603989/AN202606181823666006.html"
       }
     ],
     "riskKeywords": [
@@ -82,61 +82,288 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-31",
-      "code": "300413",
-      "name": "芒果超媒",
-      "industry": "数字媒体",
-      "industryRank": 17,
-      "industryRankPercent": 17,
+      "tradeDate": "2026-09-01",
+      "code": "000713",
+      "name": "国投丰乐",
+      "industry": "种植业",
+      "industryRank": 6,
+      "industryRankPercent": 6,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 140,
-      "estimatedWinRate": 75.4,
-      "latestPrice": 16.98,
-      "dailyChange": 20,
+      "totalScore": 126,
+      "estimatedWinRate": 71.1,
+      "latestPrice": 7.14,
+      "dailyChange": 10.02,
       "scores": {
         "oversold": 4,
-        "lowStructure": 20,
-        "falseBreak": 8,
+        "lowStructure": 4,
+        "falseBreak": 3,
         "priceRise": 20,
         "volume": 20,
         "candleQuality": 20,
-        "turnover": 11,
+        "turnover": 15,
         "moneyFlow": 20,
-        "sector": 17
+        "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -0.12,
-        "breakPct": 11.51,
-        "recent5LowPremium": -0.58,
-        "volumeRatio": 3.86,
-        "entityStrength": 93.7,
+        "dropFrom60High": 4.54,
+        "breakPct": 25.15,
+        "recent5LowPremium": 19.15,
+        "volumeRatio": 3.8,
+        "entityStrength": 97,
         "closePosition": 100,
-        "turnover": 6.41,
-        "mainNetInflow": 30206.4,
-        "mainNetRatio": 27.8,
-        "sectorFiveDayChange": 8.54
+        "turnover": 11.89,
+        "mainNetInflow": 8461.6,
+        "mainNetRatio": 16.67,
+        "sectorFiveDayChange": 17.21
       },
       "tradePlan": {
-        "buyPrice": 16.47,
-        "aggressiveBuyPrice": 16.98,
+        "buyPrice": 6.93,
+        "aggressiveBuyPrice": 7.14,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 15.81,
-        "structuralStop": 15.4,
-        "takeProfit1": 18.12,
-        "takeProfit2": 19.76,
+        "stopLoss": 6.65,
+        "structuralStop": 6.47,
+        "takeProfit1": 7.62,
+        "takeProfit2": 8.32,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -0.1%，近5日低点较前60日低点 -0.6%",
-        "前低关系 11.5%，假跌破作为加分项而非一票否决",
-        "当日涨幅 20%，量比 3.86",
-        "实体强度 93.7%，收盘位置 100%",
-        "主力净流入 30206.4 万元，行业5日强度排名前 17%",
+        "板块放量弹性：距60日高点 4.5%，近5日低点较前60日低点 19.1%",
+        "前低关系 25.1%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 3.8",
+        "实体强度 97%，收盘位置 100%",
+        "主力净流入 8461.6 万元，行业5日强度排名前 6%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
+        {
+          "title": "国投丰乐:关于国投财务有限公司的风险持续评估报告",
+          "date": "2026-08-21",
+          "url": "https://data.eastmoney.com/notices/detail/000713/AN202608201828207987.html"
+        },
+        {
+          "title": "国投丰乐:第七届董事会第二十一次会议决议公告",
+          "date": "2026-08-21",
+          "url": "https://data.eastmoney.com/notices/detail/000713/AN202608201828207992.html"
+        },
+        {
+          "title": "国投丰乐:2026年半年度非经营性资金占用及其他关联资金往来情况汇总表",
+          "date": "2026-08-21",
+          "url": "https://data.eastmoney.com/notices/detail/000713/AN202608201828207988.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-09-01",
+      "code": "300061",
+      "name": "旗天科技",
+      "industry": "广告营销",
+      "industryRank": 25,
+      "industryRankPercent": 25,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 121,
+      "estimatedWinRate": 69.5,
+      "latestPrice": 6.6,
+      "dailyChange": 6.11,
+      "scores": {
+        "oversold": 17,
+        "lowStructure": 9,
+        "falseBreak": 3,
+        "priceRise": 13,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 17,
+        "sector": 14
+      },
+      "metrics": {
+        "dropFrom60High": -25.34,
+        "breakPct": 12.41,
+        "recent5LowPremium": 3.96,
+        "volumeRatio": 2.06,
+        "entityStrength": 80,
+        "closePosition": 87.5,
+        "turnover": 6.81,
+        "mainNetInflow": 1938.3,
+        "mainNetRatio": 7.17,
+        "sectorFiveDayChange": 8.04
+      },
+      "tradePlan": {
+        "buyPrice": 6.44,
+        "aggressiveBuyPrice": 6.6,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 6.18,
+        "structuralStop": 6.25,
+        "takeProfit1": 7.08,
+        "takeProfit2": 7.73,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -25.3%，近5日低点较前60日低点 4%",
+        "前低关系 12.4%，假跌破作为加分项而非一票否决",
+        "当日涨幅 6.1%，量比 2.06",
+        "实体强度 80%，收盘位置 87.5%",
+        "主力净流入 1938.3 万元，行业5日强度排名前 25%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "旗天科技:关于为子公司提供担保的公告",
+          "date": "2026-09-01",
+          "url": "https://data.eastmoney.com/notices/detail/300061/AN202609011828881076.html"
+        },
+        {
+          "title": "旗天科技:关于子公司为公司提供担保的公告",
+          "date": "2026-08-26",
+          "url": "https://data.eastmoney.com/notices/detail/300061/AN202608261828484031.html"
+        },
+        {
+          "title": "旗天科技:2026年半年度报告",
+          "date": "2026-08-25",
+          "url": "https://data.eastmoney.com/notices/detail/300061/AN202608241828362124.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-09-01",
+      "code": "002291",
+      "name": "遥望科技",
+      "industry": "广告营销",
+      "industryRank": 25,
+      "industryRankPercent": 25,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 117,
+      "estimatedWinRate": 68.3,
+      "latestPrice": 6.01,
+      "dailyChange": 10.07,
+      "scores": {
+        "oversold": 4,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 15,
+        "moneyFlow": 20,
+        "sector": 14
+      },
+      "metrics": {
+        "dropFrom60High": -3.84,
+        "breakPct": 17.88,
+        "recent5LowPremium": 13.02,
+        "volumeRatio": 2.83,
+        "entityStrength": 97,
+        "closePosition": 100,
+        "turnover": 12.96,
+        "mainNetInflow": 15991.8,
+        "mainNetRatio": 24.58,
+        "sectorFiveDayChange": 8.04
+      },
+      "tradePlan": {
+        "buyPrice": 5.83,
+        "aggressiveBuyPrice": 6.01,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 5.6,
+        "structuralStop": 5.34,
+        "takeProfit1": 6.41,
+        "takeProfit2": 7,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 -3.8%，近5日低点较前60日低点 13%",
+        "前低关系 17.9%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10.1%，量比 2.83",
+        "实体强度 97%，收盘位置 100%",
+        "主力净流入 15991.8 万元，行业5日强度排名前 25%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "遥望科技:关于2025年股票期权与限制性股票激励计划部分限制性股票回购注销完成的公告",
+          "date": "2026-09-02",
+          "url": "https://data.eastmoney.com/notices/detail/002291/AN202609011828888579.html"
+        },
+        {
+          "title": "遥望科技:关于为控股孙公司提供担保的进展公告",
+          "date": "2026-08-29",
+          "url": "https://data.eastmoney.com/notices/detail/002291/AN202608281828625555.html"
+        },
+        {
+          "title": "遥望科技:2026年半年度报告",
+          "date": "2026-08-25",
+          "url": "https://data.eastmoney.com/notices/detail/002291/AN202608241828364298.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-09-01",
+      "code": "300413",
+      "name": "芒果超媒",
+      "industry": "数字媒体",
+      "industryRank": 14,
+      "industryRankPercent": 14,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 116,
+      "estimatedWinRate": 68,
+      "latestPrice": 20.38,
+      "dailyChange": 20.02,
+      "scores": {
+        "oversold": 4,
+        "lowStructure": 9,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 20,
+        "candleQuality": 8,
+        "turnover": 15,
+        "moneyFlow": 20,
+        "sector": 17
+      },
+      "metrics": {
+        "dropFrom60High": 19.88,
+        "breakPct": 42.36,
+        "recent5LowPremium": 0.94,
+        "volumeRatio": 7.11,
+        "entityStrength": 0,
+        "closePosition": 100,
+        "turnover": 13.45,
+        "mainNetInflow": 36582.5,
+        "mainNetRatio": 13.09,
+        "sectorFiveDayChange": 10.15
+      },
+      "tradePlan": {
+        "buyPrice": 20.38,
+        "aggressiveBuyPrice": 20.38,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 19.56,
+        "structuralStop": 19.66,
+        "takeProfit1": 22.42,
+        "takeProfit2": 24.46,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 19.9%，近5日低点较前60日低点 0.9%",
+        "前低关系 42.4%，假跌破作为加分项而非一票否决",
+        "当日涨幅 20%，量比 7.11",
+        "实体强度 0%，收盘位置 100%",
+        "主力净流入 36582.5 万元，行业5日强度排名前 14%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "芒果超媒:股票交易异常波动公告",
+          "date": "2026-09-02",
+          "url": "https://data.eastmoney.com/notices/detail/300413/AN202609011828887715.html"
+        },
         {
           "title": "芒果超媒:关于参加2026年湖南辖区上市公司投资者网上集体接待日暨半年度业绩说明会活动的公告",
           "date": "2026-08-29",
@@ -146,307 +373,80 @@
           "title": "芒果超媒:关于芒果TV版权库扩建项目延期并调整资金使用计划的公告",
           "date": "2026-08-22",
           "url": "https://data.eastmoney.com/notices/detail/300413/AN202608211828259182.html"
-        },
-        {
-          "title": "芒果超媒:关于芒果TV智慧视听媒体服务平台项目节余尾款永久补充流动资金的公告",
-          "date": "2026-08-22",
-          "url": "https://data.eastmoney.com/notices/detail/300413/AN202608211828259238.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-31",
-      "code": "300133",
-      "name": "华策影视",
-      "industry": "影视院线",
-      "industryRank": 10,
-      "industryRankPercent": 10,
+      "tradeDate": "2026-09-01",
+      "code": "000998",
+      "name": "隆平高科",
+      "industry": "种植业",
+      "industryRank": 6,
+      "industryRankPercent": 6,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 128,
-      "estimatedWinRate": 71.7,
-      "latestPrice": 8,
-      "dailyChange": 15.77,
+      "totalScore": 114,
+      "estimatedWinRate": 67.3,
+      "latestPrice": 9.97,
+      "dailyChange": 10.04,
       "scores": {
         "oversold": 4,
-        "lowStructure": 4,
-        "falseBreak": 8,
-        "priceRise": 17,
-        "volume": 20,
-        "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 20,
-        "sector": 20
-      },
-      "metrics": {
-        "dropFrom60High": 2.17,
-        "breakPct": 11.08,
-        "recent5LowPremium": 8.67,
-        "volumeRatio": 4.26,
-        "entityStrength": 83.3,
-        "closePosition": 85.7,
-        "turnover": 15.03,
-        "mainNetInflow": 26009.6,
-        "mainNetRatio": 13.63,
-        "sectorFiveDayChange": 10.46
-      },
-      "tradePlan": {
-        "buyPrice": 7.76,
-        "aggressiveBuyPrice": 8,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 7.45,
-        "structuralStop": 6.92,
-        "takeProfit1": 8.54,
-        "takeProfit2": 9.31,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "板块放量弹性：距60日高点 2.2%，近5日低点较前60日低点 8.7%",
-        "前低关系 11.1%，假跌破作为加分项而非一票否决",
-        "当日涨幅 15.8%，量比 4.26",
-        "实体强度 83.3%，收盘位置 85.7%",
-        "主力净流入 26009.6 万元，行业5日强度排名前 10%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "华策影视:关于公司与专业投资机构共同投资的公告",
-          "date": "2026-08-24",
-          "url": "https://data.eastmoney.com/notices/detail/300133/AN202608241828374459.html"
-        },
-        {
-          "title": "华策影视:关于部分限制性股票回购注销完成的公告",
-          "date": "2026-08-21",
-          "url": "https://data.eastmoney.com/notices/detail/300133/AN202608211828271177.html"
-        },
-        {
-          "title": "华策影视:关于召开2026年第二次临时股东会的通知",
-          "date": "2026-08-21",
-          "url": "https://data.eastmoney.com/notices/detail/300133/AN202608201828214698.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-31",
-      "code": "300182",
-      "name": "捷成股份",
-      "industry": "影视院线",
-      "industryRank": 10,
-      "industryRankPercent": 10,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 124,
-      "estimatedWinRate": 70.4,
-      "latestPrice": 5.38,
-      "dailyChange": 9.35,
-      "scores": {
-        "oversold": 17,
         "lowStructure": 4,
         "falseBreak": 3,
-        "priceRise": 17,
-        "volume": 17,
-        "candleQuality": 14,
-        "turnover": 15,
-        "moneyFlow": 17,
-        "sector": 20
-      },
-      "metrics": {
-        "dropFrom60High": -20.65,
-        "breakPct": 15.46,
-        "recent5LowPremium": 11.48,
-        "volumeRatio": 2.41,
-        "entityStrength": 68.7,
-        "closePosition": 70.3,
-        "turnover": 13.39,
-        "mainNetInflow": 13651.5,
-        "mainNetRatio": 8,
-        "sectorFiveDayChange": 10.46
-      },
-      "tradePlan": {
-        "buyPrice": 5.22,
-        "aggressiveBuyPrice": 5.38,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 5.01,
-        "structuralStop": 4.93,
-        "takeProfit1": 5.74,
-        "takeProfit2": 6.26,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -20.6%，近5日低点较前60日低点 11.5%",
-        "前低关系 15.5%，假跌破作为加分项而非一票否决",
-        "当日涨幅 9.3%，量比 2.41",
-        "实体强度 68.7%，收盘位置 70.3%",
-        "主力净流入 13651.5 万元，行业5日强度排名前 10%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "捷成股份:2026年半年度非经营性资金占用及其他关联资金往来情况汇总表",
-          "date": "2026-08-25",
-          "url": "https://data.eastmoney.com/notices/detail/300182/AN202608241828361619.html"
-        },
-        {
-          "title": "捷成股份:2026年半年度关于计提资产减值准备的公告",
-          "date": "2026-08-25",
-          "url": "https://data.eastmoney.com/notices/detail/300182/AN202608241828361528.html"
-        },
-        {
-          "title": "捷成股份:2026年半年度报告",
-          "date": "2026-08-25",
-          "url": "https://data.eastmoney.com/notices/detail/300182/AN202608241828361585.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-31",
-      "code": "601929",
-      "name": "吉视传媒",
-      "industry": "电视广播Ⅱ",
-      "industryRank": 12,
-      "industryRankPercent": 12,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 121,
-      "estimatedWinRate": 69.5,
-      "latestPrice": 2.57,
-      "dailyChange": 9.83,
-      "scores": {
-        "oversold": 4,
-        "lowStructure": 4,
-        "falseBreak": 8,
         "priceRise": 20,
-        "volume": 17,
+        "volume": 12,
         "candleQuality": 20,
         "turnover": 11,
         "moneyFlow": 20,
-        "sector": 17
+        "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -1.91,
-        "breakPct": 10.53,
-        "recent5LowPremium": 6.7,
-        "volumeRatio": 2.74,
-        "entityStrength": 96.2,
+        "dropFrom60High": 0.71,
+        "breakPct": 22.31,
+        "recent5LowPremium": 18.64,
+        "volumeRatio": 1.84,
+        "entityStrength": 93.9,
         "closePosition": 100,
-        "turnover": 6.01,
-        "mainNetInflow": 19482.4,
-        "mainNetRatio": 37.72,
-        "sectorFiveDayChange": 9.99
+        "turnover": 6.88,
+        "mainNetInflow": 26204.6,
+        "mainNetRatio": 29.85,
+        "sectorFiveDayChange": 17.21
       },
       "tradePlan": {
-        "buyPrice": 2.49,
-        "aggressiveBuyPrice": 2.57,
+        "buyPrice": 9.67,
+        "aggressiveBuyPrice": 9.97,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 2.39,
-        "structuralStop": 2.31,
-        "takeProfit1": 2.74,
-        "takeProfit2": 2.99,
+        "stopLoss": 9.28,
+        "structuralStop": 8.99,
+        "takeProfit1": 10.64,
+        "takeProfit2": 11.6,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -1.9%，近5日低点较前60日低点 6.7%",
-        "前低关系 10.5%，假跌破作为加分项而非一票否决",
-        "当日涨幅 9.8%，量比 2.74",
-        "实体强度 96.2%，收盘位置 100%",
-        "主力净流入 19482.4 万元，行业5日强度排名前 12%",
+        "板块放量弹性：距60日高点 0.7%，近5日低点较前60日低点 18.6%",
+        "前低关系 22.3%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.84",
+        "实体强度 93.9%，收盘位置 100%",
+        "主力净流入 26204.6 万元，行业5日强度排名前 6%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "吉视传媒:吉视传媒股份有限公司2026年半年度报告",
-          "date": "2026-08-25",
-          "url": "https://data.eastmoney.com/notices/detail/601929/AN202608241828366967.html"
+          "title": "隆平高科:关于参加2026年湖南辖区上市公司投资者网上集体接待日活动的公告",
+          "date": "2026-08-28",
+          "url": "https://data.eastmoney.com/notices/detail/000998/AN202608271828546552.html"
         },
         {
-          "title": "吉视传媒:吉视传媒第五届董事会第二十次会议决议公告",
-          "date": "2026-08-25",
-          "url": "https://data.eastmoney.com/notices/detail/601929/AN202608241828366968.html"
+          "title": "隆平高科:2026年8月24日投资者活动记录表",
+          "date": "2026-08-26",
+          "url": "https://data.eastmoney.com/notices/detail/000998/AN202608261828447906.html"
         },
         {
-          "title": "吉视传媒:吉视传媒股份有限公司2026年半年度报告摘要",
-          "date": "2026-08-25",
-          "url": "https://data.eastmoney.com/notices/detail/601929/AN202608241828366969.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-08-31",
-      "code": "688787",
-      "name": "海天瑞声",
-      "industry": "IT服务Ⅱ",
-      "industryRank": 53,
-      "industryRankPercent": 53,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 116,
-      "estimatedWinRate": 68,
-      "latestPrice": 99.75,
-      "dailyChange": 6.09,
-      "scores": {
-        "oversold": 25,
-        "lowStructure": 9,
-        "falseBreak": 8,
-        "priceRise": 13,
-        "volume": 8,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 17,
-        "sector": 5
-      },
-      "metrics": {
-        "dropFrom60High": -40.54,
-        "breakPct": 4.87,
-        "recent5LowPremium": 4.87,
-        "volumeRatio": 1.27,
-        "entityStrength": 82.3,
-        "closePosition": 91.4,
-        "turnover": 5.13,
-        "mainNetInflow": 1810.2,
-        "mainNetRatio": 6,
-        "sectorFiveDayChange": 5.57
-      },
-      "tradePlan": {
-        "buyPrice": 96.76,
-        "aggressiveBuyPrice": 99.75,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 92.89,
-        "structuralStop": 91.25,
-        "takeProfit1": 106.44,
-        "takeProfit2": 116.11,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "板块放量弹性：距60日高点 -40.5%，近5日低点较前60日低点 4.9%",
-        "前低关系 4.9%，假跌破作为加分项而非一票否决",
-        "当日涨幅 6.1%，量比 1.27",
-        "实体强度 82.3%，收盘位置 91.4%",
-        "主力净流入 1810.2 万元，行业5日强度排名前 53%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "海天瑞声:海天瑞声关于召开2026年半年度业绩说明会的公告",
-          "date": "2026-08-27",
-          "url": "https://data.eastmoney.com/notices/detail/688787/AN202608261828489514.html"
-        },
-        {
-          "title": "海天瑞声:海天瑞声2026年度“提质增效重回报”行动方案的半年度评估报告",
-          "date": "2026-08-27",
-          "url": "https://data.eastmoney.com/notices/detail/688787/AN202608261828489513.html"
-        },
-        {
-          "title": "海天瑞声:海天瑞声关于2026年第二季度计提资产减值准备的公告",
-          "date": "2026-08-27",
-          "url": "https://data.eastmoney.com/notices/detail/688787/AN202608261828489512.html"
+          "title": "隆平高科:关于公司计提资产减值准备的公告",
+          "date": "2026-08-21",
+          "url": "https://data.eastmoney.com/notices/detail/000998/AN202608201828210986.html"
         }
       ]
     }
