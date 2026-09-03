@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/9/2 20:16:27",
-  "tradeDate": "2026-09-02",
+  "generatedAt": "2026/9/3 20:14:03",
+  "tradeDate": "2026-09-03",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 30,
-  "signalCount": 23,
+  "scannedCount": 39,
+  "signalCount": 27,
   "riskReview": {
-    "announcementCheckedCount": 30,
+    "announcementCheckedCount": 39,
     "excludedByAnnouncement": 5,
     "announcementRiskSamples": [
       {
-        "code": "601606",
-        "name": "长城军工",
-        "title": "长城军工:安徽长城军工股份有限公司股票交易风险提示公告",
-        "date": "2026-07-28",
-        "url": "https://data.eastmoney.com/notices/detail/601606/AN202607271827388763.html"
+        "code": "601086",
+        "name": "国芳集团",
+        "title": "国芳集团:股票交易风险提示公告",
+        "date": "2026-09-04",
+        "url": "https://data.eastmoney.com/notices/detail/601086/AN202609031828964046.html"
       },
       {
-        "code": "001326",
-        "name": "联域股份",
-        "title": "联域股份:关于持股5%以上股东未减持股份并提前终止股份减持计划的公告",
-        "date": "2026-08-20",
-        "url": "https://data.eastmoney.com/notices/detail/001326/AN202608191828160892.html"
+        "code": "600172",
+        "name": "黄河旋风",
+        "title": "黄河旋风:关于持股5%以上股东股份被轮候冻结的公告",
+        "date": "2026-08-14",
+        "url": "https://data.eastmoney.com/notices/detail/600172/AN202608131827939451.html"
       },
       {
-        "code": "002855",
-        "name": "捷荣技术",
-        "title": "捷荣技术:董事会审计委员会关于《董事会对会计师事务所出具2025年度带强调事项段的无保留意见审计报告的专项说明》的意见",
-        "date": "2026-04-30",
-        "url": "https://data.eastmoney.com/notices/detail/002855/AN202604291821770665.html"
+        "code": "000520",
+        "name": "凤凰航运",
+        "title": "凤凰航运:非标准审计意见专项说明",
+        "date": "2026-04-29",
+        "url": "https://data.eastmoney.com/notices/detail/000520/AN202604291821715005.html"
       },
       {
-        "code": "600435",
-        "name": "北方导航",
-        "title": "北方导航:北方导航2026年半年度业绩预亏公告",
-        "date": "2026-07-11",
-        "url": "https://data.eastmoney.com/notices/detail/600435/AN202607101826872334.html"
+        "code": "600506",
+        "name": "统一股份",
+        "title": "统一股份:统一低碳科技(新疆)股份有限公司关于持股5%以上股东减持股份计划公告",
+        "date": "2026-07-25",
+        "url": "https://data.eastmoney.com/notices/detail/600506/AN202607241827321498.html"
       },
       {
-        "code": "002059",
-        "name": "云南旅游",
-        "title": "云南旅游:公司关于全资公司收到仲裁裁决书的公告",
-        "date": "2026-05-14",
-        "url": "https://data.eastmoney.com/notices/detail/002059/AN202605131822277428.html"
+        "code": "603819",
+        "name": "神力股份",
+        "title": "神力股份:关于持股5%以上股东股份被轮候冻结的公告",
+        "date": "2026-07-03",
+        "url": "https://data.eastmoney.com/notices/detail/603819/AN202607021826658287.html"
       }
     ],
     "riskKeywords": [
@@ -82,314 +82,92 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-09-02",
-      "code": "002297",
-      "name": "博云新材",
-      "industry": "航空装备Ⅱ",
-      "industryRank": 22,
-      "industryRankPercent": 22,
-      "signalLevel": "buy",
-      "setupType": "板块放量弹性",
-      "totalScore": 129,
-      "estimatedWinRate": 72,
-      "latestPrice": 20,
-      "dailyChange": 10.01,
-      "scores": {
-        "oversold": 25,
-        "lowStructure": 4,
-        "falseBreak": 3,
-        "priceRise": 20,
-        "volume": 8,
-        "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 20,
-        "sector": 14
-      },
-      "metrics": {
-        "dropFrom60High": -44.29,
-        "breakPct": 21.02,
-        "recent5LowPremium": 17.56,
-        "volumeRatio": 1.39,
-        "entityStrength": 98.6,
-        "closePosition": 100,
-        "turnover": 12.02,
-        "mainNetInflow": 33056.6,
-        "mainNetRatio": 25.11,
-        "sectorFiveDayChange": 5.48
-      },
-      "tradePlan": {
-        "buyPrice": 19.4,
-        "aggressiveBuyPrice": 20,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 18.62,
-        "structuralStop": 17.85,
-        "takeProfit1": 21.34,
-        "takeProfit2": 23.28,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "板块放量弹性：距60日高点 -44.3%，近5日低点较前60日低点 17.6%",
-        "前低关系 21%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 1.39",
-        "实体强度 98.6%，收盘位置 100%",
-        "主力净流入 33056.6 万元，行业5日强度排名前 22%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "博云新材:关于独立董事取得独立董事培训证明的公告",
-          "date": "2026-08-27",
-          "url": "https://data.eastmoney.com/notices/detail/002297/AN202608261828475207.html"
-        },
-        {
-          "title": "博云新材:关于参加2026年湖南辖区上市公司投资者网上集体接待日暨半年度业绩说明会活动的公告",
-          "date": "2026-08-27",
-          "url": "https://data.eastmoney.com/notices/detail/002297/AN202608261828475182.html"
-        },
-        {
-          "title": "博云新材:第八届董事会第二次会议决议公告",
-          "date": "2026-08-25",
-          "url": "https://data.eastmoney.com/notices/detail/002297/AN202608241828365145.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-09-02",
-      "code": "000519",
-      "name": "中兵红箭",
-      "industry": "地面兵装Ⅱ",
-      "industryRank": 4,
-      "industryRankPercent": 4,
+      "tradeDate": "2026-09-03",
+      "code": "603090",
+      "name": "宏盛股份",
+      "industry": "通用设备",
+      "industryRank": 41,
+      "industryRankPercent": 41,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 129,
-      "estimatedWinRate": 72,
-      "latestPrice": 15.62,
-      "dailyChange": 6.69,
-      "scores": {
-        "oversold": 22,
-        "lowStructure": 4,
-        "falseBreak": 8,
-        "priceRise": 13,
-        "volume": 20,
-        "candleQuality": 20,
-        "turnover": 11,
-        "moneyFlow": 11,
-        "sector": 20
-      },
-      "metrics": {
-        "dropFrom60High": -31.52,
-        "breakPct": 10.73,
-        "recent5LowPremium": 7.13,
-        "volumeRatio": 3.94,
-        "entityStrength": 92.6,
-        "closePosition": 96.7,
-        "turnover": 9.77,
-        "mainNetInflow": 9366.9,
-        "mainNetRatio": 4.48,
-        "sectorFiveDayChange": 13.19
-      },
-      "tradePlan": {
-        "buyPrice": 15.15,
-        "aggressiveBuyPrice": 15.62,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 14.54,
-        "structuralStop": 14.45,
-        "takeProfit1": 16.67,
-        "takeProfit2": 18.18,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -31.5%，近5日低点较前60日低点 7.1%",
-        "前低关系 10.7%，假跌破作为加分项而非一票否决",
-        "当日涨幅 6.7%，量比 3.94",
-        "实体强度 92.6%，收盘位置 96.7%",
-        "主力净流入 9366.9 万元，行业5日强度排名前 4%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "中兵红箭:关于办公地址变更的公告",
-          "date": "2026-08-21",
-          "url": "https://data.eastmoney.com/notices/detail/000519/AN202608201828213468.html"
-        },
-        {
-          "title": "中兵红箭:2026年半年度报告",
-          "date": "2026-08-21",
-          "url": "https://data.eastmoney.com/notices/detail/000519/AN202608201828213444.html"
-        },
-        {
-          "title": "中兵红箭:关于2026年半年度计提信用及资产减值损失的公告",
-          "date": "2026-08-21",
-          "url": "https://data.eastmoney.com/notices/detail/000519/AN202608201828213476.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-09-02",
-      "code": "603665",
-      "name": "康隆达",
-      "industry": "服装家纺",
-      "industryRank": 42,
-      "industryRankPercent": 42,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 127,
-      "estimatedWinRate": 71.4,
-      "latestPrice": 22.56,
+      "totalScore": 133,
+      "estimatedWinRate": 73.2,
+      "latestPrice": 44.35,
       "dailyChange": 10,
       "scores": {
-        "oversold": 17,
-        "lowStructure": 9,
-        "falseBreak": 8,
-        "priceRise": 20,
-        "volume": 17,
-        "candleQuality": 20,
-        "turnover": 7,
-        "moneyFlow": 20,
-        "sector": 9
-      },
-      "metrics": {
-        "dropFrom60High": -21.8,
-        "breakPct": 4.35,
-        "recent5LowPremium": 2.43,
-        "volumeRatio": 2.57,
-        "entityStrength": 85.5,
-        "closePosition": 100,
-        "turnover": 3.44,
-        "mainNetInflow": 1526.2,
-        "mainNetRatio": 12.93,
-        "sectorFiveDayChange": 4.26
-      },
-      "tradePlan": {
-        "buyPrice": 21.88,
-        "aggressiveBuyPrice": 22.56,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 21,
-        "structuralStop": 20.15,
-        "takeProfit1": 24.07,
-        "takeProfit2": 26.26,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -21.8%，近5日低点较前60日低点 2.4%",
-        "前低关系 4.4%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 2.57",
-        "实体强度 85.5%，收盘位置 100%",
-        "主力净流入 1526.2 万元，行业5日强度排名前 42%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "康隆达:康隆达简式权益变动报告书(裕昊创投)",
-          "date": "2026-08-26",
-          "url": "https://data.eastmoney.com/notices/detail/603665/AN202608251828406855.html"
-        },
-        {
-          "title": "康隆达:康隆达关于控股股东及其一致行动人权益变动触及5%整数倍的提示性公告",
-          "date": "2026-08-26",
-          "url": "https://data.eastmoney.com/notices/detail/603665/AN202608251828406856.html"
-        },
-        {
-          "title": "康隆达:康隆达2026年第一次临时股东会会议资料",
-          "date": "2026-08-26",
-          "url": "https://data.eastmoney.com/notices/detail/603665/AN202608251828403494.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-09-02",
-      "code": "300252",
-      "name": "金信诺",
-      "industry": "军工电子Ⅱ",
-      "industryRank": 35,
-      "industryRankPercent": 35,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 123,
-      "estimatedWinRate": 70.1,
-      "latestPrice": 12.65,
-      "dailyChange": 6.75,
-      "scores": {
         "oversold": 22,
         "lowStructure": 4,
         "falseBreak": 3,
-        "priceRise": 13,
-        "volume": 17,
+        "priceRise": 20,
+        "volume": 20,
         "candleQuality": 20,
         "turnover": 15,
         "moneyFlow": 20,
         "sector": 9
       },
       "metrics": {
-        "dropFrom60High": -34.39,
-        "breakPct": 19.47,
-        "recent5LowPremium": 17.21,
-        "volumeRatio": 2.79,
-        "entityStrength": 83.9,
-        "closePosition": 88.4,
-        "turnover": 11.87,
-        "mainNetInflow": 11996.2,
-        "mainNetRatio": 14.66,
-        "sectorFiveDayChange": 4.93
+        "dropFrom60High": -34.59,
+        "breakPct": 24.81,
+        "recent5LowPremium": 16.33,
+        "volumeRatio": 4.72,
+        "entityStrength": 95.1,
+        "closePosition": 100,
+        "turnover": 15,
+        "mainNetInflow": 7488.8,
+        "mainNetRatio": 11.8,
+        "sectorFiveDayChange": 1.37
       },
       "tradePlan": {
-        "buyPrice": 12.27,
-        "aggressiveBuyPrice": 12.65,
+        "buyPrice": 43.02,
+        "aggressiveBuyPrice": 44.35,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 11.78,
-        "structuralStop": 11.66,
-        "takeProfit1": 13.5,
-        "takeProfit2": 14.72,
+        "stopLoss": 41.3,
+        "structuralStop": 40.5,
+        "takeProfit1": 47.32,
+        "takeProfit2": 51.62,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -34.4%，近5日低点较前60日低点 17.2%",
-        "前低关系 19.5%，假跌破作为加分项而非一票否决",
-        "当日涨幅 6.8%，量比 2.79",
-        "实体强度 83.9%，收盘位置 88.4%",
-        "主力净流入 11996.2 万元，行业5日强度排名前 35%",
+        "低位放量反弹：距60日高点 -34.6%，近5日低点较前60日低点 16.3%",
+        "前低关系 24.8%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 4.72",
+        "实体强度 95.1%，收盘位置 100%",
+        "主力净流入 7488.8 万元，行业5日强度排名前 41%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "金信诺:关于控股股东部分股份解除质押的公告",
-          "date": "2026-09-02",
-          "url": "https://data.eastmoney.com/notices/detail/300252/AN202609021828920484.html"
-        },
-        {
-          "title": "金信诺:关于控股股东部分股份质押的公告",
+          "title": "宏盛股份:宏盛股份2026年半年度报告",
           "date": "2026-08-27",
-          "url": "https://data.eastmoney.com/notices/detail/300252/AN202608271828539950.html"
+          "url": "https://data.eastmoney.com/notices/detail/603090/AN202608261828475522.html"
         },
         {
-          "title": "金信诺:第五届董事会2026年第十次会议决议公告",
-          "date": "2026-08-26",
-          "url": "https://data.eastmoney.com/notices/detail/300252/AN202608251828407115.html"
+          "title": "宏盛股份:宏盛股份2026年半年度报告摘要",
+          "date": "2026-08-27",
+          "url": "https://data.eastmoney.com/notices/detail/603090/AN202608261828475523.html"
+        },
+        {
+          "title": "宏盛股份:宏盛股份关于召开2026年半年度业绩说明会的公告",
+          "date": "2026-08-27",
+          "url": "https://data.eastmoney.com/notices/detail/603090/AN202608261828475521.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-09-02",
-      "code": "600967",
-      "name": "内蒙一机",
-      "industry": "地面兵装Ⅱ",
-      "industryRank": 4,
-      "industryRankPercent": 4,
+      "tradeDate": "2026-09-03",
+      "code": "600693",
+      "name": "东百集团",
+      "industry": "一般零售",
+      "industryRank": 13,
+      "industryRankPercent": 13,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 115,
-      "estimatedWinRate": 67.7,
-      "latestPrice": 13.41,
-      "dailyChange": 10.01,
+      "totalScore": 120,
+      "estimatedWinRate": 69.2,
+      "latestPrice": 11.04,
+      "dailyChange": 9.96,
       "scores": {
         "oversold": 4,
         "lowStructure": 4,
@@ -397,56 +175,278 @@
         "priceRise": 20,
         "volume": 17,
         "candleQuality": 20,
-        "turnover": 7,
+        "turnover": 15,
         "moneyFlow": 20,
-        "sector": 20
+        "sector": 17
       },
       "metrics": {
-        "dropFrom60High": 8.15,
-        "breakPct": 24.75,
-        "recent5LowPremium": 9.38,
-        "volumeRatio": 2.64,
-        "entityStrength": 100,
+        "dropFrom60High": 1.47,
+        "breakPct": 36.45,
+        "recent5LowPremium": 29.19,
+        "volumeRatio": 2.09,
+        "entityStrength": 79.5,
         "closePosition": 100,
-        "turnover": 3.82,
-        "mainNetInflow": 18374.1,
-        "mainNetRatio": 21.73,
-        "sectorFiveDayChange": 13.19
+        "turnover": 17.25,
+        "mainNetInflow": 22767,
+        "mainNetRatio": 14.56,
+        "sectorFiveDayChange": 3.58
       },
       "tradePlan": {
-        "buyPrice": 13.01,
-        "aggressiveBuyPrice": 13.41,
+        "buyPrice": 10.71,
+        "aggressiveBuyPrice": 11.04,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 12.49,
-        "structuralStop": 12.5,
-        "takeProfit1": 14.31,
-        "takeProfit2": 15.61,
+        "stopLoss": 10.28,
+        "structuralStop": 9.77,
+        "takeProfit1": 11.78,
+        "takeProfit2": 12.85,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 8.1%，近5日低点较前60日低点 9.4%",
-        "前低关系 24.8%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 2.64",
-        "实体强度 100%，收盘位置 100%",
-        "主力净流入 18374.1 万元，行业5日强度排名前 4%",
+        "板块放量弹性：距60日高点 1.5%，近5日低点较前60日低点 29.2%",
+        "前低关系 36.5%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 2.09",
+        "实体强度 79.5%，收盘位置 100%",
+        "主力净流入 22767 万元，行业5日强度排名前 13%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "内蒙一机:内蒙古第一机械集团股份有限公司关于股票交易异常波动的公告",
-          "date": "2026-09-03",
-          "url": "https://data.eastmoney.com/notices/detail/600967/AN202609021828930975.html"
+          "title": "东百集团:东百集团关于转让仓储物流子公司100%股权的进展公告",
+          "date": "2026-08-29",
+          "url": "https://data.eastmoney.com/notices/detail/600693/AN202608281828630252.html"
         },
         {
-          "title": "内蒙一机:内蒙古第一机械集团股份有限公司关于变更持续督导财务顾问主办人的公告",
-          "date": "2026-08-28",
-          "url": "https://data.eastmoney.com/notices/detail/600967/AN202608271828548262.html"
+          "title": "东百集团:东百集团2026年半年度报告",
+          "date": "2026-08-12",
+          "url": "https://data.eastmoney.com/notices/detail/600693/AN202608111827863318.html"
         },
         {
-          "title": "内蒙一机:内蒙古第一机械集团股份有限公司八届七次董事会决议公告",
-          "date": "2026-08-28",
-          "url": "https://data.eastmoney.com/notices/detail/600967/AN202608271828548258.html"
+          "title": "东百集团:东百集团第十二届董事会第三次会议决议公告",
+          "date": "2026-08-12",
+          "url": "https://data.eastmoney.com/notices/detail/600693/AN202608111827863320.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-09-03",
+      "code": "600865",
+      "name": "百大集团",
+      "industry": "一般零售",
+      "industryRank": 13,
+      "industryRankPercent": 13,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 119,
+      "estimatedWinRate": 68.9,
+      "latestPrice": 10.32,
+      "dailyChange": 10.02,
+      "scores": {
+        "oversold": 4,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 20,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 17
+      },
+      "metrics": {
+        "dropFrom60High": 3.72,
+        "breakPct": 22.34,
+        "recent5LowPremium": 16.69,
+        "volumeRatio": 3.14,
+        "entityStrength": 93.1,
+        "closePosition": 100,
+        "turnover": 6.52,
+        "mainNetInflow": 6932.9,
+        "mainNetRatio": 28.07,
+        "sectorFiveDayChange": 3.58
+      },
+      "tradePlan": {
+        "buyPrice": 10.01,
+        "aggressiveBuyPrice": 10.32,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 9.61,
+        "structuralStop": 9.31,
+        "takeProfit1": 11.01,
+        "takeProfit2": 12.01,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 3.7%，近5日低点较前60日低点 16.7%",
+        "前低关系 22.3%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 3.14",
+        "实体强度 93.1%，收盘位置 100%",
+        "主力净流入 6932.9 万元，行业5日强度排名前 13%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "百大集团:百大集团股份有限公司2026年半年度业绩说明会投资者关系活动记录表",
+          "date": "2026-08-27",
+          "url": "https://data.eastmoney.com/notices/detail/600865/AN202608271828537655.html"
+        },
+        {
+          "title": "百大集团:百大集团股份有限公司关于处置股票资产产生收益的公告",
+          "date": "2026-08-26",
+          "url": "https://data.eastmoney.com/notices/detail/600865/AN202608251828407282.html"
+        },
+        {
+          "title": "百大集团:百大集团股份有限公司关于召开2026年半年度业绩说明会的公告",
+          "date": "2026-08-20",
+          "url": "https://data.eastmoney.com/notices/detail/600865/AN202608191828149187.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-09-03",
+      "code": "603162",
+      "name": "海通发展",
+      "industry": "航运港口",
+      "industryRank": 24,
+      "industryRankPercent": 24,
+      "signalLevel": "buy",
+      "setupType": "板块放量弹性",
+      "totalScore": 117,
+      "estimatedWinRate": 68.3,
+      "latestPrice": 13.31,
+      "dailyChange": 10,
+      "scores": {
+        "oversold": 4,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 17,
+        "candleQuality": 20,
+        "turnover": 15,
+        "moneyFlow": 20,
+        "sector": 14
+      },
+      "metrics": {
+        "dropFrom60High": 2.62,
+        "breakPct": 40.85,
+        "recent5LowPremium": 34.06,
+        "volumeRatio": 2.05,
+        "entityStrength": 99.1,
+        "closePosition": 100,
+        "turnover": 18.36,
+        "mainNetInflow": 20168.5,
+        "mainNetRatio": 19.73,
+        "sectorFiveDayChange": 2.61
+      },
+      "tradePlan": {
+        "buyPrice": 12.91,
+        "aggressiveBuyPrice": 13.31,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 12.39,
+        "structuralStop": 12.24,
+        "takeProfit1": 14.2,
+        "takeProfit2": 15.49,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "板块放量弹性：距60日高点 2.6%，近5日低点较前60日低点 34.1%",
+        "前低关系 40.9%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 2.05",
+        "实体强度 99.1%，收盘位置 100%",
+        "主力净流入 20168.5 万元，行业5日强度排名前 24%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "海通发展:福建海通发展股份有限公司关于最近五年不存在被证券监管部门和交易所采取监管措施或处罚及整改情况的公告",
+          "date": "2026-09-04",
+          "url": "https://data.eastmoney.com/notices/detail/603162/AN202609031828966172.html"
+        },
+        {
+          "title": "海通发展:福建海通发展股份有限公司前次募集资金使用情况鉴证报告",
+          "date": "2026-09-04",
+          "url": "https://data.eastmoney.com/notices/detail/603162/AN202609031828966175.html"
+        },
+        {
+          "title": "海通发展:福建海通发展股份有限公司关于部分股票期权注销完成的公告",
+          "date": "2026-09-04",
+          "url": "https://data.eastmoney.com/notices/detail/603162/AN202609031828966166.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-09-03",
+      "code": "300179",
+      "name": "四方达",
+      "industry": "通用设备",
+      "industryRank": 41,
+      "industryRankPercent": 41,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 117,
+      "estimatedWinRate": 68.3,
+      "latestPrice": 37.85,
+      "dailyChange": 7.28,
+      "scores": {
+        "oversold": 25,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 13,
+        "volume": 17,
+        "candleQuality": 14,
+        "turnover": 15,
+        "moneyFlow": 17,
+        "sector": 9
+      },
+      "metrics": {
+        "dropFrom60High": -42.65,
+        "breakPct": 25.14,
+        "recent5LowPremium": 22.43,
+        "volumeRatio": 2.08,
+        "entityStrength": 60.8,
+        "closePosition": 75.5,
+        "turnover": 20.93,
+        "mainNetInflow": 25105.4,
+        "mainNetRatio": 8.56,
+        "sectorFiveDayChange": 1.37
+      },
+      "tradePlan": {
+        "buyPrice": 36.92,
+        "aggressiveBuyPrice": 37.85,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 35.44,
+        "structuralStop": 35.54,
+        "takeProfit1": 40.61,
+        "takeProfit2": 44.3,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -42.7%，近5日低点较前60日低点 22.4%",
+        "前低关系 25.1%，假跌破作为加分项而非一票否决",
+        "当日涨幅 7.3%，量比 2.08",
+        "实体强度 60.8%，收盘位置 75.5%",
+        "主力净流入 25105.4 万元，行业5日强度排名前 41%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "四方达:董事、高级管理人员内部问责制度(2026年8月)",
+          "date": "2026-08-26",
+          "url": "https://data.eastmoney.com/notices/detail/300179/AN202608251828429436.html"
+        },
+        {
+          "title": "四方达:第六届董事会第十七次会议决议公告",
+          "date": "2026-08-26",
+          "url": "https://data.eastmoney.com/notices/detail/300179/AN202608251828429408.html"
+        },
+        {
+          "title": "四方达:2026年半年度非经营性资金占用及其他关联资金往来情况汇总表",
+          "date": "2026-08-26",
+          "url": "https://data.eastmoney.com/notices/detail/300179/AN202608251828429411.html"
         }
       ]
     }
