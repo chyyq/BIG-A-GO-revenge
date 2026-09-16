@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026/9/15 20:52:25",
-  "tradeDate": "2026-09-15",
+  "generatedAt": "2026/9/16 20:48:20",
+  "tradeDate": "2026-09-16",
   "dataSources": [
     "东方财富沪深A股实时行情 clist/get",
     "东方财富行业板块近5日涨幅 f109",
@@ -8,46 +8,46 @@
     "东方财富上市公司公告 security/ann"
   ],
   "strategyName": "A股低位放量反转概率评分策略 V3",
-  "scannedCount": 58,
-  "signalCount": 32,
+  "scannedCount": 121,
+  "signalCount": 65,
   "riskReview": {
-    "announcementCheckedCount": 58,
-    "excludedByAnnouncement": 16,
+    "announcementCheckedCount": 121,
+    "excludedByAnnouncement": 23,
     "announcementRiskSamples": [
       {
-        "code": "002584",
-        "name": "西陇科学",
-        "title": "西陇科学:关于公司银行账户内部分资金被冻结暨业绩承诺补偿的进展公告",
-        "date": "2026-08-11",
-        "url": "https://data.eastmoney.com/notices/detail/002584/AN202608101827810971.html"
+        "code": "300464",
+        "name": "星徽股份",
+        "title": "星徽股份:关于控股股东一致行动人部分股份被司法冻结的公告",
+        "date": "2026-06-05",
+        "url": "https://data.eastmoney.com/notices/detail/300464/AN202606051823300945.html"
       },
       {
-        "code": "605058",
-        "name": "澳弘电子",
-        "title": "澳弘电子:澳弘电子股票交易风险提示公告",
-        "date": "2026-09-16",
-        "url": "https://data.eastmoney.com/notices/detail/605058/AN202609151829410820.html"
+        "code": "688010",
+        "name": "福光股份",
+        "title": "福光股份:关于持股5%以上股东减持股份计划公告",
+        "date": "2026-09-04",
+        "url": "https://data.eastmoney.com/notices/detail/688010/AN202609031828963946.html"
       },
       {
-        "code": "601218",
-        "name": "吉鑫科技",
-        "title": "吉鑫科技:江苏吉鑫风能科技股份有限公司持股5%以上股东减持股份计划公告",
-        "date": "2026-05-21",
-        "url": "https://data.eastmoney.com/notices/detail/601218/AN202605201822495781.html"
+        "code": "688584",
+        "name": "上海合晶",
+        "title": "上海合晶:上海合晶持股5%以上股东减持股份计划公告",
+        "date": "2026-09-11",
+        "url": "https://data.eastmoney.com/notices/detail/688584/AN202609101829232176.html"
       },
       {
-        "code": "688416",
-        "name": "恒烁股份",
-        "title": "恒烁股份:关于使用公积金弥补亏损通知债权人的公告",
-        "date": "2026-08-04",
-        "url": "https://data.eastmoney.com/notices/detail/688416/AN202608031827589929.html"
+        "code": "688699",
+        "name": "明微电子",
+        "title": "明微电子:关于股票交易风险提示公告",
+        "date": "2026-07-01",
+        "url": "https://data.eastmoney.com/notices/detail/688699/AN202606301826602435.html"
       },
       {
-        "code": "603386",
-        "name": "骏亚科技",
-        "title": "骏亚科技:2026年半年度业绩预亏公告",
-        "date": "2026-07-09",
-        "url": "https://data.eastmoney.com/notices/detail/603386/AN202607081826814721.html"
+        "code": "002137",
+        "name": "实益达",
+        "title": "实益达:关于控股股东及其一致行动人减持股份预披露的公告",
+        "date": "2026-07-14",
+        "url": "https://data.eastmoney.com/notices/detail/002137/AN202607131826935907.html"
       }
     ],
     "riskKeywords": [
@@ -82,371 +82,371 @@
   "recommendations": [
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-09-15",
-      "code": "002487",
-      "name": "大金重工",
-      "industry": "风电设备",
-      "industryRank": 12,
-      "industryRankPercent": 12,
+      "tradeDate": "2026-09-16",
+      "code": "300671",
+      "name": "富满微",
+      "industry": "半导体",
+      "industryRank": 10,
+      "industryRankPercent": 10,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 162,
-      "estimatedWinRate": 82,
-      "latestPrice": 39.44,
-      "dailyChange": 10.01,
+      "totalScore": 156,
+      "estimatedWinRate": 80.4,
+      "latestPrice": 58.06,
+      "dailyChange": 14.74,
       "scores": {
-        "oversold": 22,
-        "lowStructure": 20,
+        "oversold": 25,
+        "lowStructure": 14,
         "falseBreak": 8,
-        "priceRise": 20,
-        "volume": 20,
+        "priceRise": 17,
+        "volume": 17,
         "candleQuality": 20,
         "turnover": 15,
         "moneyFlow": 20,
-        "sector": 17
+        "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -37,
-        "breakPct": 10.27,
-        "recent5LowPremium": -2.64,
-        "volumeRatio": 3.24,
-        "entityStrength": 64.2,
-        "closePosition": 100,
-        "turnover": 12.81,
-        "mainNetInflow": 60227.7,
-        "mainNetRatio": 19.73,
-        "sectorFiveDayChange": 3.37
+        "dropFrom60High": -45.01,
+        "breakPct": 3.65,
+        "recent5LowPremium": -2.34,
+        "volumeRatio": 2.52,
+        "entityStrength": 87.1,
+        "closePosition": 93,
+        "turnover": 11.44,
+        "mainNetInflow": 17996.4,
+        "mainNetRatio": 12.91,
+        "sectorFiveDayChange": 3.88
       },
       "tradePlan": {
-        "buyPrice": 38.26,
-        "aggressiveBuyPrice": 39.44,
+        "buyPrice": 56.32,
+        "aggressiveBuyPrice": 58.06,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 36.73,
-        "structuralStop": 35.33,
-        "takeProfit1": 42.09,
-        "takeProfit2": 45.91,
+        "stopLoss": 54.07,
+        "structuralStop": 50.23,
+        "takeProfit1": 61.95,
+        "takeProfit2": 67.58,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -37%，近5日低点较前60日低点 -2.6%",
-        "前低关系 10.3%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 3.24",
-        "实体强度 64.2%，收盘位置 100%",
-        "主力净流入 60227.7 万元，行业5日强度排名前 12%",
+        "低位放量反弹：距60日高点 -45%，近5日低点较前60日低点 -2.3%",
+        "前低关系 3.7%，假跌破作为加分项而非一票否决",
+        "当日涨幅 14.7%，量比 2.52",
+        "实体强度 87.1%，收盘位置 93%",
+        "主力净流入 17996.4 万元，行业5日强度排名前 10%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "大金重工:关于2026年中期A股分红派息实施的公告",
-          "date": "2026-09-16",
-          "url": "https://data.eastmoney.com/notices/detail/002487/AN202609151829419374.html"
+          "title": "富满微:公司章程(2026年8月)",
+          "date": "2026-09-07",
+          "url": "https://data.eastmoney.com/notices/detail/300671/AN202609071829103815.html"
         },
         {
-          "title": "大金重工:2026年第三次临时股东会决议公告",
-          "date": "2026-09-12",
-          "url": "https://data.eastmoney.com/notices/detail/002487/AN202609111829278814.html"
+          "title": "富满微:关于公司完成工商变更登记的公告",
+          "date": "2026-09-07",
+          "url": "https://data.eastmoney.com/notices/detail/300671/AN202609071829103820.html"
         },
         {
-          "title": "大金重工:北京海润天睿律师事务所关于大金重工2026年第三次临时股东会的法律意见",
-          "date": "2026-09-12",
-          "url": "https://data.eastmoney.com/notices/detail/002487/AN202609111829278802.html"
+          "title": "富满微:2026年第四次临时股东会决议公告",
+          "date": "2026-08-31",
+          "url": "https://data.eastmoney.com/notices/detail/300671/AN202608311828825623.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-09-15",
-      "code": "603092",
-      "name": "德力佳",
-      "industry": "风电设备",
-      "industryRank": 12,
-      "industryRankPercent": 12,
+      "tradeDate": "2026-09-16",
+      "code": "688478",
+      "name": "晶升股份",
+      "industry": "半导体",
+      "industryRank": 10,
+      "industryRankPercent": 10,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 151,
-      "estimatedWinRate": 78.8,
-      "latestPrice": 44.37,
-      "dailyChange": 8.22,
+      "totalScore": 145,
+      "estimatedWinRate": 77,
+      "latestPrice": 47.78,
+      "dailyChange": 19.99,
       "scores": {
-        "oversold": 17,
-        "lowStructure": 20,
-        "falseBreak": 14,
-        "priceRise": 17,
-        "volume": 20,
+        "oversold": 25,
+        "lowStructure": 9,
+        "falseBreak": 8,
+        "priceRise": 20,
+        "volume": 12,
         "candleQuality": 20,
-        "turnover": 15,
-        "moneyFlow": 11,
-        "sector": 17
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -23.54,
-        "breakPct": 0.97,
-        "recent5LowPremium": -1.2,
-        "volumeRatio": 3.64,
-        "entityStrength": 78.6,
-        "closePosition": 85.9,
-        "turnover": 13.4,
-        "mainNetInflow": 443.8,
-        "mainNetRatio": 2.21,
-        "sectorFiveDayChange": 3.37
+        "dropFrom60High": -49.33,
+        "breakPct": 8.27,
+        "recent5LowPremium": 4.95,
+        "volumeRatio": 1.92,
+        "entityStrength": 97,
+        "closePosition": 100,
+        "turnover": 6.16,
+        "mainNetInflow": 7356.1,
+        "mainNetRatio": 19.4,
+        "sectorFiveDayChange": 3.88
       },
       "tradePlan": {
-        "buyPrice": 43.04,
-        "aggressiveBuyPrice": 44.37,
+        "buyPrice": 46.35,
+        "aggressiveBuyPrice": 47.78,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 41.32,
-        "structuralStop": 40.71,
-        "takeProfit1": 47.34,
-        "takeProfit2": 51.65,
+        "stopLoss": 44.5,
+        "structuralStop": 39.39,
+        "takeProfit1": 50.99,
+        "takeProfit2": 55.62,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -23.5%，近5日低点较前60日低点 -1.2%",
-        "前低关系 1%，假跌破作为加分项而非一票否决",
-        "当日涨幅 8.2%，量比 3.64",
-        "实体强度 78.6%，收盘位置 85.9%",
-        "主力净流入 443.8 万元，行业5日强度排名前 12%",
+        "低位放量反弹：距60日高点 -49.3%，近5日低点较前60日低点 4.9%",
+        "前低关系 8.3%，假跌破作为加分项而非一票否决",
+        "当日涨幅 20%，量比 1.92",
+        "实体强度 97%，收盘位置 100%",
+        "主力净流入 7356.1 万元，行业5日强度排名前 10%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "德力佳:投资者关系活动记录表",
-          "date": "2026-09-04",
-          "url": "https://data.eastmoney.com/notices/detail/603092/AN202609041829014030.html"
+          "title": "晶升股份:华泰联合证券有限责任公司关于南京晶升装备股份有限公司2026年半年度持续督导跟踪报告",
+          "date": "2026-09-12",
+          "url": "https://data.eastmoney.com/notices/detail/688478/AN202609111829272784.html"
         },
         {
-          "title": "德力佳:投资者关系活动记录表",
-          "date": "2026-09-01",
-          "url": "https://data.eastmoney.com/notices/detail/603092/AN202609011828880684.html"
+          "title": "晶升股份:南京晶升装备股份有限公司关于终止发行股份及支付现金购买资产并募集配套资金暨关联交易事项相关内幕信息知情人买卖公司股票情况自查报告的公告",
+          "date": "2026-09-10",
+          "url": "https://data.eastmoney.com/notices/detail/688478/AN202609091829175597.html"
         },
         {
-          "title": "德力佳:关于召开2026年半年度业绩说明会的公告",
-          "date": "2026-08-25",
-          "url": "https://data.eastmoney.com/notices/detail/603092/AN202608241828362507.html"
+          "title": "晶升股份:上海市锦天城律师事务所关于南京晶升装备股份有限公司终止发行股份及支付现金购买资产并募集配套资金暨关联交易事项相关主体买卖股票情况的专项核查意见",
+          "date": "2026-09-10",
+          "url": "https://data.eastmoney.com/notices/detail/688478/AN202609091829175594.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-09-15",
-      "code": "603248",
-      "name": "锡华科技",
-      "industry": "风电设备",
-      "industryRank": 12,
-      "industryRankPercent": 12,
+      "tradeDate": "2026-09-16",
+      "code": "003026",
+      "name": "中晶科技",
+      "industry": "半导体",
+      "industryRank": 10,
+      "industryRankPercent": 10,
       "signalLevel": "buy",
       "setupType": "低位放量反弹",
-      "totalScore": 149,
-      "estimatedWinRate": 78.2,
-      "latestPrice": 18.46,
+      "totalScore": 141,
+      "estimatedWinRate": 75.7,
+      "latestPrice": 33.64,
       "dailyChange": 10.01,
       "scores": {
-        "oversold": 17,
-        "lowStructure": 9,
-        "falseBreak": 14,
+        "oversold": 22,
+        "lowStructure": 4,
+        "falseBreak": 3,
         "priceRise": 20,
         "volume": 17,
         "candleQuality": 20,
         "turnover": 15,
         "moneyFlow": 20,
-        "sector": 17
+        "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -20.64,
-        "breakPct": 1.77,
-        "recent5LowPremium": 1.03,
-        "volumeRatio": 3,
-        "entityStrength": 94.8,
+        "dropFrom60High": -32.45,
+        "breakPct": 29.88,
+        "recent5LowPremium": 8.66,
+        "volumeRatio": 2.6,
+        "entityStrength": 87.8,
         "closePosition": 100,
-        "turnover": 11.17,
-        "mainNetInflow": 3484.5,
-        "mainNetRatio": 24.19,
-        "sectorFiveDayChange": 3.37
+        "turnover": 10.74,
+        "mainNetInflow": 6395.5,
+        "mainNetRatio": 12.55,
+        "sectorFiveDayChange": 3.88
       },
       "tradePlan": {
-        "buyPrice": 17.91,
-        "aggressiveBuyPrice": 18.46,
+        "buyPrice": 32.7,
+        "aggressiveBuyPrice": 33.64,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 17.19,
-        "structuralStop": 16.72,
-        "takeProfit1": 19.7,
-        "takeProfit2": 21.49,
+        "stopLoss": 31.39,
+        "structuralStop": 31.51,
+        "takeProfit1": 35.97,
+        "takeProfit2": 39.24,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "低位放量反弹：距60日高点 -20.6%，近5日低点较前60日低点 1%",
-        "前低关系 1.8%，假跌破作为加分项而非一票否决",
-        "当日涨幅 10%，量比 3",
-        "实体强度 94.8%，收盘位置 100%",
-        "主力净流入 3484.5 万元，行业5日强度排名前 12%",
+        "低位放量反弹：距60日高点 -32.4%，近5日低点较前60日低点 8.7%",
+        "前低关系 29.9%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 2.6",
+        "实体强度 87.8%，收盘位置 100%",
+        "主力净流入 6395.5 万元，行业5日强度排名前 10%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "锡华科技:江苏锡华新能源科技股份有限公司2026年半年度报告",
-          "date": "2026-08-26",
-          "url": "https://data.eastmoney.com/notices/detail/603248/AN202608251828422223.html"
+          "title": "中晶科技:股票交易异常波动公告",
+          "date": "2026-09-17",
+          "url": "https://data.eastmoney.com/notices/detail/003026/AN202609161829470369.html"
         },
         {
-          "title": "锡华科技:江苏锡华新能源科技股份有限公司第二届董事会第九次会议决议的公告",
-          "date": "2026-08-26",
-          "url": "https://data.eastmoney.com/notices/detail/603248/AN202608251828422224.html"
+          "title": "中晶科技:2026年限制性股票激励计划授予登记完成公告(回购股份)",
+          "date": "2026-09-15",
+          "url": "https://data.eastmoney.com/notices/detail/003026/AN202609141829372366.html"
         },
         {
-          "title": "锡华科技:江苏锡华新能源科技股份有限公司2026年半年度募集资金存放、管理与使用情况的专项说明报告",
-          "date": "2026-08-26",
-          "url": "https://data.eastmoney.com/notices/detail/603248/AN202608251828422221.html"
+          "title": "中晶科技:2026年限制性股票激励计划授予登记完成公告(新增股份)",
+          "date": "2026-09-11",
+          "url": "https://data.eastmoney.com/notices/detail/003026/AN202609101829233982.html"
         }
       ]
     },
     {
       "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-09-15",
-      "code": "301155",
-      "name": "海力风电",
-      "industry": "风电设备",
-      "industryRank": 12,
-      "industryRankPercent": 12,
+      "tradeDate": "2026-09-16",
+      "code": "605358",
+      "name": "立昂微",
+      "industry": "半导体",
+      "industryRank": 10,
+      "industryRankPercent": 10,
+      "signalLevel": "buy",
+      "setupType": "低位放量反弹",
+      "totalScore": 135,
+      "estimatedWinRate": 73.8,
+      "latestPrice": 44.87,
+      "dailyChange": 10,
+      "scores": {
+        "oversold": 25,
+        "lowStructure": 4,
+        "falseBreak": 3,
+        "priceRise": 20,
+        "volume": 12,
+        "candleQuality": 20,
+        "turnover": 11,
+        "moneyFlow": 20,
+        "sector": 20
+      },
+      "metrics": {
+        "dropFrom60High": -46.03,
+        "breakPct": 13.79,
+        "recent5LowPremium": 10.39,
+        "volumeRatio": 1.57,
+        "entityStrength": 94.3,
+        "closePosition": 100,
+        "turnover": 6.44,
+        "mainNetInflow": 40099.8,
+        "mainNetRatio": 18.51,
+        "sectorFiveDayChange": 3.88
+      },
+      "tradePlan": {
+        "buyPrice": 43.52,
+        "aggressiveBuyPrice": 44.87,
+        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
+        "stopLoss": 41.78,
+        "structuralStop": 40.51,
+        "takeProfit1": 47.87,
+        "takeProfit2": 52.22,
+        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
+        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
+      },
+      "reasons": [
+        "低位放量反弹：距60日高点 -46%，近5日低点较前60日低点 10.4%",
+        "前低关系 13.8%，假跌破作为加分项而非一票否决",
+        "当日涨幅 10%，量比 1.57",
+        "实体强度 94.3%，收盘位置 100%",
+        "主力净流入 40099.8 万元，行业5日强度排名前 10%",
+        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
+      ],
+      "recentAnnouncements": [
+        {
+          "title": "立昂微:立昂微关于受让控股子公司少数股权的进展公告",
+          "date": "2026-09-11",
+          "url": "https://data.eastmoney.com/notices/detail/605358/AN202609101829219633.html"
+        },
+        {
+          "title": "立昂微:投资者关系活动记录表20260903",
+          "date": "2026-09-09",
+          "url": "https://data.eastmoney.com/notices/detail/605358/AN202609091829173355.html"
+        },
+        {
+          "title": "立昂微:立昂微关于受让控股子公司少数股权进展暨完成工商变更登记的公告",
+          "date": "2026-09-01",
+          "url": "https://data.eastmoney.com/notices/detail/605358/AN202608311828804991.html"
+        }
+      ]
+    },
+    {
+      "strategyName": "A股低位放量反转概率评分策略 V3",
+      "tradeDate": "2026-09-16",
+      "code": "688233",
+      "name": "神工股份",
+      "industry": "半导体",
+      "industryRank": 10,
+      "industryRankPercent": 10,
       "signalLevel": "buy",
       "setupType": "板块放量弹性",
-      "totalScore": 144,
-      "estimatedWinRate": 76.6,
-      "latestPrice": 44.2,
-      "dailyChange": 12.84,
+      "totalScore": 135,
+      "estimatedWinRate": 73.8,
+      "latestPrice": 100.5,
+      "dailyChange": 8.45,
       "scores": {
-        "oversold": 10,
-        "lowStructure": 20,
+        "oversold": 25,
+        "lowStructure": 9,
         "falseBreak": 8,
         "priceRise": 17,
-        "volume": 20,
+        "volume": 8,
         "candleQuality": 20,
-        "turnover": 15,
+        "turnover": 11,
         "moneyFlow": 17,
-        "sector": 17
+        "sector": 20
       },
       "metrics": {
-        "dropFrom60High": -14.56,
-        "breakPct": 5.7,
-        "recent5LowPremium": -2.22,
-        "volumeRatio": 4.29,
-        "entityStrength": 82.3,
-        "closePosition": 88.6,
-        "turnover": 11.85,
-        "mainNetInflow": 5642.5,
-        "mainNetRatio": 9.03,
-        "sectorFiveDayChange": 3.37
+        "dropFrom60High": -59.31,
+        "breakPct": 10.76,
+        "recent5LowPremium": 3.81,
+        "volumeRatio": 1.48,
+        "entityStrength": 96.8,
+        "closePosition": 96.8,
+        "turnover": 6.67,
+        "mainNetInflow": 8281.7,
+        "mainNetRatio": 7.47,
+        "sectorFiveDayChange": 3.88
       },
       "tradePlan": {
-        "buyPrice": 42.87,
-        "aggressiveBuyPrice": 44.2,
+        "buyPrice": 97.48,
+        "aggressiveBuyPrice": 100.5,
         "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 41.16,
-        "structuralStop": 38.2,
-        "takeProfit1": 47.16,
-        "takeProfit2": 51.44,
+        "stopLoss": 93.58,
+        "structuralStop": 92.11,
+        "takeProfit1": 107.23,
+        "takeProfit2": 116.98,
         "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
         "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
       },
       "reasons": [
-        "板块放量弹性：距60日高点 -14.6%，近5日低点较前60日低点 -2.2%",
-        "前低关系 5.7%，假跌破作为加分项而非一票否决",
-        "当日涨幅 12.8%，量比 4.29",
-        "实体强度 82.3%，收盘位置 88.6%",
-        "主力净流入 5642.5 万元，行业5日强度排名前 12%",
+        "板块放量弹性：距60日高点 -59.3%，近5日低点较前60日低点 3.8%",
+        "前低关系 10.8%，假跌破作为加分项而非一票否决",
+        "当日涨幅 8.4%，量比 1.48",
+        "实体强度 96.8%，收盘位置 96.8%",
+        "主力净流入 8281.7 万元，行业5日强度排名前 10%",
         "近20条公告未命中重大利空、减持或业绩暴雷关键词"
       ],
       "recentAnnouncements": [
         {
-          "title": "海力风电:非经营性资金占用及其他关联资金往来情况汇总表(2026年半年度)",
-          "date": "2026-08-29",
-          "url": "https://data.eastmoney.com/notices/detail/301155/AN202608281828624764.html"
-        },
-        {
-          "title": "海力风电:2026年半年度报告",
-          "date": "2026-08-29",
-          "url": "https://data.eastmoney.com/notices/detail/301155/AN202608280006757733.html"
-        },
-        {
-          "title": "海力风电:2026年半年度报告摘要",
-          "date": "2026-08-29",
-          "url": "https://data.eastmoney.com/notices/detail/301155/AN202608280006757732.html"
-        }
-      ]
-    },
-    {
-      "strategyName": "A股低位放量反转概率评分策略 V3",
-      "tradeDate": "2026-09-15",
-      "code": "301662",
-      "name": "宏工科技",
-      "industry": "电池",
-      "industryRank": 40,
-      "industryRankPercent": 40,
-      "signalLevel": "buy",
-      "setupType": "低位放量反弹",
-      "totalScore": 142,
-      "estimatedWinRate": 76,
-      "latestPrice": 67.5,
-      "dailyChange": 15.03,
-      "scores": {
-        "oversold": 22,
-        "lowStructure": 20,
-        "falseBreak": 8,
-        "priceRise": 17,
-        "volume": 17,
-        "candleQuality": 14,
-        "turnover": 15,
-        "moneyFlow": 20,
-        "sector": 9
-      },
-      "metrics": {
-        "dropFrom60High": -38.86,
-        "breakPct": 4.52,
-        "recent5LowPremium": -2.13,
-        "volumeRatio": 2.46,
-        "entityStrength": 72.8,
-        "closePosition": 74.4,
-        "turnover": 20.71,
-        "mainNetInflow": 7775.4,
-        "mainNetRatio": 12.71,
-        "sectorFiveDayChange": -2.14
-      },
-      "tradePlan": {
-        "buyPrice": 65.47,
-        "aggressiveBuyPrice": 67.5,
-        "buyTiming": "次一交易日：不低开超过3%，回踩信号日实体中位线或5日线企稳后放量上攻",
-        "stopLoss": 62.85,
-        "structuralStop": 59,
-        "takeProfit1": 72.02,
-        "takeProfit2": 78.56,
-        "trailingRule": "剩余仓位沿10日均线持有，收盘跌破10日均线或从最高点回撤10%卖出",
-        "sellTiming": "买入后3个交易日确认量能，1-3周内按10%/20%目标分批执行，剩余仓位跟随10日均线"
-      },
-      "reasons": [
-        "低位放量反弹：距60日高点 -38.9%，近5日低点较前60日低点 -2.1%",
-        "前低关系 4.5%，假跌破作为加分项而非一票否决",
-        "当日涨幅 15%，量比 2.46",
-        "实体强度 72.8%，收盘位置 74.4%",
-        "主力净流入 7775.4 万元，行业5日强度排名前 40%",
-        "近20条公告未命中重大利空、减持或业绩暴雷关键词"
-      ],
-      "recentAnnouncements": [
-        {
-          "title": "宏工科技:20260915投资者关系活动记录表",
+          "title": "神工股份:锦州神工半导体股份有限公司关于召开2026年半年度业绩说明会的公告",
           "date": "2026-09-15",
-          "url": "https://data.eastmoney.com/notices/detail/301662/AN202609151829416857.html"
+          "url": "https://data.eastmoney.com/notices/detail/688233/AN202609141829369868.html"
         },
         {
-          "title": "宏工科技:关于参加广东辖区2026年投资者网上集体接待日活动的公告",
-          "date": "2026-09-12",
-          "url": "https://data.eastmoney.com/notices/detail/301662/AN202609111829267294.html"
+          "title": "神工股份:中国国际金融股份有限公司关于锦州神工半导体股份有限公司向特定对象发行股票之上市保荐书",
+          "date": "2026-09-11",
+          "url": "https://data.eastmoney.com/notices/detail/688233/AN202609101829235524.html"
         },
         {
-          "title": "宏工科技:关于回购公司股份进展的公告",
-          "date": "2026-09-02",
-          "url": "https://data.eastmoney.com/notices/detail/301662/AN202609011828876351.html"
+          "title": "神工股份:中国国际金融股份有限公司关于锦州神工半导体股份有限公司向特定对象发行股票之发行保荐书",
+          "date": "2026-09-11",
+          "url": "https://data.eastmoney.com/notices/detail/688233/AN202609101829235532.html"
         }
       ]
     }
